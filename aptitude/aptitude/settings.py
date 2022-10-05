@@ -2,6 +2,7 @@ import os
 from pathlib import Path
 from . import local_settings
 
+
 SECRET_KEY = local_settings.SECRET_KEY
 DATABASES = local_settings.DATABASES
 
@@ -17,6 +18,7 @@ ALLOWED_HOSTS = []
 # Application definition
 INSTALLED_APPS = [
     'home',
+    # 'users',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -35,7 +37,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'home.urls'
+ROOT_URLCONF = 'aptitude.urls'
+
 
 TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
@@ -85,8 +88,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 STATIC_URL = 'static/'
 
-AUTH_USER_MODEL = 'users.User'
+# AUTH_USER_MODEL = 'users.User'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
-# DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
