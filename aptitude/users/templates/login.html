@@ -1,9 +1,776 @@
-<!DOCTYPE html>
-<html lang="ko">
+{% comment %} {% load static %} {% endcomment %}
+
+{% load bootstrap5 %}
+{% comment %} <link rel="stylesheet" href="{% static './style.css'%}"> {% endcomment %}
+
+{% comment %} <html lang="ko">
 <title>동심원</title>
 
+<div className="test"> test</div>
 
 <a href="{% url 'home' %}"><p>Home</p></a>
 
-<a href="/"><p>로그인</p></a>
-<a href="{% url 'signup' %}"><p>회원가입</p></a>
+<a href="{% url 'login' %}"><p>로그인</p></a>
+<a href="{% url 'signup' %}"><p>회원가입</p></a> {% endcomment %}
+
+<!DOCTYPE html><html><head><link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR&display=swap" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=Noto+Sans+Thai+UI&display=swap" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet" /></head><body><div class="v202_4"><div class="v204_4"></div><div class="v204_5"></div><div class="v204_6"></div><div class="v204_9"></div><span class="v204_7">이미지</span><div class="v204_10"></div><div class="v212_148"></div><div class="v212_149"></div><div class="v204_22"></div><div class="v204_12"></div><span class="v204_24">아이디</span><span class="v204_27">회원가입</span><span class="v204_40">어서오세요~
+    시그니처 문구</span><span class="v204_25">비밀번호</span><span class="v204_26">로그인</span><span class="v212_150">아이디 찾기</span><span class="v212_151">비밀번호 찾기</span><span class="v204_28">마우스 올리면
+    sns 로그인 버튼 활성화</span><div class="name"></div><div class="name"></div><div class="v204_15"></div><div class="v204_16"></div><div class="v204_17"></div><div class="v204_18"></div><div class="v204_19"></div><div class="v237_314"></div><div class="name"></div><span class="v237_316">로고</span><span class="v237_317">감사한 마음이 소중한 당신에게 닿을 수 있도록</span><span class="v237_324">love what you have.</span><span class="v237_325">로그인</span><span class="v237_326">마이페이지</span><span class="v237_327">회원가입</span><div class="name"></div><span class="v237_1402">할인상품</span><span class="v237_1403">HOME</span><span class="v237_1404">모든상품</span><span class="v237_1405">고객문의</span><span class="v237_1406">리뷰보기</span><span class="v237_1407">공지사항</span><span class="v237_1408">판매자 등록 신청</span><div class="name"></div><div class="v274_599"></div><span class="v274_600">위치
+    000-0000-000
+    seongjo@dongsimwon.kr</span><span class="v274_601">(주) 성조</span><span class="v274_602">ⓒ 2022 (주)성조</span><div class="name"></div><div class="name"></div><div class="name"></div><span class="v274_606">당신의 소중한 사람들에게 감사함을 전합니다.
+    소중한 인연이 만족하는 선물을 전합니다.</span><span class="v274_607">모든상품</span><span class="v274_608">할인상품</span><span class="v274_609">판매자 등록 신청</span><span class="v274_610">전화문의</span><span class="v274_611">82-000-0000-0000</span><span class="v274_612">전화문의는 평일 9시부터 6시까지만 가능합니다.</span><span class="v274_613">공지사항</span><span class="v274_614">고객문의</span><span class="v274_615">동심원</span><div class="v274_616"></div><div class="v274_617"></div><div class="name"></div><div class="name"></div><div class="v274_620"></div><div class="v274_621"></div><div class="v274_622"></div><div class="v274_623"></div><div class="v274_624"></div><div class="v274_625"></div></div></body></html> <br/><br/> <style>* {
+      box-sizing: border-box;
+    }
+    body {
+      font-size: 14px;
+    }
+    .v202_4 {
+      width: 100%;
+      height: 2379px;
+      background: rgba(233,236,239,1);
+      opacity: 1;
+      position: relative;
+      top: 0px;
+      left: 0px;
+      overflow: hidden;
+    }
+    .v204_4 {
+      width: 100%;
+      height: 833px;
+      background: rgba(255,255,255,1);
+      opacity: 1;
+      position: absolute;
+      top: 609px;
+      left: 258px;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+      overflow: hidden;
+    }
+    .v204_5 {
+      width: 702px;
+      height: 833px;
+      background: rgba(217,217,217,1);
+      opacity: 1;
+      position: absolute;
+      top: 609px;
+      left: 258px;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+      overflow: hidden;
+    }
+    .v204_6 {
+      width: 634px;
+      height: 68px;
+      background: rgba(217,217,217,1);
+      opacity: 1;
+      position: absolute;
+      top: 934px;
+      left: 987px;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      overflow: hidden;
+    }
+    .v204_9 {
+      width: 634px;
+      height: 68px;
+      background: rgba(217,217,217,1);
+      opacity: 1;
+      position: absolute;
+      top: 1033px;
+      left: 987px;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      overflow: hidden;
+    }
+    .v204_7 {
+      width: 433px;
+      color: rgba(0,0,0,1);
+      position: absolute;
+      top: 940px;
+      left: 393px;
+      font-family: Inter;
+      font-weight: Regular;
+      font-size: 150px;
+      opacity: 1;
+      text-align: left;
+    }
+    .v204_10 {
+      width: 634px;
+      height: 68px;
+      background: rgba(217,217,217,1);
+      opacity: 1;
+      position: absolute;
+      top: 1136px;
+      left: 987px;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      overflow: hidden;
+    }
+    .v212_148 {
+      width: 197px;
+      height: 19px;
+      background: rgba(217,217,217,1);
+      opacity: 1;
+      position: absolute;
+      top: 1252px;
+      left: 1092px;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      overflow: hidden;
+    }
+    .v212_149 {
+      width: 197px;
+      height: 19px;
+      background: rgba(217,217,217,1);
+      opacity: 1;
+      position: absolute;
+      top: 1252px;
+      left: 1320px;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      overflow: hidden;
+    }
+    .v204_22 {
+      width: 240px;
+      height: 68px;
+      background: rgba(217,217,217,1);
+      opacity: 1;
+      position: absolute;
+      top: 1349px;
+      left: 1184px;
+      border-top-left-radius: 40px;
+      border-top-right-radius: 40px;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      overflow: hidden;
+    }
+    .v204_12 {
+      width: 134px;
+      height: 46px;
+      background: rgba(217,217,217,1);
+      opacity: 1;
+      position: absolute;
+      top: 628px;
+      left: 1501px;
+      border-top-left-radius: 40px;
+      border-top-right-radius: 40px;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      overflow: hidden;
+    }
+    .v204_24 {
+      width: 285px;
+      color: rgba(0,0,0,1);
+      position: absolute;
+      top: 946px;
+      left: 1162px;
+      font-family: Inter;
+      font-weight: Regular;
+      font-size: 40px;
+      opacity: 1;
+      text-align: center;
+    }
+    .v204_27 {
+      width: 136px;
+      color: rgba(0,0,0,1);
+      position: absolute;
+      top: 635px;
+      left: 1500px;
+      font-family: Inter;
+      font-weight: Regular;
+      font-size: 30px;
+      opacity: 1;
+      text-align: center;
+    }
+    .v204_40 {
+      width: 480px;
+      color: rgba(0,0,0,1);
+      position: absolute;
+      top: 628px;
+      left: 976px;
+      font-family: Inter;
+      font-weight: Regular;
+      font-size: 30px;
+      opacity: 1;
+      text-align: left;
+    }
+    .v204_25 {
+      width: 285px;
+      color: rgba(0,0,0,1);
+      position: absolute;
+      top: 1046px;
+      left: 1162px;
+      font-family: Inter;
+      font-weight: Regular;
+      font-size: 40px;
+      opacity: 1;
+      text-align: center;
+    }
+    .v204_26 {
+      width: 285px;
+      color: rgba(0,0,0,1);
+      position: absolute;
+      top: 1144px;
+      left: 1162px;
+      font-family: Inter;
+      font-weight: Regular;
+      font-size: 40px;
+      opacity: 1;
+      text-align: center;
+    }
+    .v212_150 {
+      width: 143px;
+      color: rgba(0,0,0,1);
+      position: absolute;
+      top: 1252px;
+      left: 1113px;
+      font-family: Inter;
+      font-weight: Regular;
+      font-size: 14px;
+      opacity: 1;
+      text-align: center;
+    }
+    .v212_151 {
+      width: 143px;
+      color: rgba(0,0,0,1);
+      position: absolute;
+      top: 1252px;
+      left: 1344px;
+      font-family: Inter;
+      font-weight: Regular;
+      font-size: 14px;
+      opacity: 1;
+      text-align: center;
+    }
+    .v204_28 {
+      width: 427px;
+      color: rgba(0,0,0,1);
+      position: absolute;
+      top: 1364px;
+      left: 1091px;
+      font-family: Inter;
+      font-weight: Regular;
+      font-size: 40px;
+      opacity: 1;
+      text-align: center;
+    }
+    .name {
+      color: #fff;
+    }
+    .name {
+      color: #fff;
+    }
+    .v204_15 {
+      width: 62px;
+      height: 62px;
+      background: rgba(217,217,217,1);
+      opacity: 1;
+      position: absolute;
+      top: 1482px;
+      left: 1071px;
+      border-radius: 50%;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .v204_16 {
+      width: 62px;
+      height: 62px;
+      background: rgba(217,217,217,1);
+      opacity: 1;
+      position: absolute;
+      top: 1482px;
+      left: 1172px;
+      border-radius: 50%;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .v204_17 {
+      width: 62px;
+      height: 62px;
+      background: rgba(217,217,217,1);
+      opacity: 1;
+      position: absolute;
+      top: 1482px;
+      left: 1273px;
+      border-radius: 50%;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .v204_18 {
+      width: 62px;
+      height: 62px;
+      background: rgba(217,217,217,1);
+      opacity: 1;
+      position: absolute;
+      top: 1482px;
+      left: 1374px;
+      border-radius: 50%;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .v204_19 {
+      width: 62px;
+      height: 62px;
+      background: rgba(217,217,217,1);
+      opacity: 1;
+      position: absolute;
+      top: 1482px;
+      left: 1475px;
+      border-radius: 50%;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .v237_314 {
+      width: 100%;
+      height: 263px;
+      background: rgba(255,255,255,1);
+      opacity: 1;
+      position: relative;
+      top: 0px;
+      left: 0px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      overflow: hidden;
+    }
+    .name {
+      color: #fff;
+    }
+    .v237_316 {
+      width: 192px;
+      color: rgba(0,0,0,1);
+      position: absolute;
+      top: 49px;
+      left: 333px;
+      font-family: Noto Serif KR;
+      font-weight: Regular;
+      font-size: 36px;
+      opacity: 1;
+      text-align: center;
+    }
+    .v237_317 {
+      width: 718px;
+      color: rgba(0,0,0,1);
+      position: absolute;
+      top: 133px;
+      left: 877px;
+      font-family: Noto Serif KR;
+      font-weight: Regular;
+      font-size: 18px;
+      opacity: 1;
+      text-align: center;
+    }
+    .v237_324 {
+      width: 173px;
+      color: rgba(117,117,117,1);
+      position: absolute;
+      top: 159px;
+      left: 1266px;
+      font-family: Noto Sans Thai UI;
+      font-weight: Regular;
+      font-size: 14px;
+      opacity: 1;
+      text-align: center;
+    }
+    .v237_325 {
+      width: 68px;
+      color: rgba(0,0,0,1);
+      position: absolute;
+      top: 220px;
+      left: 1291px;
+      font-family: Noto Sans;
+      font-weight: Regular;
+      font-size: 16px;
+      opacity: 1;
+      text-align: center;
+    }
+    .v237_326 {
+      width: 85px;
+      color: rgba(0,0,0,1);
+      position: absolute;
+      top: 220px;
+      left: 1206px;
+      font-family: Noto Sans;
+      font-weight: Regular;
+      font-size: 16px;
+      opacity: 1;
+      text-align: center;
+    }
+    .v237_327 {
+      width: 68px;
+      color: rgba(0,0,0,1);
+      position: absolute;
+      top: 220px;
+      left: 1359px;
+      font-family: Noto Sans;
+      font-weight: Regular;
+      font-size: 16px;
+      opacity: 1;
+      text-align: center;
+    }
+    .name {
+      color: #fff;
+    }
+    .v237_1402 {
+      width: 68px;
+      color: rgba(0,0,0,1);
+      position: absolute;
+      top: 221px;
+      left: 553px;
+      font-family: Noto Sans;
+      font-weight: Regular;
+      font-size: 16px;
+      opacity: 1;
+      text-align: center;
+    }
+    .v237_1403 {
+      width: 68px;
+      color: rgba(0,0,0,1);
+      position: absolute;
+      top: 221px;
+      left: 384px;
+      font-family: Noto Sans;
+      font-weight: Regular;
+      font-size: 16px;
+      opacity: 1;
+      text-align: center;
+    }
+    .v237_1404 {
+      width: 68px;
+      color: rgba(0,0,0,1);
+      position: absolute;
+      top: 221px;
+      left: 462px;
+      font-family: Noto Sans;
+      font-weight: Regular;
+      font-size: 16px;
+      opacity: 1;
+      text-align: center;
+    }
+    .v237_1405 {
+      width: 68px;
+      color: rgba(0,0,0,1);
+      position: absolute;
+      top: 220px;
+      left: 836px;
+      font-family: Noto Sans;
+      font-weight: Regular;
+      font-size: 16px;
+      opacity: 1;
+      text-align: center;
+    }
+    .v237_1406 {
+      width: 68px;
+      color: rgba(0,0,0,1);
+      position: absolute;
+      top: 220px;
+      left: 914px;
+      font-family: Noto Sans;
+      font-weight: Regular;
+      font-size: 16px;
+      opacity: 1;
+      text-align: center;
+    }
+    .v237_1407 {
+      width: 68px;
+      color: rgba(0,0,0,1);
+      position: absolute;
+      top: 221px;
+      left: 758px;
+      font-family: Noto Sans;
+      font-weight: Regular;
+      font-size: 16px;
+      opacity: 1;
+      text-align: center;
+    }
+    .v237_1408 {
+      width: 117px;
+      color: rgba(0,0,0,1);
+      position: absolute;
+      top: 221px;
+      left: 631px;
+      font-family: Noto Sans;
+      font-weight: Regular;
+      font-size: 16px;
+      opacity: 1;
+      text-align: center;
+    }
+    .name {
+      color: #fff;
+    }
+    .v274_599 {
+      width: 100%;
+      height: 374px;
+      background: rgba(34,40,49,1);
+      opacity: 1;
+      position: absolute;
+      top: 2005px;
+      left: 0px;
+      overflow: hidden;
+    }
+    .v274_600 {
+      width: 196px;
+      color: rgba(255,255,255,1);
+      position: absolute;
+      top: 2142px;
+      left: 1548px;
+      font-family: Noto Sans Thai UI;
+      font-weight: Regular;
+      font-size: 16px;
+      opacity: 1;
+      text-align: center;
+    }
+    .v274_601 {
+      width: 110px;
+      color: rgba(255,255,255,1);
+      position: absolute;
+      top: 2108px;
+      left: 1581px;
+      font-family: Noto Sans Thai UI;
+      font-weight: Bold;
+      font-size: 24px;
+      opacity: 1;
+      text-align: center;
+    }
+    .v274_602 {
+      width: 341px;
+      color: rgba(255,255,255,1);
+      position: absolute;
+      top: 2300px;
+      left: 145px;
+      font-family: Noto Sans Thai UI;
+      font-weight: Regular;
+      font-size: 16px;
+      opacity: 1;
+      text-align: left;
+    }
+    .name {
+      color: #fff;
+    }
+    .name {
+      color: #fff;
+    }
+    .name {
+      color: #fff;
+    }
+    .v274_606 {
+      width: 350px;
+      color: rgba(255,255,255,1);
+      position: absolute;
+      top: 2168px;
+      left: 147px;
+      font-family: Noto Sans Thai UI;
+      font-weight: Regular;
+      font-size: 16px;
+      opacity: 1;
+      text-align: left;
+    }
+    .v274_607 {
+      width: 107px;
+      color: rgba(255,255,255,1);
+      position: absolute;
+      top: 2108px;
+      left: 654px;
+      font-family: Noto Sans Thai UI;
+      font-weight: Regular;
+      font-size: 16px;
+      opacity: 1;
+      text-align: left;
+    }
+    .v274_608 {
+      width: 107px;
+      color: rgba(255,255,255,1);
+      position: absolute;
+      top: 2135px;
+      left: 654px;
+      font-family: Noto Sans Thai UI;
+      font-weight: Regular;
+      font-size: 16px;
+      opacity: 1;
+      text-align: left;
+    }
+    .v274_609 {
+      width: 119px;
+      color: rgba(255,255,255,1);
+      position: absolute;
+      top: 2162px;
+      left: 654px;
+      font-family: Noto Sans Thai UI;
+      font-weight: Regular;
+      font-size: 16px;
+      opacity: 1;
+      text-align: left;
+    }
+    .v274_610 {
+      width: 91px;
+      color: rgba(255,255,255,1);
+      position: absolute;
+      top: 2108px;
+      left: 1056px;
+      font-family: Noto Sans Thai UI;
+      font-weight: Bold;
+      font-size: 24px;
+      opacity: 1;
+      text-align: left;
+    }
+    .v274_611 {
+      width: 168px;
+      color: rgba(255,255,255,1);
+      position: absolute;
+      top: 2156px;
+      left: 1056px;
+      font-family: Noto Sans Thai UI;
+      font-weight: Regular;
+      font-size: 16px;
+      opacity: 1;
+      text-align: left;
+    }
+    .v274_612 {
+      width: 332px;
+      color: rgba(255,255,255,1);
+      position: absolute;
+      top: 2183px;
+      left: 1056px;
+      font-family: Noto Sans Thai UI;
+      font-weight: Regular;
+      font-size: 16px;
+      opacity: 1;
+      text-align: left;
+    }
+    .v274_613 {
+      width: 107px;
+      color: rgba(255,255,255,1);
+      position: absolute;
+      top: 2189px;
+      left: 654px;
+      font-family: Noto Sans Thai UI;
+      font-weight: Regular;
+      font-size: 16px;
+      opacity: 1;
+      text-align: left;
+    }
+    .v274_614 {
+      width: 107px;
+      color: rgba(255,255,255,1);
+      position: absolute;
+      top: 2216px;
+      left: 654px;
+      font-family: Noto Sans Thai UI;
+      font-weight: Regular;
+      font-size: 16px;
+      opacity: 1;
+      text-align: left;
+    }
+    .v274_615 {
+      width: 120px;
+      color: rgba(255,255,255,1);
+      position: absolute;
+      top: 2098px;
+      left: 129px;
+      font-family: Noto Serif KR;
+      font-weight: Regular;
+      font-size: 32px;
+      opacity: 1;
+      text-align: center;
+    }
+    .v274_616 {
+      width: 60px;
+      height: 60px;
+      background: rgba(217,217,217,1);
+      opacity: 1;
+      position: absolute;
+      top: 2292px;
+      left: 1837px;
+      overflow: hidden;
+    }
+    .v274_617 {
+      width: 60px;
+      height: 60px;
+      background: rgba(217,217,217,1);
+      opacity: 1;
+      position: absolute;
+      top: 2207px;
+      left: 1837px;
+      overflow: hidden;
+    }
+    .name {
+      color: #fff;
+    }
+    .name {
+      color: #fff;
+    }
+    .v274_620 {
+      width: 25px;
+      height: 25px;
+      background: rgba(217,217,217,1);
+      opacity: 1;
+      position: absolute;
+      top: 2270px;
+      left: 654px;
+      border-radius: 50%;
+    }
+    .v274_621 {
+      width: 25px;
+      height: 25px;
+      background: rgba(217,217,217,1);
+      opacity: 1;
+      position: absolute;
+      top: 2270px;
+      left: 686px;
+      border-radius: 50%;
+    }
+    .v274_622 {
+      width: 25px;
+      height: 25px;
+      background: rgba(217,217,217,1);
+      opacity: 1;
+      position: absolute;
+      top: 2270px;
+      left: 718px;
+      border-radius: 50%;
+    }
+    .v274_623 {
+      width: 25px;
+      height: 25px;
+      background: rgba(217,217,217,1);
+      opacity: 1;
+      position: absolute;
+      top: 2270px;
+      left: 750px;
+      border-radius: 50%;
+    }
+    .v274_624 {
+      width: 25px;
+      height: 25px;
+      background: rgba(217,217,217,1);
+      opacity: 1;
+      position: absolute;
+      top: 2270px;
+      left: 782px;
+      border-radius: 50%;
+    }
+    .v274_625 {
+      width: 25px;
+      height: 25px;
+      background: rgba(217,217,217,1);
+      opacity: 1;
+      position: absolute;
+      top: 2270px;
+      left: 814px;
+      border-radius: 50%;
+    }
+    </style>

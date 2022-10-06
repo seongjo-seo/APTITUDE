@@ -1,0 +1,1920 @@
+{% comment %} {% load static %}
+{% load bootstrap5 %}
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		
+		<title>동심원</title>
+
+		<!-- home의 핵심 css -->
+		<link rel="stylesheet" href="{% static './css/home_style.css'%}">
+		<link rel="stylesheet" href="{% static './css/variables.css"'%}">
+		
+</head>
+
+<!-- body 시작-->
+<body>
+
+	<header>
+		<div class="container">
+			<nav class="navbar navbar-expand-lg bg-light">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">Navbar</a>
+				</div>
+			</nav>
+			<!-- 헤더 묶어 놓기 -->
+			<a href="/" class="logo d-flex align-items-center"><h1>동심원</h1></a>
+
+			<!-- 내비게이션 시작 -->
+			<nav class="navbar navbar-expand-lg bg-light">
+				<ul class="nav justify-content-center">
+				<li class="nav-item"><a href="/">Home</a></li>
+				<li class="dropdown"><a href="#"><span>카테고리</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+						<ul>
+						<li><a href="#">브라이덜 샤워</a></li>
+						<li><a href="#">출생</a></li>
+						<li><a href="#">혼인</a></li>
+						<li><a href="#">생일</a></li>
+						<li><a href="#">임신</a></li>
+						<li><a href="#">출산(베이비샤워)</a></li>
+						<li><a href="#">돌잔치</a></li>
+						<li><a href="#">약혼</a></li>
+						<li><a href="#">환갑</a></li>
+						<li><a href="#">칠순</a></li>
+						</ul>
+				</li>
+				<li><a href="/">할인상품</a></li>
+				<li><a href="/">판매자 등록 신청</a></li>
+				<li><a href="/">공지사항</a></li>
+				<li><a href="/">고객문의</a></li>
+				<li><a href="/">리뷰보기</a></li>
+				</ul>
+			</nav>
+			<!-- 내비게이션 끝 -->
+
+		</div>
+	</header>
+	
+
+	<div class="container-fluid">
+  </div>
+	<!-- header 시작 -->
+	<header id="header" class="header d-flex align-items-center fixed-top">
+
+		<div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+			<!-- 우측 상단 시작 -->
+			<div class="position-relative">
+					<a href="#" class="mx-2 js-search-open"><span class="bi-search"></span></a>
+					<i class="bi bi-list mobile-nav-toggle"></i>
+					<!-- 마이페이지, 로그인 로그아웃 회원가입-->
+					<a href="{% url 'home' %}"><span>마이페이지</span></a>
+					<a href="{% url 'login' %}"><span>로그인</span></a>
+					<a href="{% url 'signup' %}"><span>회원가입</span></a>
+
+					<!-- 검색 창 시작 -->
+					<div class="search-form-wrap js-search-form-wrap">
+					<form action="/" class="search-form">
+							<span class="icon bi-search"></span>
+							<input type="text" placeholder="Search" class="form-control">
+							<button class="btn js-search-close"><span class="bi-x"></span></button>
+					</form>
+					</div><!-- 검색 창 시작 -->
+			</div>
+			<!-- 우측 상단 끝 -->
+		
+		</div>
+	</header>
+	<!-- header 끝 -->
+</body>
+</html> {% endcomment %}
+
+<!DOCTYPE html><html><head><link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR&display=swap" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=Noto+Sans+Thai+UI&display=swap" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=Nova+Square&display=swap" rel="stylesheet" /></head><body><div class="v204_30"><div class="v234_8101"></div><div class="v237_295"></div><div class="v237_277"></div><div class="v231_4"></div><div class="v237_238"></div><div class="v235_8259"></div><div class="v235_8270"></div><div class="v237_1124"></div><span class="v235_8144">출산(베이비샤워)</span><div class="v235_8136"></div><div class="name"></div><span class="v232_9">로고</span><span class="v234_8095">감사한 마음이 소중한 당신에게 닿을 수 있도록</span><span class="v235_8123">판매중인 상품이에요 :)</span><span class="v235_8135">모두보기</span><span class="v235_8137">모든상품</span><span class="v235_8138">브라이덜 샤워</span><span class="v235_8149">허니제이의 상품</span><span class="v235_8150">곰돌이푸 꿀단지</span><span class="v235_8139">출생</span><span class="v235_8140">혼인</span><span class="v235_8141">생일</span><span class="v235_8142">임신</span><span class="v236_8337">필터</span><span class="v235_8143">돌잔치</span><span class="v235_8145">약혼</span><span class="v235_8146">환갑</span><span class="v235_8147">칠순</span><span class="v237_678">제작문의</span><div class="name"></div><span class="v234_8096">love what you have.</span><span class="v235_8113">love what you have.
+	Test test test
+	test test test test test test test test test test test test test test test test test test test test
+	
+	
+	(이미지가 더 컸으면 좋겠다는 컨펌을 받았다.)</span><span class="v237_279">
+	{name}님의 연령대 사람들이 고른 상품</span><span class="v234_8097">로그인</span><span class="v235_8256">마이페이지</span><span class="v235_8111">회원가입</span><span class="v234_8102">1/n</span><div class="name"></div><div class="name"></div><div class="v235_8112"></div><div class="v235_8114"></div><div class="v238_86"></div><span class="v235_8152">Julia의 상품</span><span class="v235_8153">코코넛 아몬드 튀일</span><div class="v235_8155"></div><span class="v235_8156">Fresher의 상품</span><span class="v235_8157">자수 수건 세트</span><div class="v235_8159"></div><span class="v235_8160">소재집의 상품</span><span class="v235_8161">신랑신부 오르골</span><div class="v235_8163"></div><span class="v235_8164">sulsulsun의 상품</span><span class="v235_8165">풍기 인삼증류주</span><div class="v235_8167"></div><span class="v235_8168">heungbu의 상품</span><span class="v235_8169">과일 화과자 세트</span><div class="v235_8171"></div><span class="v235_8172">jaringobi의 상품</span><span class="v235_8173">히말라야 핑크솔트</span><div class="v235_8175"></div><span class="v235_8176">허니제이의 상품</span><span class="v235_8177">아카시아 꿀스틱</span><div class="v235_8179"></div><span class="v235_8196">demeter의 상품</span><span class="v235_8197">사계절 꽃차 보자기</span><div class="v235_8199"></div><span class="v235_8200">fullmoon의 상품</span><span class="v235_8201">플라워 도기 그릇</span><div class="v235_8203"></div><span class="v235_8204">flower 의 상품</span><span class="v235_8205">생화 디퓨저 세트</span><div class="v235_8207"></div><span class="v235_8208">lemon tree의 상품</span><span class="v235_8209">봉봉오쇼콜라 세트</span><div class="v235_8211"></div><div class="v270_520"></div><span class="v271_522">긍정 / 평가</span><span class="v235_8269">분기 / 한달 / 주</span><div class="v236_8334"></div><span class="v237_280">동심원이 {name}님에게 추천하는 상품은 이런 상품이 있어요</span><span class="v242_256">gumi_b**** <구미></span><div class="v274_830"></div><span class="v274_831">위치
+	000-0000-000
+	seongjo@dongsimwon.kr</span><span class="v274_832">(주) 성조</span><span class="v274_833">ⓒ 2022 (주)성조</span><div class="name"></div><div class="name"></div><div class="name"></div><span class="v274_837">당신의 소중한 사람들에게 감사함을 전합니다.
+	소중한 인연이 만족하는 선물을 전합니다.</span><span class="v274_838">모든상품</span><span class="v274_839">할인상품</span><span class="v274_840">판매자 등록 신청</span><span class="v274_841">전화문의</span><span class="v274_842">82-000-0000-0000</span><span class="v274_843">전화문의는 평일 9시부터 6시까지만 가능합니다.</span><span class="v274_844">공지사항</span><span class="v274_845">고객문의</span><span class="v274_846">동심원</span><div class="v274_847"></div><div class="v274_848"></div><div class="name"></div><div class="name"></div><div class="v274_851"></div><div class="v274_852"></div><div class="v274_853"></div><div class="v274_854"></div><div class="v274_855"></div><div class="v274_856"></div><div class="name"></div><span class="v237_255">동심원에서는 모든 일정을 관리할 수 있어요.
+	(대략 설명 이미지 더 추가)</span><span class="v237_275">동심원에서는 모든 일정을 관리할 수 있어요.
+	(대략 설명 이미지 더 추가)</span><div class="name"></div><div class="v237_207"></div><div class="v237_288"></div><div class="name"></div><div class="v237_282"></div><span class="v237_283">보러가기</span><div class="v237_284"></div><span class="v237_285">보러가기</span><div class="v271_537"><div class="v237_281"></div><div class="v271_536"></div></div><span class="v237_290">자주하는 질문</span><span class="v237_291">1:1 문의 남기기</span><span class="v237_1393">할인상품</span><span class="v237_1394">HOME</span><span class="v237_1395">모든상품</span><span class="v237_1396">고객문의</span><span class="v237_1397">리뷰보기</span><span class="v237_1398">공지사항</span><span class="v237_1399">판매자 등록 신청</span><div class="name"></div><div class="name"></div><div class="v271_523"></div><span class="v271_524">아몬드 튀일 세트</span><span class="v271_543">에코장인 서성조의 에코백</span><span class="v271_525">5.0점 (115건)</span><div class="v271_526"></div><span class="v271_541">5.0점 (60건)</span><div class="v271_542"></div><span class="v271_544">웨딩플래너 아무개</span><span class="v271_545">5.0점 (200건)</span><div class="v271_546"></div><div class="v271_533"><div class="v271_531"></div><div class="v271_528"></div></div><div class="v271_540"><div class="v270_521"></div><div class="v271_539"></div></div><div class="v271_549"><div class="v235_8262"></div><div class="v271_548"></div></div><div class="v308_534"></div></div></body></html> <br/><br/> <style>* {
+		box-sizing: border-box;
+	}
+	body {
+		font-size: 14px;
+	}
+	.v204_30 {
+		width: 100%;
+		height: 6796px;
+		background: rgba(233,236,239,1);
+		opacity: 1;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		overflow: hidden;
+	}
+	.v234_8101 {
+		width: 100%;
+		height: 918px;
+		background: rgba(253,238,220,0.30000001192092896);
+		opacity: 1;
+		position: absolute;
+		top: 264px;
+		left: 0px;
+		overflow: hidden;
+	}
+	.v237_295 {
+		width: 85px;
+		height: 117px;
+		background: rgba(90,90,90,1);
+		opacity: 1;
+		position: absolute;
+		top: 223px;
+		left: 1206px;
+		overflow: hidden;
+	}
+	.v237_277 {
+		width: 100%;
+		height: 595px;
+		background: rgba(241,166,97,0.10000000149011612);
+		opacity: 1;
+		position: absolute;
+		top: 5827px;
+		left: 0px;
+		overflow: hidden;
+	}
+	.v231_4 {
+		width: 100%;
+		height: 263px;
+		background: rgba(255,255,255,1);
+		opacity: 1;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		overflow: hidden;
+	}
+	.v237_238 {
+		width: 100%;
+		height: 277px;
+		background: rgba(255,216,169,0.3499999940395355);
+		opacity: 1;
+		position: absolute;
+		top: 1182px;
+		left: 0px;
+	}
+	.v235_8259 {
+		width: 100%;
+		height: 100%;
+		background: rgba(253,238,220,0.5);
+		opacity: 1;
+		position: absolute;
+		top: 3311px;
+		left: 0px;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		overflow: hidden;
+	}
+	.v235_8270 {
+		width: 100%;
+		height: 100%;
+		background: rgba(255,255,255,1);
+		opacity: 1;
+		position: absolute;
+		top: 4623px;
+		left: 0px;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		overflow: hidden;
+	}
+	.v237_1124 {
+		width: 100%;
+		height: 100%;
+		background: rgba(255,255,255,1);
+		opacity: 1;
+		position: absolute;
+		top: 1459px;
+		left: 0px;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		overflow: hidden;
+	}
+	.v235_8144 {
+		width: 136px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 1627px;
+		left: 592px;
+		font-family: Noto Serif;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v235_8136 {
+		width: 400px;
+		height: 100px;
+		background: rgba(166,196,255,0.30000001192092896);
+		opacity: 1;
+		position: absolute;
+		top: 3166px;
+		left: 760px;
+		border-top-left-radius: 30px;
+		border-top-right-radius: 30px;
+		border-bottom-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		overflow: hidden;
+	}
+	.name {
+		color: #fff;
+	}
+	.v232_9 {
+		width: 192px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 49px;
+		left: 333px;
+		font-family: Noto Serif KR;
+		font-weight: Regular;
+		font-size: 36px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v234_8095 {
+		width: 718px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 133px;
+		left: 877px;
+		font-family: Noto Serif KR;
+		font-weight: Regular;
+		font-size: 18px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v235_8123 {
+		width: 737px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 1566px;
+		left: 592px;
+		font-family: Noto Serif;
+		font-weight: Regular;
+		font-size: 32px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v235_8135 {
+		width: 136px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 3200px;
+		left: 892px;
+		font-family: Noto Serif;
+		font-weight: Regular;
+		font-size: 32px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v235_8137 {
+		width: 136px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 1627px;
+		left: 91px;
+		font-family: Noto Serif;
+		font-weight: Display Bold;
+		font-size: 16px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v235_8138 {
+		width: 136px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 1627px;
+		left: 194px;
+		font-family: Noto Serif;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v235_8149 {
+		width: 136px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 2053px;
+		left: 80px;
+		font-family: Noto Serif;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v235_8150 {
+		width: 136px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 2053px;
+		left: 216px;
+		font-family: Noto Serif;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: left;
+	}
+	.v235_8139 {
+		width: 136px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 1627px;
+		left: 291px;
+		font-family: Noto Serif;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v235_8140 {
+		width: 136px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 1627px;
+		left: 359px;
+		font-family: Noto Serif;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v235_8141 {
+		width: 136px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 1627px;
+		left: 427px;
+		font-family: Noto Serif;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v235_8142 {
+		width: 136px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 1627px;
+		left: 491px;
+		font-family: Noto Serif;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v236_8337 {
+		width: 136px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 1627px;
+		left: 1721px;
+		font-family: Noto Serif;
+		font-weight: Display Bold;
+		font-size: 16px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v235_8143 {
+		width: 136px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 1627px;
+		left: 712px;
+		font-family: Noto Serif;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v235_8145 {
+		width: 136px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 1627px;
+		left: 780px;
+		font-family: Noto Serif;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v235_8146 {
+		width: 136px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 1627px;
+		left: 847px;
+		font-family: Noto Serif;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v235_8147 {
+		width: 136px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 1627px;
+		left: 916px;
+		font-family: Noto Serif;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v237_678 {
+		width: 68px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 301px;
+		left: 1215px;
+		font-family: Noto Sans;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: center;
+	}
+	.name {
+		color: #fff;
+	}
+	.v234_8096 {
+		width: 173px;
+		color: rgba(117,117,117,1);
+		position: absolute;
+		top: 159px;
+		left: 1266px;
+		font-family: Noto Sans Thai UI;
+		font-weight: Regular;
+		font-size: 14px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v235_8113 {
+		width: 613px;
+		color: rgba(117,117,117,1);
+		position: absolute;
+		top: 526px;
+		left: 190px;
+		font-family: Noto Sans Thai UI;
+		font-weight: Regular;
+		opacity: 1;
+		text-align: left;
+	}
+	.v237_279 {
+		width: 755px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 4888px;
+		left: 121px;
+		font-family: Noto Sans Thai UI;
+		font-weight: Regular;
+		opacity: 1;
+		text-align: left;
+	}
+	.v234_8097 {
+		width: 68px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 220px;
+		left: 1291px;
+		font-family: Noto Sans;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v235_8256 {
+		width: 85px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 220px;
+		left: 1206px;
+		font-family: Noto Sans;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v235_8111 {
+		width: 68px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 220px;
+		left: 1359px;
+		font-family: Noto Sans;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v234_8102 {
+		width: 68px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 1101px;
+		left: 926px;
+		font-family: Noto Sans;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: center;
+	}
+	.name {
+		color: #fff;
+	}
+	.name {
+		color: #fff;
+	}
+	.v235_8112 {
+		width: 970px;
+		height: 643px;
+		background: url("../images/v235_8112.png");
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		opacity: 1;
+		position: absolute;
+		top: 384px;
+		left: 852px;
+		overflow: hidden;
+	}
+	.v235_8114 {
+		width: 400px;
+		height: 364px;
+		background: rgba(217,217,217,1);
+		opacity: 1;
+		position: absolute;
+		top: 1684px;
+		left: 91px;
+		border-top-left-radius: 30px;
+		border-top-right-radius: 30px;
+		border-bottom-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		overflow: hidden;
+	}
+	.v238_86 {
+		width: 400px;
+		height: 364px;
+		background: url("../images/v238_86.png");
+		opacity: 1;
+		position: absolute;
+		top: 1684px;
+		left: 91px;
+	}
+	.v235_8152 {
+		width: 136px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 2053px;
+		left: 523px;
+		font-family: Noto Serif;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v235_8153 {
+		width: 136px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 2053px;
+		left: 642px;
+		font-family: Noto Serif;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: left;
+	}
+	.v235_8155 {
+		width: 400px;
+		height: 364px;
+		background: url("../images/v235_8155.png");
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		opacity: 1;
+		position: absolute;
+		top: 1684px;
+		left: 534px;
+		border-top-left-radius: 30px;
+		border-top-right-radius: 30px;
+		border-bottom-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		overflow: hidden;
+	}
+	.v235_8156 {
+		width: 136px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 2053px;
+		left: 977px;
+		font-family: Noto Serif;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v235_8157 {
+		width: 136px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 2053px;
+		left: 1104px;
+		font-family: Noto Serif;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: left;
+	}
+	.v235_8159 {
+		width: 400px;
+		height: 364px;
+		background: url("../images/v235_8159.png");
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		opacity: 1;
+		position: absolute;
+		top: 1684px;
+		left: 988px;
+		border-top-left-radius: 30px;
+		border-top-right-radius: 30px;
+		border-bottom-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		overflow: hidden;
+	}
+	.v235_8160 {
+		width: 136px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 2053px;
+		left: 1431px;
+		font-family: Noto Serif;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v235_8161 {
+		width: 136px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 2053px;
+		left: 1554px;
+		font-family: Noto Serif;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: left;
+	}
+	.v235_8163 {
+		width: 400px;
+		height: 364px;
+		background: url("../images/v235_8163.png");
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		opacity: 1;
+		position: absolute;
+		top: 1684px;
+		left: 1442px;
+		border-top-left-radius: 30px;
+		border-top-right-radius: 30px;
+		border-bottom-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		overflow: hidden;
+	}
+	.v235_8164 {
+		width: 136px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 2539px;
+		left: 80px;
+		font-family: Noto Serif;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v235_8165 {
+		width: 136px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 2539px;
+		left: 216px;
+		font-family: Noto Serif;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: left;
+	}
+	.v235_8167 {
+		width: 400px;
+		height: 364px;
+		background: url("../images/v235_8167.png");
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		opacity: 1;
+		position: absolute;
+		top: 2170px;
+		left: 91px;
+		border-top-left-radius: 30px;
+		border-top-right-radius: 30px;
+		border-bottom-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		overflow: hidden;
+	}
+	.v235_8168 {
+		width: 136px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 2539px;
+		left: 523px;
+		font-family: Noto Serif;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v235_8169 {
+		width: 136px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 2539px;
+		left: 662px;
+		font-family: Noto Serif;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: left;
+	}
+	.v235_8171 {
+		width: 400px;
+		height: 364px;
+		background: url("../images/v235_8171.png");
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		opacity: 1;
+		position: absolute;
+		top: 2170px;
+		left: 534px;
+		border-top-left-radius: 30px;
+		border-top-right-radius: 30px;
+		border-bottom-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		overflow: hidden;
+	}
+	.v235_8172 {
+		width: 136px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 2539px;
+		left: 977px;
+		font-family: Noto Serif;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v235_8173 {
+		width: 136px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 2539px;
+		left: 1115px;
+		font-family: Noto Serif;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: left;
+	}
+	.v235_8175 {
+		width: 400px;
+		height: 364px;
+		background: url("../images/v235_8175.png");
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		opacity: 1;
+		position: absolute;
+		top: 2170px;
+		left: 988px;
+		border-top-left-radius: 30px;
+		border-top-right-radius: 30px;
+		border-bottom-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		overflow: hidden;
+	}
+	.v235_8176 {
+		width: 136px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 2539px;
+		left: 1431px;
+		font-family: Noto Serif;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v235_8177 {
+		width: 136px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 2539px;
+		left: 1567px;
+		font-family: Noto Serif;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: left;
+	}
+	.v235_8179 {
+		width: 400px;
+		height: 364px;
+		background: url("../images/v235_8179.png");
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		opacity: 1;
+		position: absolute;
+		top: 2170px;
+		left: 1442px;
+		border-top-left-radius: 30px;
+		border-top-right-radius: 30px;
+		border-bottom-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		overflow: hidden;
+	}
+	.v235_8196 {
+		width: 136px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 3049px;
+		left: 80px;
+		font-family: Noto Serif;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v235_8197 {
+		width: 136px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 3049px;
+		left: 210px;
+		font-family: Noto Serif;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: left;
+	}
+	.v235_8199 {
+		width: 400px;
+		height: 364px;
+		background: url("../images/v235_8199.png");
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		opacity: 1;
+		position: absolute;
+		top: 2680px;
+		left: 91px;
+		border-top-left-radius: 30px;
+		border-top-right-radius: 30px;
+		border-bottom-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		overflow: hidden;
+	}
+	.v235_8200 {
+		width: 136px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 3049px;
+		left: 523px;
+		font-family: Noto Serif;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v235_8201 {
+		width: 136px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 3049px;
+		left: 667px;
+		font-family: Noto Serif;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: left;
+	}
+	.v235_8203 {
+		width: 400px;
+		height: 364px;
+		background: url("../images/v235_8203.png");
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		opacity: 1;
+		position: absolute;
+		top: 2680px;
+		left: 534px;
+		border-top-left-radius: 30px;
+		border-top-right-radius: 30px;
+		border-bottom-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		overflow: hidden;
+	}
+	.v235_8204 {
+		width: 136px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 3049px;
+		left: 977px;
+		font-family: Noto Serif;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v235_8205 {
+		width: 136px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 3049px;
+		left: 1118px;
+		font-family: Noto Serif;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: left;
+	}
+	.v235_8207 {
+		width: 400px;
+		height: 364px;
+		background: url("../images/v235_8207.png");
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		opacity: 1;
+		position: absolute;
+		top: 2680px;
+		left: 988px;
+		border-top-left-radius: 30px;
+		border-top-right-radius: 30px;
+		border-bottom-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		overflow: hidden;
+	}
+	.v235_8208 {
+		width: 136px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 3049px;
+		left: 1431px;
+		font-family: Noto Serif;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v235_8209 {
+		width: 136px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 3049px;
+		left: 1581px;
+		font-family: Noto Serif;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: left;
+	}
+	.v235_8211 {
+		width: 400px;
+		height: 364px;
+		background: url("../images/v235_8211.png");
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		opacity: 1;
+		position: absolute;
+		top: 2680px;
+		left: 1442px;
+		border-top-left-radius: 30px;
+		border-top-right-radius: 30px;
+		border-bottom-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		overflow: hidden;
+	}
+	.v270_520 {
+		width: 549px;
+		height: 427px;
+		background: rgba(217,217,217,1);
+		opacity: 1;
+		position: absolute;
+		top: 3876px;
+		left: 1290px;
+		border-top-left-radius: 60px;
+		border-top-right-radius: 60px;
+		border-bottom-left-radius: 60px;
+		border-bottom-right-radius: 60px;
+		overflow: hidden;
+	}
+	.v271_522 {
+		width: 307px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 3333px;
+		left: 1496px;
+		font-size: 36px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v235_8269 {
+		width: 162px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 3398px;
+		left: 1572px;
+		font-size: 24px;
+		opacity: 1;
+		text-align: left;
+	}
+	.v236_8334 {
+		width: 450px;
+		height: 500px;
+		background: url("../images/v236_8334.png");
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		opacity: 1;
+		position: absolute;
+		top: 4726px;
+		left: 914px;
+		border-top-left-radius: 30px;
+		border-top-right-radius: 30px;
+		border-bottom-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+		overflow: hidden;
+	}
+	.v237_280 {
+		width: 100%;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 5479px;
+		left: 876px;
+		font-family: Noto Sans Thai UI;
+		font-weight: Regular;
+		font-size: 36px;
+		opacity: 1;
+		text-align: left;
+	}
+	.v242_256 {
+		width: 342px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 5162px;
+		left: 1420px;
+		font-family: Noto Sans Thai UI;
+		font-weight: Regular;
+		font-size: 36px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v274_830 {
+		width: 100%;
+		height: 374px;
+		background: rgba(34,40,49,1);
+		opacity: 1;
+		position: absolute;
+		top: 6422px;
+		left: 0px;
+		overflow: hidden;
+	}
+	.v274_831 {
+		width: 196px;
+		color: rgba(255,255,255,1);
+		position: absolute;
+		top: 6559px;
+		left: 1548px;
+		font-family: Noto Sans Thai UI;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v274_832 {
+		width: 110px;
+		color: rgba(255,255,255,1);
+		position: absolute;
+		top: 6525px;
+		left: 1581px;
+		font-family: Noto Sans Thai UI;
+		font-weight: Bold;
+		font-size: 24px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v274_833 {
+		width: 341px;
+		color: rgba(255,255,255,1);
+		position: absolute;
+		top: 6717px;
+		left: 145px;
+		font-family: Noto Sans Thai UI;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: left;
+	}
+	.name {
+		color: #fff;
+	}
+	.name {
+		color: #fff;
+	}
+	.name {
+		color: #fff;
+	}
+	.v274_837 {
+		width: 350px;
+		color: rgba(255,255,255,1);
+		position: absolute;
+		top: 6585px;
+		left: 147px;
+		font-family: Noto Sans Thai UI;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: left;
+	}
+	.v274_838 {
+		width: 107px;
+		color: rgba(255,255,255,1);
+		position: absolute;
+		top: 6525px;
+		left: 654px;
+		font-family: Noto Sans Thai UI;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: left;
+	}
+	.v274_839 {
+		width: 107px;
+		color: rgba(255,255,255,1);
+		position: absolute;
+		top: 6552px;
+		left: 654px;
+		font-family: Noto Sans Thai UI;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: left;
+	}
+	.v274_840 {
+		width: 119px;
+		color: rgba(255,255,255,1);
+		position: absolute;
+		top: 6579px;
+		left: 654px;
+		font-family: Noto Sans Thai UI;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: left;
+	}
+	.v274_841 {
+		width: 91px;
+		color: rgba(255,255,255,1);
+		position: absolute;
+		top: 6525px;
+		left: 1056px;
+		font-family: Noto Sans Thai UI;
+		font-weight: Bold;
+		font-size: 24px;
+		opacity: 1;
+		text-align: left;
+	}
+	.v274_842 {
+		width: 168px;
+		color: rgba(255,255,255,1);
+		position: absolute;
+		top: 6573px;
+		left: 1056px;
+		font-family: Noto Sans Thai UI;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: left;
+	}
+	.v274_843 {
+		width: 332px;
+		color: rgba(255,255,255,1);
+		position: absolute;
+		top: 6600px;
+		left: 1056px;
+		font-family: Noto Sans Thai UI;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: left;
+	}
+	.v274_844 {
+		width: 107px;
+		color: rgba(255,255,255,1);
+		position: absolute;
+		top: 6606px;
+		left: 654px;
+		font-family: Noto Sans Thai UI;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: left;
+	}
+	.v274_845 {
+		width: 107px;
+		color: rgba(255,255,255,1);
+		position: absolute;
+		top: 6633px;
+		left: 654px;
+		font-family: Noto Sans Thai UI;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: left;
+	}
+	.v274_846 {
+		width: 120px;
+		color: rgba(255,255,255,1);
+		position: absolute;
+		top: 6515px;
+		left: 129px;
+		font-family: Noto Serif KR;
+		font-weight: Regular;
+		font-size: 32px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v274_847 {
+		width: 60px;
+		height: 60px;
+		background: rgba(217,217,217,1);
+		opacity: 1;
+		position: absolute;
+		top: 6709px;
+		left: 1837px;
+		overflow: hidden;
+	}
+	.v274_848 {
+		width: 60px;
+		height: 60px;
+		background: rgba(217,217,217,1);
+		opacity: 1;
+		position: absolute;
+		top: 6624px;
+		left: 1837px;
+		overflow: hidden;
+	}
+	.name {
+		color: #fff;
+	}
+	.name {
+		color: #fff;
+	}
+	.v274_851 {
+		width: 25px;
+		height: 25px;
+		background: rgba(217,217,217,1);
+		opacity: 1;
+		position: absolute;
+		top: 6687px;
+		left: 654px;
+		border-radius: 50%;
+	}
+	.v274_852 {
+		width: 25px;
+		height: 25px;
+		background: rgba(217,217,217,1);
+		opacity: 1;
+		position: absolute;
+		top: 6687px;
+		left: 686px;
+		border-radius: 50%;
+	}
+	.v274_853 {
+		width: 25px;
+		height: 25px;
+		background: rgba(217,217,217,1);
+		opacity: 1;
+		position: absolute;
+		top: 6687px;
+		left: 718px;
+		border-radius: 50%;
+	}
+	.v274_854 {
+		width: 25px;
+		height: 25px;
+		background: rgba(217,217,217,1);
+		opacity: 1;
+		position: absolute;
+		top: 6687px;
+		left: 750px;
+		border-radius: 50%;
+	}
+	.v274_855 {
+		width: 25px;
+		height: 25px;
+		background: rgba(217,217,217,1);
+		opacity: 1;
+		position: absolute;
+		top: 6687px;
+		left: 782px;
+		border-radius: 50%;
+	}
+	.v274_856 {
+		width: 25px;
+		height: 25px;
+		background: rgba(217,217,217,1);
+		opacity: 1;
+		position: absolute;
+		top: 6687px;
+		left: 814px;
+		border-radius: 50%;
+	}
+	.name {
+		color: #fff;
+	}
+	.v237_255 {
+		width: 613px;
+		color: rgba(77,76,76,1);
+		position: absolute;
+		top: 1282px;
+		left: 239px;
+		font-family: Noto Sans Thai UI;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: left;
+	}
+	.v237_275 {
+		width: 352px;
+		color: rgba(77,76,76,1);
+		position: absolute;
+		top: 1282px;
+		left: 1438px;
+		font-family: Noto Sans Thai UI;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: left;
+	}
+	.name {
+		color: #fff;
+	}
+	.v237_207 {
+		width: 419px;
+		height: 264px;
+		background: rgba(255,255,255,1);
+		opacity: 1;
+		position: absolute;
+		top: 5978px;
+		left: 378px;
+		border: 0.10000000149011612px solid rgba(0,0,0,1);
+		border-top-left-radius: 30px;
+		border-top-right-radius: 30px;
+		border-bottom-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		overflow: hidden;
+	}
+	.v237_288 {
+		width: 419px;
+		height: 264px;
+		background: rgba(255,255,255,1);
+		opacity: 1;
+		position: absolute;
+		top: 5978px;
+		left: 1124px;
+		border: 0.10000000149011612px solid rgba(0,0,0,1);
+		border-top-left-radius: 30px;
+		border-top-right-radius: 30px;
+		border-bottom-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		overflow: hidden;
+	}
+	.name {
+		color: #fff;
+	}
+	.v237_282 {
+		width: 555px;
+		height: 122px;
+		background: rgba(255,255,255,1);
+		opacity: 1;
+		position: absolute;
+		top: 5601px;
+		left: 876px;
+		border: 1px solid rgba(218,218,218,1);
+		border-top-left-radius: 15px;
+		border-top-right-radius: 15px;
+		border-bottom-left-radius: 15px;
+		border-bottom-right-radius: 15px;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		overflow: hidden;
+	}
+	.v237_283 {
+		width: 179px;
+		color: rgba(117,117,117,1);
+		position: absolute;
+		top: 5629px;
+		left: 1064px;
+		font-family: Noto Sans Thai UI;
+		font-weight: Regular;
+		font-size: 36px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v237_284 {
+		width: 555px;
+		height: 122px;
+		background: rgba(255,255,255,1);
+		opacity: 1;
+		position: absolute;
+		top: 5104px;
+		left: 121px;
+		border: 1px solid rgba(218,218,218,1);
+		border-top-left-radius: 15px;
+		border-top-right-radius: 15px;
+		border-bottom-left-radius: 15px;
+		border-bottom-right-radius: 15px;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		overflow: hidden;
+	}
+	.v237_285 {
+		width: 179px;
+		color: rgba(117,117,117,1);
+		position: absolute;
+		top: 5132px;
+		left: 309px;
+		font-family: Noto Sans Thai UI;
+		font-weight: Regular;
+		font-size: 36px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v271_537 {
+		width: 573px;
+		height: 385px;
+		background: url("../images/v271_537.png");
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		opacity: 1;
+		position: absolute;
+		top: 5338px;
+		left: 177px;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		overflow: hidden;
+	}
+	.v237_281 {
+		width: 573px;
+		height: 385px;
+		background: rgba(217,217,217,1);
+		opacity: 1;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		border: 1px solid rgba(0,0,0,1);
+		border-top-left-radius: 60px;
+		border-top-right-radius: 60px;
+		border-bottom-left-radius: 60px;
+		border-bottom-right-radius: 60px;
+		overflow: hidden;
+	}
+	.v271_536 {
+		width: 579px;
+		height: 385px;
+		background: url("../images/v271_536.png");
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		opacity: 1;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		border: 1px solid rgba(0,0,0,1);
+		border-top-left-radius: 60px;
+		border-top-right-radius: 60px;
+		border-bottom-left-radius: 60px;
+		border-bottom-right-radius: 60px;
+		overflow: hidden;
+	}
+	.v237_290 {
+		width: 288px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 6132px;
+		left: 458px;
+		font-family: Noto Sans Thai UI;
+		font-weight: Regular;
+		font-size: 26px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v237_291 {
+		width: 288px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 6129px;
+		left: 1189px;
+		font-family: Noto Sans Thai UI;
+		font-weight: Regular;
+		font-size: 26px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v237_1393 {
+		width: 68px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 221px;
+		left: 556px;
+		font-family: Noto Sans;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v237_1394 {
+		width: 68px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 221px;
+		left: 387px;
+		font-family: Noto Sans;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v237_1395 {
+		width: 68px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 221px;
+		left: 465px;
+		font-family: Noto Sans;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v237_1396 {
+		width: 68px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 220px;
+		left: 839px;
+		font-family: Noto Sans;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v237_1397 {
+		width: 68px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 220px;
+		left: 917px;
+		font-family: Noto Sans;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v237_1398 {
+		width: 68px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 221px;
+		left: 761px;
+		font-family: Noto Sans;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: center;
+	}
+	.v237_1399 {
+		width: 117px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 221px;
+		left: 634px;
+		font-family: Noto Sans;
+		font-weight: Regular;
+		font-size: 16px;
+		opacity: 1;
+		text-align: center;
+	}
+	.name {
+		color: #fff;
+	}
+	.name {
+		color: #fff;
+	}
+	.v271_523 {
+		width: 549px;
+		height: 731px;
+		background: url("../images/v271_523.png");
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		opacity: 1;
+		position: absolute;
+		top: 3572px;
+		left: 1290px;
+		border-top-left-radius: 60px;
+		border-top-right-radius: 60px;
+		border-bottom-left-radius: 60px;
+		border-bottom-right-radius: 60px;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		overflow: hidden;
+	}
+	.v271_524 {
+		width: 222px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 4317px;
+		left: 1630px;
+		font-family: Noto Serif;
+		font-weight: Regular;
+		font-size: 30px;
+		opacity: 1;
+		text-align: left;
+	}
+	.v271_543 {
+		width: 394px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 4320px;
+		left: 72px;
+		font-family: Noto Serif;
+		font-weight: Regular;
+		font-size: 30px;
+		opacity: 1;
+		text-align: left;
+	}
+	.v271_525 {
+		width: 214px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 4367px;
+		left: 1660px;
+		font-family: Nova Square;
+		font-weight: Book;
+		font-size: 30px;
+		opacity: 1;
+		text-align: left;
+	}
+	.v271_526 {
+		width: 330px;
+		height: 56px;
+		background: url("../images/v271_526.png");
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		opacity: 1;
+		position: absolute;
+		top: 4367px;
+		left: 1351px;
+		overflow: hidden;
+	}
+	.v271_541 {
+		width: 214px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 4374px;
+		left: 342px;
+		font-family: Nova Square;
+		font-weight: Book;
+		font-size: 30px;
+		opacity: 1;
+		text-align: left;
+	}
+	.v271_542 {
+		width: 330px;
+		height: 56px;
+		background: url("../images/v271_542.png");
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		opacity: 1;
+		position: absolute;
+		top: 4371px;
+		left: 33px;
+		overflow: hidden;
+	}
+	.v271_544 {
+		width: 394px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 4303px;
+		left: 714px;
+		font-family: Noto Serif;
+		font-weight: Regular;
+		font-size: 30px;
+		opacity: 1;
+		text-align: left;
+	}
+	.v271_545 {
+		width: 214px;
+		color: rgba(0,0,0,1);
+		position: absolute;
+		top: 4357px;
+		left: 984px;
+		font-family: Nova Square;
+		font-weight: Book;
+		font-size: 30px;
+		opacity: 1;
+		text-align: left;
+	}
+	.v271_546 {
+		width: 330px;
+		height: 56px;
+		background: url("../images/v271_546.png");
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		opacity: 1;
+		position: absolute;
+		top: 4354px;
+		left: 675px;
+		overflow: hidden;
+	}
+	.v271_533 {
+		width: 350px;
+		height: 350px;
+		background: url("../images/v271_533.png");
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		opacity: 1;
+		position: absolute;
+		top: 4777px;
+		left: 1420px;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		overflow: hidden;
+	}
+	.v271_531 {
+		width: 350px;
+		height: 350px;
+		background: rgba(255,255,255,1);
+		opacity: 1;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		border-radius: 50%;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	}
+	.v271_528 {
+		width: 363px;
+		height: 565px;
+		background: url("../images/v271_528.png");
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		opacity: 1;
+		position: absolute;
+		top: 13px;
+		left: 6px;
+		overflow: hidden;
+	}
+	.v271_540 {
+		width: 549px;
+		height: 731px;
+		background: url("../images/v271_540.png");
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		opacity: 1;
+		position: absolute;
+		top: 3572px;
+		left: 49px;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		overflow: hidden;
+	}
+	.v270_521 {
+		width: 549px;
+		height: 731px;
+		background: rgba(217,217,217,1);
+		opacity: 1;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		border-top-left-radius: 60px;
+		border-top-right-radius: 60px;
+		border-bottom-left-radius: 60px;
+		border-bottom-right-radius: 60px;
+		overflow: hidden;
+	}
+	.v271_539 {
+		width: 571px;
+		height: 100%;
+		background: url("../images/v271_539.png");
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		opacity: 1;
+		position: absolute;
+		top: 506px;
+		left: 0px;
+		overflow: hidden;
+	}
+	.v271_549 {
+		width: 549px;
+		height: 731px;
+		background: url("../images/v271_549.png");
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		opacity: 1;
+		position: absolute;
+		top: 3572px;
+		left: 691px;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		overflow: hidden;
+	}
+	.v235_8262 {
+		width: 549px;
+		height: 731px;
+		background: rgba(217,217,217,1);
+		opacity: 1;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		border: 1px solid rgba(0,0,0,1);
+		border-top-left-radius: 60px;
+		border-top-right-radius: 60px;
+		border-bottom-left-radius: 60px;
+		border-bottom-right-radius: 60px;
+		overflow: hidden;
+	}
+	.v271_548 {
+		width: 691px;
+		height: 970px;
+		background: url("../images/v271_548.png");
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		opacity: 1;
+		position: absolute;
+		top: 105px;
+		left: 78px;
+		border: 1px solid rgba(0,0,0,1);
+		overflow: hidden;
+	}
+	.v308_534 {
+		width: 677px;
+		height: 312px;
+		background: rgba(188,188,188,0.10000000149011612);
+		opacity: 1;
+		position: absolute;
+		top: 542px;
+		left: 118px;
+		overflow: hidden;
+	}
+	</style>
