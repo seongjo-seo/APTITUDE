@@ -20,9 +20,23 @@
 <body>
 <main>
   <section>
-    
-    <a class="fs-2" href="/"><strong>동심원</strong></a>
+    <div class="container-fluid">
+      <div class="top-headers">
+        <div class="row h-15 align-items-center text-start">
+          <a class="navbar-brand fs-2 fw-bold " href="/">동심원</a>
+          <div>
+            <span class="">감사한 마음이 소중한 당신에게 닿을 수 있도록</span>
+          </div>
+          <div>
+            <span class="">love what you have.</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </section>
+
+  
 
   <!-- header 시작 위치 -->
   <header>
@@ -40,7 +54,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!-- 접히는 부분을 조정함-->
 
           <!-- 동작부분 -->
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/">Home</a>
             </li>
@@ -72,8 +86,8 @@
           </ul>
 
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a href="/">로그인</a></li>
-            <li class="nav-item"><a href="/">회원가입</a></li>
+            <li class="nav-item"><a href="{% url 'login' %}">로그인</a></li>
+            <li class="nav-item"><a href="{% url 'signup' %}">회원가입</a></li>
           </ul>
           <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -87,32 +101,40 @@
   </header>
   <!-- header 종료 위치 -->
 
+  <main>
+    <div class="main-first-carousel">
 
-  <section>
-    <div class="container">
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="..." class="d-block w-100" alt="이미지가 없습니다.">
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="이미지가 없습니다.">
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="이미지가 없습니다.">
+      <!-- 캐러셀 컨테이너 시작 -->
+      <section>
+        <div class="container">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="..." class="d-block w-100" alt="이미지가 없습니다.">
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="이미지가 없습니다.">
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="이미지가 없습니다.">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-  </section>
+      </section>
+      <!-- 캐러셀 컨테이너 끝 -->
+  </div>
+  </main>
+
+  
 
 
 
