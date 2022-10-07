@@ -15,53 +15,45 @@
 </head>
 
 <body>
+  <!-- mb-4 태그는 공백을 의미함 밑 하단 조정-->
 <main>
-  <section>
-    <div class="container-fluid">
-      <div class="top-headers">
-        <div class="row h-15 align-items-center-text-start">
-          <a class="navbar-brand fs-2 fw-bold " href="/">동심원</a>
-          <div>
-            <span class="">감사한 마음이 소중한 당신에게 닿을 수 있도록</span>
-          </div>
-          <div>
-            <span class="">love what you have.</span>
-          </div>
-        </div>
 
-      </div>
-    </div>
-  </section>
-
-  
-
-  <!-- header 시작 위치 -->
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-gray-100">
-      <!-- 컨테이너 시작 -->
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/">로고 위치</a>
+  <!-- 최상단 header 시작 -->
+  <header class="py-4 border-bottom">
+    <div class="container d-flex flex-wrap justify-content-center">
+      <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
         
-        <!-- 3중 버튼 시작 -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- 3중 버튼 끝 -->
+        <span class="navbar-brand fs-2 fw-bold " href="/">동심원</span>
+      </a>
+      <!-- 임시 라이팅 -->
+      <span>(임시 라이팅) </br>감사한 마음이 소중한 당신에게 닿을 수 있도록 </br> love what you have.</span>
+    </div>
+  </header>
+  <!-- 최상단 header 종료 -->
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!-- 접히는 부분을 조정함-->
 
-          <!-- 동작부분 -->
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">Home</a>
-            </li>
+  <!-- nav 시작 -->
+  <nav class="shadow-sm py-2 border-bottom">
+    <div class="container d-flex flex-wrap">
+            
+      <!-- 3중 버튼 시작 -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- 3중 버튼 끝 -->
+      
+      <ul class="nav me-auto">
+        <li class="nav-item"><a href="/" class="nav-link link-dark px-2 active" aria-current="page">Home</a></li>
 
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <span>모든상품</span>
-                <i class="bi bi-chevron-down dropdown-indicator"></i>
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+          <li class="nav-item dropdown">
+            <a class="nav-link link-dark px-2 dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span>모든상품</span>
+              <i class="bi bi-chevron-down dropdown-indicator"></i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="#">브라이덜 샤워</a></li>
               <li><a class="dropdown-item" href="#">출생</a></li>
               <li><a class="dropdown-item" href="#">혼인</a></li>
@@ -72,31 +64,40 @@
               <li><a class="dropdown-item" href="#">약혼</a></li>
               <li><a class="dropdown-item" href="#">환갑</a></li>
               <li><a class="dropdown-item" href="#">칠순</a></li>
-              <li><hr class="dropdown-divider"></li>
-              </ul>
+            </ul>
           </li>
-            <li class="nav-item"><a class="nav-link" href="/">할인상품</a></li>
-            <li class="nav-item"><a class="nav-link" href="/">판매자 등록 신청</a></li>
-            <li class="nav-item"><a class="nav-link" href="/">공지사항</a></li>
-            <li class="nav-item"><a class="nav-link" href="/">고객문의</a></li>
-            <li class="nav-item"><a class="nav-link" href="/">리뷰보기</a></li>
-          </ul>
+      </ul>
 
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a href="{% url 'login' %}">로그인</a></li>
-            <li class="nav-item"><a href="{% url 'signup' %}">회원가입</a></li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+      <!-- nav drop box 이후 파트 -->
+        <li class="nav-item"><a class="nav-link link-dark px-2" href="/">할인상품</a></li>
+        <li class="nav-item"><a class="nav-link link-dark px-2" href="/">판매자 등록 신청</a></li>
+        <li class="nav-item"><a class="nav-link link-dark px-2" href="/">공지사항</a></li>
+        <li class="nav-item"><a class="nav-link link-dark px-2" href="/">고객문의</a></li>
+        <li class="nav-item"><a class="nav-link link-dark px-2" href="/">리뷰보기</a></li>
+      <!-- nav drop box 이후 파트 -->
+      </ul>
 
-        </div>
-      </div>
-      <!-- 컨테이너 끝 -->
-    </nav>
-  </header>
-  <!-- header 종료 위치 -->
+      <!-- 로그인, 마이페이지, 회원가입 등 시작 부분-->
+      <ul class="nav">
+        <li class="nav-item"><a href="{% url 'login' %}"  class="nav-link link-dark px-2">로그인</a></li>
+        <li class="nav-item"><a href="{% url 'signup' %}"  class="nav-link link-dark px-2">회원가입</a></li>
+      </ul>
+      <!-- 로그인, 마이페이지, 회원가입 등 끝 부분-->
+
+      
+      <!-- 검색 시작 부분 -->
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <!-- 아이콘으로 대체할 거임-->
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      <!-- 검색 끝 부분 -->
+    </div>
+  </nav>
+  <!-- nav 종료 -->
+
+    {% comment %} <li><hr class="dropdown-divider"></li> 선 긋는 코드 {% endcomment %}
+
 
 
   <!-- carousel container 시작 -->
@@ -108,35 +109,39 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+        <!-- 이미지 -->
+        <svg class="bd-placeholder-img" width="100%" height="80%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <rect width="100%" height="100%" fill="#777"/></svg>
 
         <div class="container">
           <div class="carousel-caption text-start">
             <h1>이건 좌측 정렬</h1>
             <p>이건 좌측 정렬</p>
-            <p><a class="btn btn-lg btn-primary" href="#">구매하기</a></p>
+            <p><a class="btn btn-lg btn-primary" href="#">임시</a></p>
           </div>
         </div>
       </div>
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+        <svg class="bd-placeholder-img" width="100%" height="80%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <rect width="100%" height="100%" fill="#777"/></svg>
 
         <div class="container">
           <div class="carousel-caption">
             <h1>이건 중앙 정렬</h1>
             <p>이건 중앙 정렬</p>
-            <p><a class="btn btn-lg btn-primary" href="#">구매하기</a></p>
+            <p><a class="btn btn-lg btn-primary" href="#">임시</a></p>
           </div>
         </div>
       </div>
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+        <svg class="bd-placeholder-img" width="100%" height="80%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <rect width="100%" height="100%" fill="#777"/></svg>
 
         <div class="container">
           <div class="carousel-caption text-end">
             <h1>이건 우측 정렬</h1>
             <p>이건 우측 정렬</p>
-            <p><a class="btn btn-lg btn-primary" href="#">구매하기</a></p>
+            <p><a class="btn btn-lg btn-primary" href="#">임시</a></p>
           </div>
         </div>
       </div>
@@ -151,6 +156,8 @@
     </button>
   </div>
   <!-- carousel container 종료 -->
+
+
 
 
 
@@ -173,9 +180,9 @@
 
         <!-- 1번 캐러셀 -->
         <div class="col">
-          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('test.jpg');">
             <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h2>
+              <h2 class="pt-5 mt-5 mb-5 display-6 lh-1 fw-bold"></h2>
             </div>
           </div>
         </div>
@@ -184,7 +191,7 @@
         <div class="col">
           <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
             <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h2>
+              <h2 class="pt-5 mt-5 mb-5 display-6 lh-1 fw-bold"></h2>
             </div>
           </div>
         </div>
@@ -193,7 +200,7 @@
         <div class="col">
           <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
             <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h2>
+              <h2 class="pt-5 mt-5 mb-5 display-6 lh-1 fw-bold"></h2>
             </div>
           </div>
         </div>
