@@ -1,30 +1,3 @@
 .body{
   margin: 0;
 }
-
-.top-headers{
-  position: absolute;
-  width: 192px;
-  height: 60px;
-  left: 333px;
-  top: 49px;
-
-  font-family: 'Noto Serif KR';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 52px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-
-  color: #000000;
-}
-
-.main-first-carousel {
-  box-sizing: border-box;
-  width: 100%;
-  height: 971px;
-  background: rgba(253, 238, 220, 0.3);
-}
-
