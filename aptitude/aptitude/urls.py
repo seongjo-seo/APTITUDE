@@ -10,4 +10,5 @@ urlpatterns = [
     path('', home),
     path('/', include('home.urls')),
     path('users/', include('users.urls')),
+    path('custom/', include('custom.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
