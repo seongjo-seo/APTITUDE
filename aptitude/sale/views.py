@@ -1,3 +1,8 @@
 from django.shortcuts import render
 
-# Create your views here.
+def sale_list(request):
+  return render(request, 'sale_list.html', {})
+
+def sale_detail(request):
+  return render(request, 'sale_detail.html', {})
+  
