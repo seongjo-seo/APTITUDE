@@ -17,7 +17,9 @@ ALLOWED_HOSTS = []
 
 # Application definition
 INSTALLED_APPS = [
+    # main App
     'home',
+    # 로그인, 회원가입, 유저 관리 App
     'users',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -25,9 +27,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # 부트스트랩5 적용 App
     'bootstrap5',
+    # 주문 제작 App
     'custom',
+    # 리뷰 관련 App
     'review',
+    # 판매 관련 App
     'sale',
 ]
 
