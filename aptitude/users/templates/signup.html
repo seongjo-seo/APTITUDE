@@ -87,13 +87,6 @@
       <!-- 로그인, 마이페이지, 회원가입 등 끝 부분-->
 
       
-      <!-- 검색 시작 부분 -->
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <!-- 아이콘으로 대체할 거임-->
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-      <!-- 검색 끝 부분 -->
     </div>
   </nav>
   <!-- nav 종료 -->
@@ -110,50 +103,53 @@
                 <div class="col-lg-7">
                     <div class="p-5">
                         <div class="text-center">
-                            <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
+                            <h1 class="h4 text-gray-900 mb-4">회원가입</h1>
                         </div>
+                        <!-- 폼 시작 부분-->
                         <form class="user">
+                            <!-- 작성 시작하는 부분 -->
                             <div class="form-group row">
+
+                                <div class="form-group">
+                                  <input type="text" class="form-control form-control-user" id="exampleInputEmail" placeholder="아이디를 입력해 주세요">
+                                </div>
                                 <div class="col-sm-6 mb-3 mb-sm-0">
-                                    <input type="text" class="form-control form-control-user" id="exampleFirstName"
-                                        placeholder="First Name">
+                                    <input type="text" class="form-control form-control-user" id="exampleFirstName" placeholder="비밀번호를 입력해 주세요">
                                 </div>
                                 <div class="col-sm-6">
-                                    <input type="text" class="form-control form-control-user" id="exampleLastName"
-                                        placeholder="Last Name">
+                                    <input type="text" class="form-control form-control-user" id="exampleLastName" placeholder="비밀번호를 한번 더 작성해 주세요">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control form-control-user" id="exampleInputEmail"
-                                    placeholder="Email Address">
+                                <input type="email" class="form-control form-control-user" id="exampleInputEmail" placeholder="이메일을 입력해 주세요">
                             </div>
                             <div class="form-group row">
                                 <div class="col-sm-6 mb-3 mb-sm-0">
-                                    <input type="password" class="form-control form-control-user"
-                                        id="exampleInputPassword" placeholder="Password">
+                                    <input type="text" class="form-control form-control-user" id="exampleInputPassword" placeholder="이름을 입력해 주세요">
                                 </div>
                                 <div class="col-sm-6">
-                                    <input type="password" class="form-control form-control-user"
-                                        id="exampleRepeatPassword" placeholder="Repeat Password">
+                                    <input type="text" class="form-control form-control-user" id="exampleRepeatPassword" placeholder="닉네임을 입력해 주세요">
                                 </div>
                             </div>
-                            <a href="login.html" class="btn btn-primary btn-user btn-block">
-                                Register Account
+                            <div class="form-group row">
+                              <div class="col-sm-6 mb-3 mb-sm-0">
+                                  <input type="password" class="form-control form-control-user" placeholder="주소지를 입력해 주세요">
+                              </div>
+                              <div class="col-sm-6">
+                                  <input type="password" class="form-control form-control-user" placeholder="상세 주소지를 입력해 주세요">
+                              </div>
+                            </div>
+                            <a href="{% url 'login' %}" class="btn btn-primary btn-user btn-block">
+                                회원가입하기
                             </a>
                             <hr>
-                            <a href="index.html" class="btn btn-google btn-user btn-block">
-                                <i class="fab fa-google fa-fw"></i> Register with Google
-                            </a>
-                            <a href="index.html" class="btn btn-facebook btn-user btn-block">
-                                <i class="fab fa-facebook-f fa-fw"></i> Register with Facebook
-                            </a>
                         </form>
-                        <hr>
+                        <!-- 폼 끝 부분 -->
                         <div class="text-center">
-                            <a class="small" href="forgot-password.html">Forgot Password?</a>
+                            <a class="small" href="/">비밀번호를 잃어버리셨나요?</a>
                         </div>
                         <div class="text-center">
-                            <a class="small" href="login.html">Already have an account? Login!</a>
+                            <a class="small" href="{% url 'login' %}">로그인 창으로</a>
                         </div>
                     </div>
                 </div>
