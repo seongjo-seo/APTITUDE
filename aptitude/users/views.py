@@ -6,3 +6,6 @@ def login(request):
 
 def signup(request):
   return render(request, 'signup.html', {})
+
+def mypage(request):
+  return render(request, 'mypage/mypage.html', {})
