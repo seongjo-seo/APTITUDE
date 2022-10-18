@@ -1,0 +1,24 @@
+  
+
+{% extends './header.html' %}
+
+{% block content %}
+	{% for post in posts %}
+		<!-- 최상단 header 시작 -->
+		<header class="py-4 border-bottom">
+			<div class="container d-flex flex-wrap justify-content-center">
+				<a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+						<svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+						
+						<span class="navbar-brand fs-2 fw-bold " href="/">동심원</span>
+				</a>
+				<!-- 임시 라이팅 -->
+				<span>(임시 라이팅) </br>감사한 마음이 소중한 당신에게 닿을 수 있도록 </br> love what you have.</span>
+			</div>
+		</header>
+		<!-- 최상단 header 종료 -->
+	{% endfor %}
+{% endblock %}
+  
+  
+

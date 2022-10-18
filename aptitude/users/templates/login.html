@@ -120,24 +120,36 @@
                                 <div class="text-left">
                                     <h1 class="h3 text-gray-900 mb-4 text-bold">어서오세요!</h1>
                                 </div>
-                                <form class="user">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control form-control-user"
-                                            id="exampleInputEmail" aria-describedby="emailHelp"
-                                            placeholder="아이디를 입력해 주세요">
+
+                                <form class="user" method="POST" action="/login/">
+                                  <div class="form-group">
+                                      <input
+                                          for="inputId"
+                                          type="email"
+                                          class="form-control form-control-user"
+                                          id="exampleInputEmail" aria-describedby="emailHelp"
+                                          placeholder="아이디를 입력해 주세요">
+                                  </div>
+                                  <div class="form-group">
+                                      <input
+                                        for="inputPassword"
+                                        type="password"
+                                        class="form-control form-control-user"
+                                        id="exampleInputPassword"
+                                        placeholder="비밀번호를 입력해 주세요">
+                                  </div>
+                                  <div class="form-group">
+                                    <div class="custom-control custom-checkbox small">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck">
+                                        <label class="custom-control-label" for="customCheck">기억하기</label>
                                     </div>
-                                    <div class="form-group">
-                                        <input type="password" class="form-control form-control-user"
-                                            id="exampleInputPassword" placeholder="비밀번호를 입력해 주세요">
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="custom-control custom-checkbox small">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck">
-                                            <label class="custom-control-label" for="customCheck">기억하기</label>
-                                        </div>
-                                    </div>
-                                    <a href="/" class="btn btn-primary btn-user btn-block">로그인</a>
-                                    <hr>
+                                  </div>
+
+                                  <button class="btn btn-primary btn-user btn-block" type="submit">로그인</button>
+                                <hr>
+                                </form>
+
+                                    
                                     <a href="/" class="btn btn-google btn-user btn-block">
                                         <i class="fab fa-google fa-fw"></i> 아이콘으로 바꿀거임 구글
                                     </a>
@@ -150,7 +162,6 @@
                                     <a href="/" class="btn btn-kakao btn-user btn-block">
                                       <i class="fab fa-facebook-f fa-fw"></i> 카카오
                                     </a>
-                                </form>
                                 <hr>
                                 <div class="text-center">
                                   <a class="small" href="#">아이디 찾기</a>

@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
 
-class UserManager(BaseUserManager):
+class UserCreating(BaseUserManager):
     # 일반 user 생성
     def create_user(self, email, nickname, name, address, password=None):
 
@@ -38,7 +38,7 @@ class User(AbstractBaseUser):
     is_admin = models.BooleanField(default=False)
     
     # 헬퍼 클래스 사용
-    objects = UserManager()
+    objects = UserCreating()
 
     # 사용자의 username field는 nickname으로 설정
     USERNAME_FIELD = 'nickname'
