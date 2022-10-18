@@ -35,6 +35,8 @@ INSTALLED_APPS = [
     'review',
     # 판매 관련 App
     'sale',
+    # REST 프레임워크 
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
