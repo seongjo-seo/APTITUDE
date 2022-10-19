@@ -2,7 +2,7 @@
   "name": "aptitude",
   "version": "1.0.0",
   "description": "Naver Cloud에서 주최한 API MARKETPLACE [서비스 명 :APPETIZER] 글로벌 홍보 서포터즈 개발 1팀 APTITUDE Repository입니다. <br/>\r Main 작업물이 업로드 될 Branch입니다.",
-  "main": "index.js",
+  "main": "server/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,7 +23,10 @@
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "express": "^4.18.2",
-    "mysql": "^2.18.1"
+    "jsonwebtoken": "^8.5.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "concurrently": "^7.4.0",
