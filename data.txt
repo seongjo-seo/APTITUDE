@@ -1,3 +1,0 @@
-
-
-가상환경에 "pip install djangorestframework" 추가할 것.
