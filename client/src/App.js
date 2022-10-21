@@ -1,13 +1,16 @@
 import './App.css';
-import {BrowserRouter} from "react-router-dom";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 
 import Home from './pages/Home'
-
-function App() {
+/** 상태는 BrowserRouter 경로는 Link */
+const App = () => {
   return (
     <BrowserRouter>
       <div className="App">
-        <Home/>
+        <h2>test</h2>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+        </Routes>
       </div>
     </BrowserRouter>
   );
