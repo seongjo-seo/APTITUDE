@@ -43,8 +43,8 @@ const Nav = () =>{
 							<li class="nav-item"><Link class="nav-link link-dark px-2" to={"/"}>리뷰보기</Link></li>
 						</ul>
 						<ul class="nav">
-							<li class="nav-item"><Link to={"/login"} class="nav-link link-dark px-2">로그인</Link></li>
-							<li class="nav-item"><Link to={"/signUp"} class="nav-link link-dark px-2">회원가입</Link></li>
+							<li class="nav-item"><Link to="/Login" class="nav-link link-dark px-2">로그인</Link></li>
+							<li class="nav-item"><Link to="/SignUp" class="nav-link link-dark px-2">회원가입</Link></li>
 						</ul>
 						
 						<form class="d-flex">
