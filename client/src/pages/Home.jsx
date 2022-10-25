@@ -6,12 +6,14 @@ import Nav from "../components/Nav";
 import Footer from "../components/Footer"
 import Sell_Table from "../components/Sell_Table";
 import Three_Card from "../components/Three_Card";
+import Sale_detail from "./sale/Sale_detail";
 
 /** 홈 화면 페이지 */
 const Home = () =>{
   return (
     <>
     <div>
+    <Sale_detail/>
       <Header/>
       <Nav/>
       <section>

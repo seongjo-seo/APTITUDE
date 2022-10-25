@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Login from "./pages/sign/Login";
 import SignUp from "./pages/sign/SignUp";
 import FindId from "./pages/sign/FindId";
+import Sale_detail from "./pages/sale/Sale_detail";
 
 /**
  *  상태는 BrowserRouter 경로는 Link
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/SignUp" element={<SignUp />} />
+          <Route path="/Sale_detail" element={<Sale_detail />} />
         </Routes>
         <Routes>
           {/* 아이디 찾기 */}
