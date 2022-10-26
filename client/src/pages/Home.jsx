@@ -27,37 +27,19 @@ const Home = () =>{
                 {/* <svg class="bd-placeholder-img" width="100%" height="80%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                   <rect width="100%" height="100%" fill="#777"/></svg> */}
 
+
+                  <div></div>
                 <div class="container">
                   <div class="carousel-caption text-start">
-                    <h1>이건 좌측 정렬</h1>
-                    <p>이건 좌측 정렬</p>
+                    <h1>좌측 정렬만</h1>
+                    <p>좌측 정렬만 쓰기</p>
                     <p><a class="btn btn-lg btn-primary" href="#">임시</a></p>
                   </div>
                 </div>
               </div>
               <div class="carousel-item">
-                {/* <svg class="bd-placeholder-img" width="100%" height="80%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                  <rect width="100%" height="100%" fill="#777"/></svg> */}
+                
 
-                <div class="container">
-                  <div class="carousel-caption">
-                    <h1>이건 중앙 정렬</h1>
-                    <p>이건 중앙 정렬</p>
-                    <p><a class="btn btn-lg btn-primary" href="#">임시</a></p>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                {/* <svg class="bd-placeholder-img" width="100%" height="80%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                  <rect width="100%" height="100%" fill="#777"/></svg> */}
-
-                <div class="container">
-                  <div class="carousel-caption text-end">
-                    <h1>이건 우측 정렬</h1>
-                    <p>이건 우측 정렬</p>
-                    <p><a class="btn btn-lg btn-primary" href="#">임시</a></p>
-                  </div>
-                </div>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
