@@ -1,16 +1,11 @@
-const express = "express";
+const express = require("express");
+const app = express();
 const bodyParser = "body-parser";
 
-const app = express();
+const port = 8080;
 
-app.use(express.static(path.join(__dirname, "react-project/build")));
+app.get("/", " test");
 
-app.get("/", function (요청, 응답) {
-  응답.sendFile(path.join(__dirname, "/react-project/build/index.html"));
+app.listen(port, () => {
+  console.log(`${port} 포트 서버가 시작됐습니다.`);
 });
-
-// const port = process.env.PORT || 3001 || 3002;
-
-// app.listen(port, () => {
-//   console.log(`${port} 포트 서버가 시작됐습니다.`);
-// });

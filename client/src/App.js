@@ -6,6 +6,7 @@ import Login from "./pages/sign/Login";
 import SignUp from "./pages/sign/SignUp";
 import FindId from "./pages/sign/FindId";
 import Sale_detail from "./pages/sale/Sale_detail";
+import Sale_list from "./pages/sale/Sale_list";
 
 /**
  *  상태는 BrowserRouter 경로는 Link
@@ -18,10 +19,16 @@ const App = () => {
     <BrowserRouter>
       <div className="App">
         <Routes>
+          {/* 메인 페이지 */}
           <Route path="/" element={<Home />} />
+          {/* 로그인 */}
           <Route path="/Login" element={<Login />} />
+          {/* 회원가입 */}
           <Route path="/SignUp" element={<SignUp />} />
-          <Route path="/Sale_detail" element={<Sale_detail />} />
+          {/* 판매 페이지 */}
+          <Route path="/Sale_list" element={<Sale_list />} />
+          {/* 판매 상세 페이지 */}
+          <Route path="/Sale_list/Sale_detail" element={<Sale_detail />} />
         </Routes>
         <Routes>
           {/* 아이디 찾기 */}
