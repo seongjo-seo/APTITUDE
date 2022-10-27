@@ -1,6 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.js";
+
 import { Link } from "react-router-dom";
+import { useRef, useState } from 'react';
 
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
@@ -8,6 +10,13 @@ import Nav from "../../components/Nav";
 
 /** 로그인 */
 const Login = () => {
+
+
+
+  const [userId, setUserId] = useState();
+  const [userPw, setUserPw] = useState();
+
+
   return (
     <>
       <Header />

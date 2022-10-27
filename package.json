@@ -1,6 +1,6 @@
 {
   "name": "aptitude",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Naver Cloud에서 주최한 API MARKETPLACE [서비스 명 :APPETIZER] 글로벌 홍보 서포터즈 개발 1팀 APTITUDE Repository입니다. <br/>\r Main 작업물이 업로드 될 Branch입니다.",
   "main": "server.js",
   "scripts": {
