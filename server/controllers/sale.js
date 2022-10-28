@@ -10,7 +10,7 @@ exports.create = async (req, res) => {
 
   if (!req.body.userId) {
     res.status(400).send({
-      message: "User ID can not be empty!",
+      message: "ID must be entered!",
     });
     return;
   }
