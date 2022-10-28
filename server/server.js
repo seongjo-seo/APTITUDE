@@ -11,7 +11,6 @@ const app = express();
 app.use(cors(corsOptions));
 
 const models = require("./models/index.js");
-
 models.sequelize
   .sync()
   .then(() => {
