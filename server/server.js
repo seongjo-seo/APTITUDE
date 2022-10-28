@@ -2,6 +2,18 @@ const express = require("express");
 const bodyParser = require("body-parser");
 
 const app = express();
+
+models.sequelize
+  .sync()
+  .then(() => {
+    console.log("aptitude Database Sync Completed.");
+  })
+  .catch(err => {
+    console.error("aptitude Database Sync Failed.");
+    console.error("Sync에 실패했습니다.");
+    console.error(err);
+  });
+
 const port = process.env.PORT || 3002;
 
 /** server 실행 코드  */
