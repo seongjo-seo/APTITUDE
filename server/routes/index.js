@@ -1,33 +1,13 @@
-const express = require("express");
+const { accessTokenSecret, refreshTokenSecret } = require("../config/set.js");
+const jwt = require("jsonwebtoken");
 
-const homeRouter = express.Router();
+module.exports = app => {
+  const users = require("../controllers/users.js");
 
-const authenticateJWT = (req, res, next) => {
-  const authHeader = req.headers.authorization;
+  const user = require("express").Router();
 
-  if (authHeader) {
-    const token = authHeader.split(" ")[1];
+  // Create a new User
+  user.post("/", users.create);
 
-    jwt.verify(token, accessTokenSecret, (err, user) => {
-      if (err) {
-        return res.sendStatus(403);
-      }
-
-      req.user = user;
-      next();
-    });
-  } else {
-    res.sendStatus(401);
-  }
+  app.use("/api/users", user);
 };
-
-homeRouter.get("/", (req, res) => {
-  res.send("test");
-});
-
-// router.post('/', (req, res) => {
-// })
-// router.put('/', (req, res) => {
-// })
-// router.delete('/', (req, res) => {
-// })
