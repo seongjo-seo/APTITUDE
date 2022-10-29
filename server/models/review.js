@@ -1,8 +1,8 @@
 const { DataTypes } = require("sequelize");
 
 module.exports = (sequelize, Sequelize) => {
-  const Post = sequelize.define(
-    "sale",
+  const Review = sequelize.define(
+    "review",
     {
       id: {
         type: DataTypes.STRING,
@@ -11,16 +11,28 @@ module.exports = (sequelize, Sequelize) => {
       url: {
         type: DataTypes.STRING,
       },
+      title: {
+        type: DataTypes.STRING,
+      },
+      contents: {
+        type: DataTypes.STRING,
+      },
       view: {
+        type: DataTypes.BIGINT,
+      },
+      star: {
+        type: DataTypes.BIGINT,
+      },
+      count: {
         type: DataTypes.BIGINT,
       },
     },
     {}
   );
 
-  Post.associate = models => {
+  Review.associate = models => {
     // associations can be defined here
   };
 
-  return Post;
+  return Review;
 };

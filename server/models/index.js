@@ -23,5 +23,6 @@ database.sequelize = sequelize;
 database.User = require("./users.js")(sequelize, Sequelize);
 database.Sale = require("./sale.js")(sequelize, Sequelize);
 database.Custom = require("./custom.js")(sequelize, Sequelize);
+database.Review = require("./review.js")(sequelize, Sequelize);
 
 module.exports = database;

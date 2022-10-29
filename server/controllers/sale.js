@@ -2,11 +2,11 @@ const { v4: uuidv4 } = require("uuid");
 const database = require("../models/sale");
 const sale = database.sale;
 
-// Create and Save a new Post
+// Create and Save a new url
 exports.create = async (req, res) => {
   console.log(req.body);
 
-  const { post, view, userId } = req.body;
+  const { url, view, userId } = req.body;
 
   if (!req.body.userId) {
     res.status(400).send({
@@ -17,7 +17,7 @@ exports.create = async (req, res) => {
 
   const saleData = {
     id: uuidv4(),
-    post,
+    url,
     view,
     userId,
   };
@@ -28,7 +28,7 @@ exports.create = async (req, res) => {
     res.send(created);
   } catch (err) {
     res.status(500).send({
-      message: err.message || "Some error occurred while creating the Post.",
+      message: err.message || "Some error occurred while creating the url.",
     });
   }
 };
