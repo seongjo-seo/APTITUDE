@@ -6,3 +6,18 @@ Main 작업물이 업로드 될 Branch입니다.
 
 React & express
 react query
+
+
+
+[실행 방법]
+터미널에 다음과 같이 입력하여 node_modules을 불러온다.
+[front]
+cd client
+npm install
+cd..
+[server]
+cd server
+npm install
+cd..
+
+npm run start
