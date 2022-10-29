@@ -1,5 +1,5 @@
 const { v4: uuidv4 } = require("uuid");
-const database = require("../models/custom");
+const database = require("../config/local_database.js");
 const custom = database.custom;
 
 // Create and Save a new Post
