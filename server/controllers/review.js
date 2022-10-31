@@ -1,5 +1,5 @@
 const { v4: uuidv4 } = require("uuid");
-const database = require("../config/local_database.js");
+const database = require("../models/index.js");
 const review = database.review;
 
 // Create and Save a new url

@@ -1,12 +1,57 @@
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import Nav from "../../components/Nav";
-
-import { Link } from "react-router-dom";
-
+// import DaumPostHook from '../common/DaumPostHook';
+import { Link, useNavigate } from "react-router-dom";
+import React, {useState, useRef} from "react";
+import axios from 'axios';
 
 /** 회원가입 */
 const SignUp = () => {
+  const navigate = useNavigate();
+  
+  const [inputId, setInputId] = useState();
+  const [inputPw, setInputPw] = useState();
+  const [reInputPw, setReInputPw] = useState();
+  const [inputName, setInputName] = useState();
+  const [inputNick, setInputNick] = useState();
+  const [inputEmail, setInputEmail] = useState();
+  const [inputPhone, setInputPhone] = useState();
+  const [deatilJusoData, setInputJusoData] = useState('');
+
+  const joinBtn = useRef();
+  const clickSubmitBtn = (e) => {
+    if (
+      inputId === undefined ||
+      inputPw === undefined ||
+      inputName === undefined ||
+      inputNick === undefined ||
+      inputEmail === undefined ||
+      inputPhone === undefined
+    ) {
+      alert('빈칸이 존재합니다. 빠짐없이 입력해주세요.');
+    }
+    axios
+      .post('http://localhost:3001/auth/join', {
+        userId: inputId,
+        userEmail: inputEmail,
+        userPhone: inputPhone,
+        userPw: inputPw,
+        userName: inputName,
+        userNick: inputNick,
+      })
+      .then((res) => {
+        console.log(res);
+        if (res.data.status === 'success') {
+          alert('회원가입이 완료되었습니다.');
+          navigate('/join');
+        } else {
+          alert('다시 시도해 주세요.');
+        }
+      });
+  };
+
+
   return (
     <>
       <Header />

@@ -1,5 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const cookie = require("cookie-parser");
 
 const cors = require("cors");
 
