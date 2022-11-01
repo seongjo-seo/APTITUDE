@@ -32,7 +32,7 @@ const SignUp = () => {
       alert('빈칸이 존재합니다. 빠짐없이 입력해주세요.');
     }
     axios
-      .post('http://localhost:3001/auth/join', {
+      .post('http://localhost:3002/', {
         userId: inputId,
         userEmail: inputEmail,
         userPhone: inputPhone,
@@ -100,9 +100,9 @@ const SignUp = () => {
                                       <input type="password" class="form-control form-control-user" placeholder="상세 주소지를 입력해 주세요"/>
                                   </div>
                                 </div>
-                                <a href="{% url 'login' %}" class="btn btn-primary btn-user btn-block">
-                                    회원가입하기
-                                </a>
+                                <button className="join-btn" ref={joinBtn} onClick={clickSubmitBtn}>
+                                  회원가입
+                                </button>
                                 <hr/>
                             </form>
                             <div class="text-center">
