@@ -23,24 +23,30 @@ const Home = () =>{
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                
-                {/* <svg class="bd-placeholder-img" width="100%" height="80%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                  <rect width="100%" height="100%" fill="#777"/></svg> */}
+                {/* 1번 사진 */}
+                <img src="/img/test_img.jpg" width="50%" height="80%" class="bd-placeholder-img" alt="no_img" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"/>
+                  <rect width="100%" height="100%" fill="#777"/>
 
-
-                  <div></div>
+{/* 
                 <div class="container">
                   <div class="carousel-caption text-start">
+
                     <h1>좌측 정렬만</h1>
                     <p>좌측 정렬만 쓰기</p>
-                    <p><a class="btn btn-lg btn-primary" href="#">임시</a></p>
+                    <p><a class="btn btn-lg btn-primary" href="/">임시</a></p>
                   </div>
                 </div>
+
+ */}
+
+
               </div>
               <div class="carousel-item">
-                
-
-          </div>
+                <img src="/img/test_img.jpg"  width="50%" height="80%"  class="bd-placeholder-img" alt="..."/>
+              </div>
+              <div class="carousel-item">
+                <img src="/img/test_img.jpg"  width="50%" height="80%"  class="bd-placeholder-img" alt="..."/>
+              </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
