@@ -18,7 +18,7 @@ models.sequelize
     console.log("aptitude Database Sync Completed.");
     console.log("데이터베이스 동기화가 성공했습니다.");
   })
-  .catch((err) => {
+  .catch(err => {
     console.error("aptitude Database Sync Failed.");
     console.error("Sync에 실패했습니다.");
     console.error(err);

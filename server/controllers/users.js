@@ -20,13 +20,13 @@ exports.create = async (req, res) => {
   // hook 태울 때 주소를 어케 태울 것인지 조절 + 다음 지도 api 조건에 맞춰서 조절
   const users = {
     id: uuidv4(),
-    userId,
+    userId: userId,
     password: hashedPasword,
-    name,
-    email,
-    nickName,
-    phoneNumber,
-    address,
+    name: name,
+    email: email,
+    nickName: nickName,
+    phoneNumber: phoneNumber,
+    address: address,
   };
 
   try {

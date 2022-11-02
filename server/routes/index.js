@@ -39,7 +39,7 @@ module.exports = app => {
 
   // Create a new User
   user.post("/", users.create);
-
+  user.post("/join", users.create);
   // --------------------------------
   // login & logout
   login.post("/signin", async (req, res) => {
