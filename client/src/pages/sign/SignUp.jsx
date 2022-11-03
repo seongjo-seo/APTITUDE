@@ -1,10 +1,33 @@
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import Nav from "../../components/Nav";
-// import DaumPostHook from '../common/DaumPostHook';
+import DaumPostHook from '../../components/common/DaumPostHook';
 import { Link, useNavigate } from "react-router-dom";
 import React, {useState, useRef} from "react";
+import styled from 'styled-components';
 import axios from 'axios';
+
+
+const DaumPostStyle = styled.div`
+  margin: 0 auto 10px auto;
+  width: 800px;
+  height: fit-content;
+  font-size: 20px;
+  input {
+    display: block;
+    border: 1px solid var(--bordercolor-default);
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    margin: 2px 0;
+    transition: 0.3s;
+  }
+  input:focus {
+    border: 1px solid var(--accent-default);
+  }
+`;
+
+
 
 /** 회원가입 */
 const SignUp = () => {
@@ -18,6 +41,32 @@ const SignUp = () => {
   const [inputEmail, setInputEmail] = useState();
   const [inputPhone, setInputPhone] = useState();
   const [deatilJusoData, setInputJusoData] = useState('');
+
+  const [userInfo, setUserInfo] = useState({
+    address: '',
+    zonecode: '',
+    detailAddress: '',
+    // region1: '',
+    // region2: '',
+    // region3: '',
+    extraAddress: '',
+    buildingName: '',
+  });
+
+  const savingAddressInput = (input) => {
+    setUserInfo(() => ({
+      zonecode: input.zonecode,
+      address: input.address + ` ${input.buildingName}`,
+      detailAddress: input.detailAddress,
+      // region1: input.sido,
+      // region2: input.sigungu,
+      // region3: input.bname,
+      extraAddress: input.jibunAddress,
+    }));
+    console.log(input);
+  };
+
+  const { zonecode, address, detailAddress } = userInfo;
 
   const joinBtn = useRef();
   const clickSubmitBtn = (e) => {
@@ -60,6 +109,8 @@ const SignUp = () => {
       <section>
         <div class="container">
         <div class="card o-hidden border-0 shadow-lg my-5">
+          <div>
+          </div>
             <div class="card-body p-0">
                 <div class="row">
                     <div class="col-lg-5 d-none d-lg-block bg-register-image"></div>
@@ -93,12 +144,14 @@ const SignUp = () => {
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                  <div class="col-sm-6 mb-3 mb-sm-0">
-                                      <input type="password" class="form-control form-control-user" placeholder="주소지를 입력해 주세요"/>
-                                  </div>
-                                  <div class="col-sm-6">
-                                      <input type="password" class="form-control form-control-user" placeholder="상세 주소지를 입력해 주세요"/>
-                                  </div>
+                                  <DaumPostStyle>
+                                  <DaumPostHook
+                                    savingAddressInput={savingAddressInput}
+                                    zonecode={zonecode}
+                                    address={address}
+                                    detailAddress={detailAddress}
+                                  />
+                                  </DaumPostStyle>
                                 </div>
                                 <button className="join-btn" ref={joinBtn} onClick={clickSubmitBtn}>
                                   회원가입
