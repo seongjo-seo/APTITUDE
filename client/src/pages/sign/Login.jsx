@@ -42,7 +42,7 @@ const Login = () => {
                                         <h1 class="h3 text-gray-900 mb-4 text-bold">어서오세요!</h1>
                                     </div>
 
-                                    <form class="user" method="POST" action="/login/">
+                                    <form class="user" method="POST" action="/login">
                                       <div class="form-group">
                                           <input
                                               for="inputId"

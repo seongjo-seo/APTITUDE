@@ -123,36 +123,41 @@ const SignUp = () => {
                                 <div class="form-group row">
 
                                     <div class="form-group">
-                                      <input type="text" class="form-control form-control-user" id="exampleInputEmail" placeholder="아이디를 입력해 주세요"/>
-                                    </div>
-                                    <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <input type="text" class="form-control form-control-user" id="exampleFirstName" placeholder="비밀번호를 입력해 주세요"/>
+                                      <input type="text" class="form-control form-control-user" placeholder="아이디를 입력해 주세요"/>
                                     </div>
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control form-control-user" id="exampleLastName" placeholder="비밀번호를 한번 더 작성해 주세요"/>
+                                        <input type="password" class="form-control form-control-user"placeholder="비밀번호를 입력해 주세요"/>
                                     </div>
                                 </div>
+                                  <div class="col-sm-6">
+                                        <input type="text" class="form-control form-control-user" placeholder="비밀번호를 한번 더 작성해 주세요"/>
+                                  </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control form-control-user" id="exampleInputEmail" placeholder="이메일을 입력해 주세요"/>
+                                    <input type="email" class="form-control form-control-user" placeholder="이메일을 입력해 주세요"/>
                                 </div>
-                                <div class="form-group row">
-                                    <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <input type="text" class="form-control form-control-user" id="exampleInputPassword" placeholder="이름을 입력해 주세요"/>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <input type="text" class="form-control form-control-user" id="exampleRepeatPassword" placeholder="닉네임을 입력해 주세요"/>
-                                    </div>
-                                </div>
+                                  <div class="col-sm-6 mb-3 mb-sm-0">
+                                      <input type="text" class="form-control form-control-user" placeholder="이름을 입력해 주세요"/>
+                                  </div>
+                                  <div class="col-sm-6">
+                                      <input type="text" class="form-control form-control-user" placeholder="닉네임을 입력해 주세요"/>
+                                  </div>
+
                                 <div class="form-group row">
                                   <DaumPostStyle>
-                                  <DaumPostHook
-                                    savingAddressInput={savingAddressInput}
-                                    zonecode={zonecode}
-                                    address={address}
-                                    detailAddress={detailAddress}
-                                  />
+                                    <DaumPostHook
+                                      savingAddressInput={savingAddressInput}
+                                      zonecode={zonecode}
+                                      address={address}
+                                      detailAddress={detailAddress}
+                                    />
                                   </DaumPostStyle>
+                                  <div class="form-group">
+                                    <input type="text" class="form-control form-control-user" placeholder="상세 주소를 입력해주세요"/>
+                                  </div>
                                 </div>
+
+                                
+
                                 <button className="join-btn" ref={joinBtn} onClick={clickSubmitBtn}>
                                   회원가입
                                 </button>
