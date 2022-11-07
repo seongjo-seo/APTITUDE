@@ -1,20 +1,17 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.js";
-
 import { Link } from "react-router-dom";
 import { useRef, useState } from 'react';
 
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import Nav from "../../components/Nav";
+// import { ReactComponent as LoginPage } from '../img/Sign/LoginPage.svg';
+
 
 /** 로그인 */
 const Login = () => {
 
-
-
-  const [userId, setUserId] = useState();
-  const [userPw, setUserPw] = useState();
+  // const [userId, setUserId] = useState();
+  // const [userPw, setUserPw] = useState();
 
 
   return (
@@ -23,16 +20,20 @@ const Login = () => {
       <Nav />
       <section>
         <div class="container">
-
+        {/* <img src="/img/Sign/LoginPage.jpg" alt="이미지가 존재하지 않습니다." /> */}
           <div class="row justify-content-center">
 
             <div class="col-xl-10 col-lg-12 col-md-9">
-
+              {/* <LoginPage/> */}
                 <div class="card o-hidden border-0 shadow-lg my-5">
+                  {/* 여기서 시작 */}
                     <div class="card-body p-0">
                         <div class="row">
-                            <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+                            <div class="col-lg-6 d-none d-lg-block bg-image"
+                                // style="background-image: url('../Sign/LoginPage.png');"
+                            ></div>
                             <div class="col-lg-6">
+                        {/* <img src="/img/Sign/LoginPage.jpg" alt="이미지가 존재하지 않습니다." /> */}
                                 <div class="p-5">
                                     <div class="text-right">
                                         <Link to="/SignUp">회원 가입</Link>
@@ -41,8 +42,6 @@ const Login = () => {
                                     <div class="text-left">
                                         <h1 class="h3 text-gray-900 mb-4 text-bold">어서오세요!</h1>
                                     </div>
-
-                                    <form class="user" method="POST" action="/login">
                                       <div class="form-group">
                                           <input
                                               for="inputId"
@@ -68,7 +67,6 @@ const Login = () => {
 
                                       <button class="btn btn-primary btn-user btn-block" type="submit">로그인</button>
                                     <hr/>
-                                    </form>
 
                                         
                                         <a href="/" class="btn btn-google btn-user btn-block">
