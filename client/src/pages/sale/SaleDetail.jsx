@@ -10,13 +10,15 @@ const SaleDetail = () => {
     <>
       <Header/>
       <Nav/>
+      {/* 상세 설명 시작 */}
+      {/* information start */}
       <section class="py-5">
         <div class="container px-4 px-lg-5 my-5">
           <div class="row gx-4 gx-lg-5 align-items-center">
             <div class="col-md-6">
               <img
                 class="card-img-top mb-5 mb-md-0"
-                src=""
+                src="/img/SalePage/SaleOne/Salt_1.png"
                 alt="..."/>
             </div>
             <div class="col-md-6">
@@ -40,13 +42,17 @@ const SaleDetail = () => {
           </div>
         </div>
       </section>
+      {/* 상세 설명 끝 */}
+      {/* information end */}
+      
+      {/* 연관 상품 */}
       <section class="py-5 bg-light">
         <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
           <div class="container px-4 px-lg-5 mt-5">
             <h2 class="fw-bolder mb-4">Related products</h2>
             <div class="col mb-5">
               <div class="card h-100">
-                <img class="card-img-top" src="" alt="..." />
+                <img class="card-img-top" src="/img/SalePage/SaleTwo/Anna's_1.png" alt="..." />
                 <div class="card-body p-4">
                   <div class="text-center">
                     <h5 class="fw-bolder">Fancy Product</h5>$40.00 - $80.00
@@ -64,9 +70,9 @@ const SaleDetail = () => {
           </div>
           <div class="col mb-5">
           <div class="card h-100">
-            {/* 바로 아래 div 태그에 있던 값임 style="top: 0.5rem; right: 0.5rem" */}
+            {/* 바로 아래 div 태그에 있던 값임 style="top: 0.5rem; right: 0.5rem"  Studio Fragrance*/}
             <div class="badge bg-dark text-white position-absolute">Sale</div>
-            <img class="card-img-top" src="" alt="..." />
+            <img class="card-img-top" src="/img/SalePage/SaleTwo/Studio_Fragrance_1.png" alt="..." />
             <div class="card-body p-4">
               <div class="text-center">
                 <h5 class="fw-bolder">Special Item</h5>
@@ -91,7 +97,6 @@ const SaleDetail = () => {
         
         <div class="col mb-5">
           <div class="card h-100">
-            {/* style="top: 0.5rem; right: 0.5rem" */}
             <div class="badge bg-dark text-white position-absolute">Sale</div>
             <img class="card-img-top" src="" alt="..." />
             <div class="card-body p-4">
@@ -119,7 +124,6 @@ const SaleDetail = () => {
 
         <div class="col mb-5">
           <div class="card h-100">
-            {/* style="top: 0.5rem; right: 0.5rem" */}
             <div class="badge bg-dark text-white position-absolute">Sale</div>
             <img class="card-img-top" src="" alt="..." />
             <div class="card-body p-4">
@@ -140,8 +144,8 @@ const SaleDetail = () => {
         </div>
 
 
-        
-        <div class="col mb-5">
+        {/* 상품 종료 */}
+        {/* <div class="col mb-5">
           <div class="card h-100">
             <img class="card-img-top" src="" alt="..." />
             <div class="card-body p-4">
@@ -162,7 +166,7 @@ const SaleDetail = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
 
         </div>

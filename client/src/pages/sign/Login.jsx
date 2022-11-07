@@ -29,11 +29,8 @@ const Login = () => {
                   {/* 여기서 시작 */}
                     <div class="card-body p-0">
                         <div class="row">
-                            <div class="col-lg-6 d-none d-lg-block bg-image"
-                                // style="background-image: url('../Sign/LoginPage.png');"
-                            ></div>
+                            <div class="col-lg-6 d-none d-lg-block"></div>
                             <div class="col-lg-6">
-                        {/* <img src="/img/Sign/LoginPage.jpg" alt="이미지가 존재하지 않습니다." /> */}
                                 <div class="p-5">
                                     <div class="text-right">
                                         <Link to="/SignUp">회원 가입</Link>
