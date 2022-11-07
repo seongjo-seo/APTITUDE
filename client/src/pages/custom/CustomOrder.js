@@ -2,7 +2,7 @@ import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import Nav from "../../components/Nav";
 
-const Custom_order = () => {
+const CustomOrder = () => {
   return (
     <>
       <Header />
@@ -13,4 +13,4 @@ const Custom_order = () => {
   );
 };
 
-export default Custom_order;
+export default CustomOrder;

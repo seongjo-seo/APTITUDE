@@ -49,18 +49,6 @@ const Home = () =>{
                 <img src="/img/test_img.jpg" width="50%" height="80%" class="bd-placeholder-img" alt="no_img" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"/>
                   <rect width="100%" height="100%" fill="#777"/>
 
-{/* 
-                <div class="container">
-                  <div class="carousel-caption text-start">
-
-                    <h1>좌측 정렬만</h1>
-                    <p>좌측 정렬만 쓰기</p>
-                    <p><a class="btn btn-lg btn-primary" href="/">임시</a></p>
-                  </div>
-                </div>
-
- */}
-
 
               </div>
               <div class="carousel-item">

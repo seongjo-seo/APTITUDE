@@ -72,10 +72,7 @@ const Login = () => {
 
                                         
                                         <a href="/" class="btn btn-google btn-user btn-block">
-                                            <i class="fab fa-google fa-fw"></i> 아이콘으로 바꿀거임 구글
-                                        </a>
-                                        <a href="/" class="btn btn-facebook btn-user btn-block">
-                                            <i class="fab fa-facebook-f fa-fw"></i> 페이스북? 인스타?
+                                            <i class="fab fa-google fa-fw"></i>구글
                                         </a>
                                         <a href="/" class="btn btn-naver btn-user btn-block">
                                           <i class="fab fa-facebook-f fa-fw"></i> 네이버

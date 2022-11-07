@@ -4,9 +4,11 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Login from "./pages/sign/Login";
 import SignUp from "./pages/sign/SignUp";
-import FindId from "./pages/sign/FindId";
+import FindId from "./pages/sign/find/FindId";
 import SaleDetail from "./pages/sale/SaleDetail";
 import SaleList from "./pages/sale/SaleList";
+import DiscountProduct from "./components/common/DiscountProduct";
+import Information from "./components/common/Information";
 
 /**
  *  상태는 BrowserRouter 경로는 Link
@@ -29,6 +31,9 @@ const App = () => {
           <Route path="/SaleList" element={<SaleList />} />
           {/* 판매 상세 페이지 */}
           <Route path="/SaleList/SaleDetail" element={<SaleDetail />} />
+          {/* 할인 상품 페이지 */}
+          <Route path="/DiscountProduct" element={<DiscountProduct />} />
+          <Route path="/Information" element={<Information />} />
         </Routes>
         <Routes>
           {/* 아이디 찾기 */}
