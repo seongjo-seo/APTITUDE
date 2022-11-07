@@ -16,10 +16,6 @@ const Header = () => {
               동심원
             </div>
           </Link>
-          <div>
-            (임시 라이팅) 감사한 마음이 소중한 당신에게 닿을 수 있도록 love what
-            you have.
-          </div>
         </div>
       </header>
     </>

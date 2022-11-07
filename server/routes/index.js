@@ -22,7 +22,7 @@ const authenticateJWT = (req, res, next) => {
 
 // sale, custom, review, users, mypage
 
-module.exports = app => {
+module.exports = (app) => {
   const users = require("../controllers/users.js");
   const sales = require("../controllers/sale.js");
   const customer = require("../controllers/custom.js");
@@ -39,7 +39,8 @@ module.exports = app => {
 
   // Create a new User
   user.post("/", users.create);
-  user.post("/join", users.create);
+  // user.post("/join", users.join);
+
   // --------------------------------
   // login & logout
   login.post("/signin", async (req, res) => {
@@ -73,7 +74,7 @@ module.exports = app => {
     const { token } = req.body;
 
     refreshTokens = refreshTokens.filter(
-      refreshToken => refreshToken !== token
+      (refreshToken) => refreshToken !== token
     );
 
     res.send("Logout successful");

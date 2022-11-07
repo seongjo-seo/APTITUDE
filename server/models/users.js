@@ -9,6 +9,9 @@ module.exports = (sequelize, Sequelize) => {
         defaultValue: Sequelize.UUIDV4,
         primaryKey: true,
       },
+      userType: {
+        type: DataTypes.INTEGER,
+      },
       userId: {
         type: DataTypes.STRING,
         allowNull: false,
@@ -41,7 +44,7 @@ module.exports = (sequelize, Sequelize) => {
     {}
   );
 
-  User.associate = models => {
+  User.associate = (models) => {
     // associations can be defined here
   };
 

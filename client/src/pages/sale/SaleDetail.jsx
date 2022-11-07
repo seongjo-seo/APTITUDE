@@ -5,7 +5,7 @@ import Header from "../../components/Header";
 import Nav from "../../components/Nav";
 
 /** 판매 상세페이지 */
-const Sale_detail = () => {
+const SaleDetail = () => {
   return (
     <>
       <Header/>
@@ -172,4 +172,4 @@ const Sale_detail = () => {
   );
 };
 
-export default Sale_detail;
+export default SaleDetail;

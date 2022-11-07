@@ -1,9 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 
-class Review_application extends Component {
-  render() {
-    return <div></div>;
-  }
-}
+const Review_application = () => {
+  return <></>;
+};
 
 export default Review_application;

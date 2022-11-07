@@ -22,7 +22,7 @@ const Nav = () =>{
 										<i class="bi bi-chevron-down dropdown-indicator"></i>
 									</a>
 									<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-										<li><Link class="dropdown-item" to={"/Sale_list"}>모든 상품 보기</Link></li>
+										<li><Link class="dropdown-item" to={"/SaleList"}>모든 상품 보기</Link></li>
 										<li><Link class="dropdown-item" to={"/"}>브라이덜 샤워</Link></li>
 										<li><Link class="dropdown-item" to={"/"}>출생</Link></li>
 										<li><Link class="dropdown-item" to={"/"}>혼인</Link></li>

@@ -6,6 +6,28 @@ import Nav from "../components/Nav";
 import Footer from "../components/Footer"
 import Sell_Table from "../components/Sell_Table";
 import Three_Card from "../components/Three_Card";
+import styled from 'styled-components';
+
+
+const SellTableStyle = styled.div`
+  margin: 0 auto 10px auto;
+  width: 800px;
+  height: fit-content;
+  font-size: 20px;
+  input {
+    display: block;
+    border: 1px solid var(--bordercolor-default);
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    margin: 2px 0;
+    transition: 0.3s;
+  }
+  input:focus {
+    border: 1px solid var(--accent-default);
+  }
+`;
+
 
 /** 홈 화면 페이지 */
 const Home = () =>{
@@ -93,12 +115,15 @@ const Home = () =>{
         </div>
       </section>
 
-      <h1>home</h1>
-      <p>홈</p>
       <Three_Card/>
 
       <Sell_Table/>
         <section class="py-5 text-center container">
+          <SellTableStyle>
+            <div>
+              tes
+            </div>
+          </SellTableStyle>
           <div class="row py-lg-5">
             <div class="col-lg-6 col-md-8 mx-auto">
               <p> 문의 사항 버튼 두개 제작될 곳</p>

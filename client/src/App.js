@@ -5,8 +5,8 @@ import Home from "./pages/Home";
 import Login from "./pages/sign/Login";
 import SignUp from "./pages/sign/SignUp";
 import FindId from "./pages/sign/FindId";
-import Sale_detail from "./pages/sale/Sale_detail";
-import Sale_list from "./pages/sale/Sale_list";
+import SaleDetail from "./pages/sale/SaleDetail";
+import SaleList from "./pages/sale/SaleList";
 
 /**
  *  상태는 BrowserRouter 경로는 Link
@@ -26,9 +26,9 @@ const App = () => {
           {/* 회원가입 */}
           <Route path="/SignUp" element={<SignUp />} />
           {/* 판매 페이지 */}
-          <Route path="/Sale_list" element={<Sale_list />} />
+          <Route path="/SaleList" element={<SaleList />} />
           {/* 판매 상세 페이지 */}
-          <Route path="/Sale_list/Sale_detail" element={<Sale_detail />} />
+          <Route path="/SaleList/SaleDetail" element={<SaleDetail />} />
         </Routes>
         <Routes>
           {/* 아이디 찾기 */}
