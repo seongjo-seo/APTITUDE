@@ -8,6 +8,7 @@ import Sell_Table from "../components/Sell_Table";
 import Three_Card from "../components/Three_Card";
 import styled from 'styled-components';
 
+import "../home.css";
 
 const SellTableStyle = styled.div`
   margin: 0 auto 10px auto;
@@ -108,14 +109,14 @@ const Home = () =>{
       <Sell_Table/>
         <section class="py-5 text-center container">
           <SellTableStyle>
-            <div>
-              tes
-            </div>
           </SellTableStyle>
           <div class="row py-lg-5">
-            <div class="col-lg-6 col-md-8 mx-auto">
-              <p> 문의 사항 버튼 두개 제작될 곳</p>
-            </div>
+            <button className="Questions">
+              자주하는 질문
+            </button>
+            <button className="inquiry">
+              1:1 문의 남기기
+            </button>
           </div>
         </section>
       <Footer/>

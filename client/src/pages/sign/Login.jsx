@@ -1,10 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useRef, useState, useEffect } from 'react';
 import { FaGoogle, RiKakaoTalkFill } from 'react-icons/fa';
 import {SiNaver, SiKakao} from 'react-icons/si'
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import Nav from "../../components/Nav";
+import axios from 'axios';
 import {
   MDBBtn,
   MDBContainer,
@@ -17,10 +18,80 @@ from 'mdb-react-ui-kit';
 import "./Login.css";
 
 /** 로그인 */
-const Login = () => {
+const Login = ({userInfoHandler}) => {
+  const navigate = useNavigate();
 
-  // const [userId, setUserId] = useState();
-  // const [userPw, setUserPw] = useState();
+  const idRegex = /^[a-z][a-zA-Z0-9]{5,15}$/; /** 아이디 정규표현식  */
+  const userPWRegExp = /^(?=.*[a-zA-Z])(?=.*[#?!@$%^&*-])(?=.*[0-9]).{8,16}$/; /** 비밀번호 정규표현식  */
+
+  const [userId, setUserId] = useState();
+  const [userPw, setUserPw] = useState();
+  const [isErrorId, setIsErrorId] = useState(false);
+  const [isErrorPw, setIsErrorPw] = useState(false);
+  const idInput = useRef();
+  const pwInput = useRef();
+  const loginBtn = useRef();
+  
+
+  const onChangeIdInput = (e) => {
+    setUserId(e.target.value);
+    if (idRegex.test(e.target.value) === false) {
+      setIsErrorId(true);
+    } else {
+      setIsErrorId(false);
+    }
+
+    if (
+      idRegex.test(e.target.value) === true &&
+      isErrorPw === false &&
+      pwInput.current.value >= 8
+    ) {
+      loginBtn.current.readOnly = false;
+    } else if (idRegex.test(e.target.value) === false) {
+      loginBtn.current.readOnly = true;
+    }
+  };
+
+  const onChangePwInput = (e) => {
+    setUserPw(e.target.value);
+    if (userPWRegExp.test(e.target.value) === false) {
+      setIsErrorPw(true);
+    } else {
+      setIsErrorPw(false);
+    }
+
+    if (isErrorId === false && userPWRegExp.test(e.target.value) === true) {
+      loginBtn.current.readOnly = false;
+    } else {
+      loginBtn.current.readOnly = true;
+    }
+  };
+
+  const clickLoginBtn = async (e) => {
+    try {
+      const res = await axios.post(`http://localhost:8000/api/users`, {
+        userId,
+        userPw,
+      });
+      console.log(res);
+      if (!res.data.auth) {
+        alert('아이디나 비밀번호가 맞지 않습니다.');
+      } else {
+        userInfoHandler(res);
+        localStorage.setItem('token', res.data.accessToken);
+        navigate('/');
+        alert('로그인 되었습니다.');
+      }
+    } catch (e) {
+      console.log(e);
+    }
+  };
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    clickLoginBtn();
+  };
+
 
 
   return (
@@ -43,32 +114,30 @@ const Login = () => {
                   style={{width: '185px'}} alt="logo" />
                 <h4 className="mt-1 mb-5 pb-1">어서오세요!</h4>
               </div>
-
+              <form className="login-form" onSubmit={onSubmit}>
                 <div class="form-group mb-3">
                   <input
                       for="inputId"
-                      type="email"
+                      ref={idInput}
+                      type="id"
                       class="form-control form-control-user"
-                      id="exampleInputEmail" aria-describedby="emailHelp"
+                      id="exampleInputId" aria-describedby="idHelp"
                       placeholder="아이디를 입력해 주세요"/>
                 </div>
                 <div class="form-group mb-3">
                   <input
                     for="inputPassword"
+                    ref={pwInput}
                     type="password"
                     class="form-control form-control-user"
                     id="exampleInputPassword"
                     placeholder="비밀번호를 입력해 주세요"/>
                 </div>
-
-              {/* input box 커스텀 하기 */}
-              {/* <MDBInput wrapperClass='mb-4' label='Email address' id='form1' type='email'/>
-              <MDBInput wrapperClass='mb-4' label='Password' id='form2' type='password'/> */}
-
-{/* MDBBtn */}
-{/* MDBBtn color="danger" */}
+                <button class="custom-button"
+                        // onClick={clickLoginBtn}
+                        >로그인</button>
+                </form>
               <div className="text-center pt-1 mb-5 pb-1">
-                <button class="custom-button">로그인</button>
                 
                 <div class="text-right">
                     <Link to="/SignUp">회원 가입</Link>
@@ -83,19 +152,6 @@ const Login = () => {
                 <a href="/">
                   <SiKakao color="yellow"/>
                 </a>
-
-                {/* <a class="btn text-white" style="background-color: #dd4b39;" href="#" role="button">
-                    <i class="fab fa-google"></i>
-                  </a> */}
-                  {/* <a href="/" class="btn btn-google btn-user btn-block">
-                      <i class="fab fa-google fa-fw"></i>구글
-                  </a> */}
-                  {/* <a href="/" class="btn btn-naver btn-user btn-block">
-                    <i class="fab fa-facebook-f fa-fw"></i> 네이버
-                  </a>
-                  <a href="/" class="btn btn-kakao btn-user btn-block">
-                    <i class="fab fa-facebook-f fa-fw"></i> 카카오
-                  </a> */}
                 <br/><br/>
                 <a className="text-muted" href="#!">비밀번호를 잃어버리셨나요?</a>
               </div>

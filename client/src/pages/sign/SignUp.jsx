@@ -35,22 +35,19 @@ const SignUp = () => {
   
   const [inputId, setInputId] = useState();
   const [inputPw, setInputPw] = useState();
-  const [reInputPw, setReInputPw] = useState();
   const [inputName, setInputName] = useState();
-  const [inputNick, setInputNick] = useState();
   const [inputEmail, setInputEmail] = useState();
   const [inputPhone, setInputPhone] = useState();
-  const [deatilJusoData, setInputJusoData] = useState('');
 
   const [userInfo, setUserInfo] = useState({
     address: '',
-    zonecode: '',
-    detailAddress: '',
+    // zonecode: '',
+    // detailAddress: '',
     // region1: '',
     // region2: '',
     // region3: '',
-    extraAddress: '',
-    buildingName: '',
+    // extraAddress: '',
+    // buildingName: '',
   });
 
   const savingAddressInput = (input) => {
@@ -74,20 +71,20 @@ const SignUp = () => {
       inputId === undefined ||
       inputPw === undefined ||
       inputName === undefined ||
-      inputNick === undefined ||
+      // inputNick === undefined ||
       inputEmail === undefined ||
       inputPhone === undefined
     ) {
       alert('빈칸이 존재합니다. 빠짐없이 입력해주세요.');
     }
     axios
-      .post('http://localhost:3002/', {
+      .post('http://localhost:8000/api/users', {
         userId: inputId,
         userEmail: inputEmail,
         userPhone: inputPhone,
         userPw: inputPw,
         userName: inputName,
-        userNick: inputNick,
+        // userNick: inputNick,
       })
       .then((res) => {
         console.log(res);
@@ -99,7 +96,7 @@ const SignUp = () => {
         }
       });
   };
-
+  const signBtn = useRef();
 
   return (
     <>
@@ -109,8 +106,6 @@ const SignUp = () => {
       <section>
         <div class="container">
         <div class="card o-hidden border-0 shadow-lg my-5">
-          <div>
-          </div>
             <div class="card-body p-0">
                 <div class="row">
                     <div class="col-lg-5 d-none d-lg-block bg-register-image"></div>
@@ -138,9 +133,9 @@ const SignUp = () => {
                                   <div class="col-sm-6 mb-3 mb-sm-0">
                                       <input type="text" class="form-control form-control-user" placeholder="이름을 입력해 주세요"/>
                                   </div>
-                                  <div class="col-sm-6">
+                                  {/* <div class="col-sm-6">
                                       <input type="text" class="form-control form-control-user" placeholder="닉네임을 입력해 주세요"/>
-                                  </div>
+                                  </div> */}
 
                                 <div class="form-group row">
                                   <DaumPostStyle>
@@ -158,7 +153,7 @@ const SignUp = () => {
 
                                 
 
-                                <button className="join-btn" ref={joinBtn} onClick={clickSubmitBtn}>
+                                <button className="join-btn" ref={signBtn} onClick={clickSubmitBtn}>
                                   회원가입
                                 </button>
                                 <hr/>
