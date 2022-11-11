@@ -1,0 +1,66 @@
+.headerContainer{
+
+  position: absolute;
+  width: 1362px;
+  height: 61px;
+  left: 352px;
+  top: 0px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+/* {ID}님 어서오세요! */
+.headerIdBox{
+  position: absolute;
+  right: 30px;
+  top: 30%;
+  /* width: 145px;
+  height: 35px;
+  left: 1548px;
+  top: 13px; */
+
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+}
+
+/* HOME */
+.headerText{
+  position: absolute;
+  height: 30px;
+  left: 20px;
+  top: 16px;
+
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+}
+
+.member-photo{
+  /* Ellipse 26 */
+  border-radius:30px;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  right: 100px;
+  /* left: 0px; */
+  top: 13px;
+
+  background: #b4acac;
+
+}

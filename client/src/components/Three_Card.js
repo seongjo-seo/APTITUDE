@@ -1,14 +1,23 @@
 // import { Link } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.js";
+
+import "./Three_Card.css";
 
 const Three_Card = () => {
   return (
     <>
       <section>
-        <div class="container px-4 py-5" id="custom-cards">
-          <h2 class="pb-2 border-bottom">평가 받을 3개 위치</h2>
+        <div>
+          <h2>평가 받을 3개 위치</h2>
+        </div>
+      </section>
+    </>
+  );
+};
 
+export default Three_Card;
+
+{
+  /* 
           <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
             <div class="col">
               <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
@@ -33,11 +42,5 @@ const Three_Card = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-    </>
-  );
-};
-
-export default Three_Card;
+          </div> */
+}
