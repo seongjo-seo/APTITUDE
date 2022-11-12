@@ -47,16 +47,16 @@ const Home = () =>{
             <div class="carousel-inner">
               <div class="carousel-item active">
                 {/* 1번 사진 */}
-                <img src="/img/test_img.jpg" width="50%" height="80%" class="bd-placeholder-img" alt="no_img" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"/>
+                <img src="/img/HomePage/CarouselOne.png" width="100%" height="100%" class="bd-placeholder-img" alt="no_img" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"/>
                   <rect width="100%" height="100%" fill="#777"/>
 
 
               </div>
               <div class="carousel-item">
-                <img src="/img/test_img.jpg"  width="50%" height="80%"  class="bd-placeholder-img" alt="..."/>
+                <img src="/img/HomePage/CarouselTwo.png"  width="100%" height="100%"  class="bd-placeholder-img" alt="..."/>
               </div>
               <div class="carousel-item">
-                <img src="/img/test_img.jpg"  width="50%" height="80%"  class="bd-placeholder-img" alt="..."/>
+                <img src="/img/HomePage/CarouselThree.png"  width="100%" height="100%"  class="bd-placeholder-img" alt="..."/>
               </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
