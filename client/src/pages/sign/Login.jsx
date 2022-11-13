@@ -133,8 +133,7 @@ const Login = ({userInfoHandler}) => {
                     id="exampleInputPassword"
                     placeholder="비밀번호를 입력해 주세요"/>
                 </div>
-                <button class="custom-button"
-                        // onClick={clickLoginBtn}
+                <button type="button" class="btn btn-warning custom-button"
                         >로그인</button>
                 </form>
               <div className="text-center pt-1 mb-5 pb-1">
