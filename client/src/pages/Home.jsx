@@ -5,29 +5,10 @@ import Header from "../components/Header";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer"
 import Sell_Table from "../components/Sell_Table";
-import Three_Card from "../components/Three_Card";
-import styled from 'styled-components';
+// import Three_Card from "../components/Three_Card";
+// import styled from 'styled-components';
 
-import "../home.css";
-
-const SellTableStyle = styled.div`
-  margin: 0 auto 10px auto;
-  width: 800px;
-  height: fit-content;
-  font-size: 20px;
-  input {
-    display: block;
-    border: 1px solid var(--bordercolor-default);
-    width: 100%;
-    height: 40px;
-    padding: 0 10px;
-    margin: 2px 0;
-    transition: 0.3s;
-  }
-  input:focus {
-    border: 1px solid var(--accent-default);
-  }
-`;
+import "./Home.css";
 
 
 /** 홈 화면 페이지 */
@@ -104,10 +85,9 @@ const Home = () =>{
         </div>
       </section>
 
-      <Three_Card/>
 
       <Sell_Table/>
-        <section class="py-5 text-center container">
+        {/* <section class="py-5 text-center container">
           <SellTableStyle>
           </SellTableStyle>
           <div class="row py-lg-5">
@@ -118,7 +98,7 @@ const Home = () =>{
               1:1 문의 남기기
             </button>
           </div>
-        </section>
+        </section> */}
       <Footer/>
     </div>
     </>
