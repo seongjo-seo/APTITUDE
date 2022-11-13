@@ -2,6 +2,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.js";
 
+/** 판매 상품 페이지 */
 const Sell_table = () => {
   return (
     <>

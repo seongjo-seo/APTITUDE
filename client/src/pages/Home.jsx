@@ -86,6 +86,14 @@ const Home = () =>{
       </section>
 
 
+      {/* 3개 이미지 카드 위치 */}
+      <section>
+        
+      </section>
+
+
+
+
       <Sell_Table/>
         {/* <section class="py-5 text-center container">
           <SellTableStyle>

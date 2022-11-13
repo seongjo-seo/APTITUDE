@@ -45,15 +45,15 @@ const Nav = () =>{
 						</ul>
 						<ul class="nav">
               <li class="nav-item"><Link to="/member/Mypage" class="nav-link link-dark px-2">일반회원 마이페이지</Link></li>
-              <li class="nav-item"><Link to="/salesMember/SellerMypage" class="nav-link link-dark px-2">판매회원 마이페이지</Link></li>
+              {/* <li class="nav-item"><Link to="/salesMember/SellerMypage" class="nav-link link-dark px-2">판매회원 마이페이지</Link></li> */}
 							<li class="nav-item"><Link to="/Login" class="nav-link link-dark px-2">로그인</Link></li>
 							<li class="nav-item"><Link to="/SignUp" class="nav-link link-dark px-2">회원가입</Link></li>
 						</ul>
 						
-						<form class="d-flex">
+						{/* <form class="d-flex">
 							<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
 							<button class="btn btn-outline-success" type="submit">Search</button>
-						</form>
+						</form> */}
 					</div>
 			</nav>
 		</>
