@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.js";
+// import "Nav.css";
 
 /** 내비게이션 */
 const Nav = () =>{
 	return(
 		<>
-			<nav class="shadow-sm py-2 border-bottom">
+			<nav class="shadow-sm py-2 border-bottom sticky">
 				<div class="container d-flex flex-wrap">
 						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon"></span>
