@@ -7,7 +7,8 @@ const Invitation = () => {
     <>
       {/* <section className=''> */}
         <div>
-          <div className='all-container background-color'></div>
+          {/* background-color */}
+          <div className='all-container'></div>
           <div className='wedding-phrase'> 방구미 ❤ 강동원 <br/>결혼합니다!</div>
           {/* 첫번째 원 데코레이션 */}
           <div className='one-ellipse-decorate'></div>

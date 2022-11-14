@@ -12,23 +12,23 @@ const MemberNav = () =>{
         </div>
         <div className="Dashboard">Dashboard</div>
         {/* className="default-ranking" */}
-          <ul >
+          <ul>
             <ul>
               <hr className="schedule-line"/>
-              <li className="schedule-information">일정 정보</li>
+              <p className="schedule-information">일정 정보</p>
               <ul>
-                <li ><Link className="Registration-Schedule" to={"/"}>등록 일정 보기</Link></li>
-                <li><Link className="Manage-your-schedule">일정 관리하기</Link></li>
+                <p className="delete-text-line"><Link className="Registration-Schedule" to={"/"}>등록 일정 보기</Link></p>
+                <p className="delete-text-line"><Link className="Manage-your-schedule">일정 관리하기</Link></p>
               </ul>
             </ul>
             <ul>
               <hr className="management-line"/>
-              <li className="Gift-management-text">Gift 관리</li>
+              <p className="delete-text-line Gift-management-text">Gift 관리</p>
               <ul>
-                <li><Link className="Gift-Cart" to={"/"}>Gift 장바구니</Link></li>
-                <li ><Link className="Gift-delivery-tracking" to={"/"}>Gift 배송조회</Link></li>
-                <li><Link className="Gift-review-management">Gift 리뷰관리</Link></li>
-                <li><Link className="Gift-write-message">Gift 메세지 작성</Link></li>
+                <p className="delete-text-line"><Link className="Gift-Cart" to={"/"}>Gift 장바구니</Link></p>
+                <p className="delete-text-line"><Link className="Gift-delivery-tracking" to={"/"}>Gift 배송조회</Link></p>
+                <p className="delete-text-line"><Link className="Gift-review-management">Gift 리뷰관리</Link></p>
+                <p className="delete-text-line"><Link className="Gift-write-message">Gift 메세지 작성</Link></p>
               </ul>
             </ul>
           </ul>

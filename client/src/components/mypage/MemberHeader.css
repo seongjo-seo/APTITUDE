@@ -1,5 +1,4 @@
 .headerContainer{
-
   position: absolute;
   width: 1362px;
   height: 61px;
@@ -10,6 +9,12 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 }
+
+/* 태그 하단 라인 삭제  */
+.delete-text-line a{
+  text-decoration-line:none;
+}
+
 /* {ID}님 어서오세요! */
 .headerIdBox{
   position: absolute;
