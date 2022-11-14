@@ -15,7 +15,8 @@ const SignUpStyle = styled.div`
   width: 800px;
   height: fit-content;
   font-size: 20px;
-`;
+  `;
+  // color: black;
 
 
 
@@ -94,7 +95,7 @@ const SignUp = () => {
       <Nav />
 
       <section>
-        <div class="container-sm">
+        <div class="container py-5">
           {/* 영역 박스 그림자 (임시 제거) border-0 o-hidden*/}
           <div class="card shadow my-5 p-5">
               {/* card-body p-0 */}
@@ -134,12 +135,13 @@ const SignUp = () => {
                       <button className="join-btn btn-info btn btn-outline-primary" ref={signBtn} onClick={clickSubmitBtn}>
                         회원가입
                       </button>
-                      <hr/>
+                      <hr className="hr-size text-center"/>
                   </form>
 
                   <button className="id-find">
                     <Link className="custom-signup" to={"/"}>아이디를 잃어버리셨나요?</Link>
                   </button>
+                  <br/>
                   <button className="password-find">
                     <Link className="custom-signup" to={"/"}>비밀번호를 잃어버리셨나요?</Link>
                   </button>

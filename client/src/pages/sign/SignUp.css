@@ -1,14 +1,16 @@
 /* solid */
 input {
-  
-  color: rgba(173, 173, 173, 0.3);
+  margin-left: auto;
+  margin-right: auto;
+  color: gray;
+  /* color: rgba(173, 173, 173, 0.3); */
   border-radius: 12.5px;
   display: block;
-  width: 100%;
+  width: 60%;
   height: 40px;
   padding: 0 10px;
   text-align: center;
-  margin: 2px 0;
+  /* margin: 2px 0; */
   transition: 0.3s;
   border: 0.1px solid;
   margin-top: 8px;
@@ -19,6 +21,7 @@ input:focus {
 
 .signup-text{
   font-size:xx-large;
+  /* color: black; */
   color: rgb(58, 58, 58);
 }
 
@@ -31,4 +34,10 @@ input:focus {
   height: 49px;
   border: none;
   border-radius: 12px;
+}
+
+.hr-size{
+  width: 500px;
+  margin-left : auto;
+  margin-right : auto;
 }
