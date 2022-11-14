@@ -114,6 +114,7 @@ const Login = ({userInfoHandler}) => {
                   style={{width: '185px'}} alt="logo" />
                 <h4 className="mt-1 mb-4">동심원 서비스에 어서오세요!</h4>
               </div>
+              
               <form className="login-form" onSubmit={onSubmit}>
                 <div class="form-group mb-3">
                   <input
@@ -133,14 +134,15 @@ const Login = ({userInfoHandler}) => {
                     id="exampleInputPassword"
                     placeholder="비밀번호를 입력해 주세요"/>
                 </div>
-                <button class="btn btn-warning custom-button"
-                        >로그인</button>
+                <button class="btn btn-warning custom-button">
+                  로그인
+                </button>
                 </form>
               <div className="text-center pt-1 mb-5 pb-1">
                 
-                <button class="btn btn-warning custom-button-signup">
-                    <Link className="custom-signup" to="/SignUp">회원 가입</Link>
-                </button>
+                <Link  to="/SignUp" class="btn btn-warning custom-button-signup">
+                    <p className="custom-signup">회원 가입</p>
+                </Link>
                 <hr/>
                 <a href="/">
                   <FaGoogle className="google-buttons" color="red"/>
@@ -153,10 +155,10 @@ const Login = ({userInfoHandler}) => {
                 </a>
                 <br/><br/>
                 <button className="id-find">
-                  <Link className="custom-signup" href="/">아이디를 잃어버리셨나요?</Link>
+                  <Link className="custom-signup" to={"/"}>아이디를 잃어버리셨나요?</Link>
                 </button>
                 <button className="password-find">
-                  <Link className="custom-signup" href="/">비밀번호를 잃어버리셨나요?</Link>
+                  <Link className="custom-signup" to={"/"}>비밀번호를 잃어버리셨나요?</Link>
                 </button>
               </div>
 

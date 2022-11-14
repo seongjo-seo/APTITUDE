@@ -7,6 +7,7 @@ import React, {useState, useRef} from "react";
 import styled from 'styled-components';
 import axios from 'axios';
 
+import './SignUp.css';
 
 // border: 1px solid var(--bordercolor-default);
 const SignUpStyle = styled.div`
@@ -14,19 +15,6 @@ const SignUpStyle = styled.div`
   width: 800px;
   height: fit-content;
   font-size: 20px;
-  input {
-    border-radius: 10px;
-    border: 0.1px solid;
-    display: block;
-    width: 100%;
-    height: 40px;
-    padding: 0 10px;
-    margin: 2px 0;
-    transition: 0.3s;
-  }
-  input:focus {
-    border: 1px solid var(--accent-default);
-  }
 `;
 
 
@@ -106,15 +94,13 @@ const SignUp = () => {
       <Nav />
 
       <section>
-        <div class="container">
-          {/* 영역 박스 그림자 (임시 제거) border-0 */}
-          <div class="vw-5 card o-hidden shadow my-5 p-4">
+        <div class="container-sm">
+          {/* 영역 박스 그림자 (임시 제거) border-0 o-hidden*/}
+          <div class="card shadow my-5 p-5">
               {/* card-body p-0 */}
               <div class="text-center">
-                  <div class="text-center">
-                      <h1 class="h4 text-gray-900 mb-4">회원가입</h1>
-                  </div>
-                  <form  method="POST" class="user">
+                  <span class="text-center"><p className="signup-text">회원가입</p></span>
+                  <form  method="POST">
                     <SignUpStyle>
                       <input type="text" placeholder="아이디를 입력해 주세요"/>
                     </SignUpStyle>
@@ -122,7 +108,7 @@ const SignUp = () => {
                         <input type="password"placeholder="비밀번호를 입력해 주세요"/>
                     </SignUpStyle>
                     <SignUpStyle>
-                          <input type="text" placeholder="비밀번호를 한번 더 작성해 주세요"/>
+                          <input type="password" placeholder="비밀번호를 한번 더 작성해 주세요"/>
                     </SignUpStyle>
                     <SignUpStyle>
                         <input type="email" placeholder="이메일을 입력해 주세요"/>
@@ -145,19 +131,17 @@ const SignUp = () => {
                         </SignUpStyle>
                       </div>
 
-                      
-
-                      <button className="join-btn" ref={signBtn} onClick={clickSubmitBtn}>
+                      <button className="join-btn btn-info btn btn-outline-primary" ref={signBtn} onClick={clickSubmitBtn}>
                         회원가입
                       </button>
                       <hr/>
                   </form>
 
                   <button className="id-find">
-                    <Link className="custom-signup" href="/">아이디를 잃어버리셨나요?</Link>
+                    <Link className="custom-signup" to={"/"}>아이디를 잃어버리셨나요?</Link>
                   </button>
                   <button className="password-find">
-                    <Link className="custom-signup" href="/">비밀번호를 잃어버리셨나요?</Link>
+                    <Link className="custom-signup" to={"/"}>비밀번호를 잃어버리셨나요?</Link>
                   </button>
               </div>
           </div>
