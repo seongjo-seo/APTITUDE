@@ -8,7 +8,7 @@
   /* height: 6659px; */
 }
 
-/* 텍스트 컨테이너 */
+/* 전체 컨테이너 */
 .all-container{
   /* position: absolute; */
   width: 100%;
@@ -21,13 +21,13 @@
 }
 
 
-/* 결혼 텍스트  */
+/* 첫번째 결혼 텍스트 위치 */
 /* ex) OOO ❤ ㅁㅁㅁ 결혼합니다 */
 .wedding-phrase{
   position: absolute;
   width: 35%;
   height: 150px;
-  left: 32%;
+  left: 32.95%;
   top: 20%;
 
   font-family: 'Inter';
@@ -47,7 +47,7 @@
   position: absolute;
   width: 700px;
   height: 850px;
-  left: 31.5%;
+  left: 32%;
   top: 419px;
 
   border: 5px solid rgba(114, 114, 114, 0.52);
@@ -65,10 +65,9 @@
   top: 298px;
   background: rgba(255, 237, 216, 0.83);
   filter: blur(182.5px);
-  
-  
-  /* margin-top:10px; */
 }
+
+
 /* 두번째 꾸미기용 타원 */
 .two-ellipse-decorate{
   z-index: 0;
@@ -83,9 +82,9 @@
 }
 
 
-/* 텍스트 위치 */
+/* 두번째 텍스트 위치 */
 .second-text-position{
-  margin-left: 35%;
+  margin-left: 36%;
   margin-top : 70%;
   position:sticky;
   width: 550px;
@@ -108,11 +107,77 @@
   box-sizing: border-box;
 
   position: absolute;
-  width: 700px;
+  width: 650px;
   height: 357px;
-  left: 31.5%;
+  left: 33%;
   top: 1700px;
 
   border: 4px solid #5B5B5B;
 
+}
+
+/* 세번째 사각형 컨테이너 위치 */
+.Third-Rectangular-Container-Position{
+
+  position: absolute;
+  width: 800px;
+  height: 350px;
+  left: 547px;
+  top: 2200px;
+
+  background: #D9D9D9;
+  border-radius: 20px;
+
+}
+
+/* 세번째 사각형에 들어갈 텍스트 위치 <예식장 위치> */
+.Third-text{
+  position: absolute;
+  width: 300px;
+  height: 60px;
+  margin-top: 26.5%;
+  margin-left: 42%;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 61px;
+  /* identical to box height */
+  text-align: center;
+
+  color: #806F6F;
+}
+
+/* 지도 위치 */
+/* 소피텔 앰배서더 서울 호텔 4층 그랜드볼룸 방돔 (서울 송파구 잠실로 209) 잠실역 도보 10분 거리 */
+.map-location{
+  position: absolute;
+  width: 625px;
+  height: 120px;
+  
+  margin-top: 70%;
+  margin-left: 33%;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 40px;
+
+  color: #806F6F;
+}
+
+/* 지도 들어갈 위치 */
+.location-on-the-map{
+  position: absolute;
+  z-index: 1;
+  
+  background: #D9D9D9;
+
+  width: 200px;
+  height: 60px;
+  left: 30%;
+  top: 280%;
+  color: #806F6F;
+  border-radius: 25px;
 }

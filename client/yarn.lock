@@ -1227,6 +1227,29 @@
     "minimatch" "^3.1.2"
     "strip-json-comments" "^3.1.1"
 
+"@fullcalendar/common@~5.11.2", "@fullcalendar/common@~5.11.3":
+  "integrity" "sha512-welVwyfQOXQQGfDwBMSfYEPbiO1cPfUD+C7jd3ZoweJR+dSO11ddFugxIQ7dGfABAGZ63oq/+LW9FsmAJezVNg=="
+  "resolved" "https://registry.npmjs.org/@fullcalendar/common/-/common-5.11.3.tgz"
+  "version" "5.11.3"
+  dependencies:
+    "tslib" "^2.1.0"
+
+"@fullcalendar/daygrid@^5.11.3":
+  "integrity" "sha512-PCK0y80DRNCzWuC5lGpIWqCgKDvql1ah7rXql5lu+Gn2EeFj15ZQ8diMFjtNIQucEmFaNOXnR05Pgcry1n6Shg=="
+  "resolved" "https://registry.npmjs.org/@fullcalendar/daygrid/-/daygrid-5.11.3.tgz"
+  "version" "5.11.3"
+  dependencies:
+    "@fullcalendar/common" "~5.11.3"
+    "tslib" "^2.1.0"
+
+"@fullcalendar/react@^5.11.2":
+  "integrity" "sha512-OnLvfV406VEQcK4QGN8xR4ro6Manp9dKE7/n9dhs19J1kKpqS1w1sIEYg1dT11njbk0Ob+TdF3cXLDFq73jUlA=="
+  "resolved" "https://registry.npmjs.org/@fullcalendar/react/-/react-5.11.2.tgz"
+  "version" "5.11.2"
+  dependencies:
+    "@fullcalendar/common" "~5.11.2"
+    "tslib" "^2.1.0"
+
 "@humanwhocodes/config-array@^0.10.5":
   "integrity" "sha512-MDl6D6sBsaV452/QSdX+4CXIjZhIcI0PELsxUjk4U828yd58vk3bTIvk/6w5FY+4hIy9sLW0sfrV7K7Kc++j/w=="
   "resolved" "https://registry.npmjs.org/@humanwhocodes/config-array/-/config-array-0.10.7.tgz"
@@ -7583,7 +7606,7 @@
     "strip-ansi" "^6.0.1"
     "text-table" "^0.2.0"
 
-"react-dom@^16.8.0 || ^17 || ^18", "react-dom@^18.0.0", "react-dom@^18.1.0", "react-dom@^18.2.0", "react-dom@>= 16.8.0", "react-dom@>=16.14.0", "react-dom@>=16.6.0", "react-dom@>=16.8":
+"react-dom@^16.7.0 || ^17 || ^18", "react-dom@^16.8.0 || ^17 || ^18", "react-dom@^18.0.0", "react-dom@^18.1.0", "react-dom@^18.2.0", "react-dom@>= 16.8.0", "react-dom@>=16.14.0", "react-dom@>=16.6.0", "react-dom@>=16.8":
   "integrity" "sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz"
   "version" "18.2.0"
@@ -7729,7 +7752,7 @@
     "loose-envify" "^1.4.0"
     "prop-types" "^15.6.2"
 
-"react@*", "react@^16.8.0 || ^17 || ^18", "react@^16.8.0 || ^17.0.0-rc.1 || ^18.0.0", "react@^18.0.0", "react@^18.1.0", "react@^18.2.0", "react@>= 16", "react@>= 16.8.0", "react@>=0.14.0", "react@>=15.0.0", "react@>=16.14.0", "react@>=16.6.0", "react@>=16.8", "react@>=16.8.0":
+"react@*", "react@^16.7.0 || ^17 || ^18", "react@^16.8.0 || ^17 || ^18", "react@^16.8.0 || ^17.0.0-rc.1 || ^18.0.0", "react@^18.0.0", "react@^18.1.0", "react@^18.2.0", "react@>= 16", "react@>= 16.8.0", "react@>=0.14.0", "react@>=15.0.0", "react@>=16.14.0", "react@>=16.6.0", "react@>=16.8", "react@>=16.8.0":
   "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   "version" "18.2.0"
@@ -8808,7 +8831,7 @@
   "resolved" "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz"
   "version" "1.14.1"
 
-"tslib@^2.0.3":
+"tslib@^2.0.3", "tslib@^2.1.0":
   "integrity" "sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ=="
   "resolved" "https://registry.npmjs.org/tslib/-/tslib-2.4.0.tgz"
   "version" "2.4.0"
