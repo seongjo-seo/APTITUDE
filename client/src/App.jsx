@@ -11,7 +11,7 @@ import DiscountProduct from "./components/common/DiscountProduct";
 import Information from "./components/common/Information";
 import SellerMypage from "./pages/mypage/salesMember/SellerMypage";
 import Mypage from "./pages/mypage/member/Mypage";
-import Invitation from "./pages/invitation/Invitation";
+import Invitation from "./pages/mypage/member/invitation/Invitation.jsx";
 
 /**
  *  상태는 BrowserRouter 경로는 Link
