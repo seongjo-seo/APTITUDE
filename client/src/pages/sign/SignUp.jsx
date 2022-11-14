@@ -8,14 +8,16 @@ import styled from 'styled-components';
 import axios from 'axios';
 
 
-const DaumPostStyle = styled.div`
+// border: 1px solid var(--bordercolor-default);
+const SignUpStyle = styled.div`
   margin: 0 auto 10px auto;
   width: 800px;
   height: fit-content;
   font-size: 20px;
   input {
+    border-radius: 10px;
+    border: 0.1px solid;
     display: block;
-    border: 1px solid var(--bordercolor-default);
     width: 100%;
     height: 40px;
     padding: 0 10px;
@@ -105,72 +107,61 @@ const SignUp = () => {
 
       <section>
         <div class="container">
-        <div class="card o-hidden border-0 shadow-lg my-5">
-            <div class="card-body p-0">
-                <div class="row">
-                    <div class="col-lg-5 d-none d-lg-block bg-register-image"></div>
-                    <div class="col-lg-7">
-                        <div class="p-5">
-                            <div class="text-center">
-                                <h1 class="h4 text-gray-900 mb-4">회원가입</h1>
-                            </div>
-                            <form  method="POST" class="user">
-                                <div class="form-group row">
+          {/* 영역 박스 그림자 (임시 제거) border-0 */}
+          <div class="vw-5 card o-hidden shadow my-5 p-4">
+              {/* card-body p-0 */}
+              <div class="text-center">
+                  <div class="text-center">
+                      <h1 class="h4 text-gray-900 mb-4">회원가입</h1>
+                  </div>
+                  <form  method="POST" class="user">
+                    <SignUpStyle>
+                      <input type="text" placeholder="아이디를 입력해 주세요"/>
+                    </SignUpStyle>
+                    <SignUpStyle>
+                        <input type="password"placeholder="비밀번호를 입력해 주세요"/>
+                    </SignUpStyle>
+                    <SignUpStyle>
+                          <input type="text" placeholder="비밀번호를 한번 더 작성해 주세요"/>
+                    </SignUpStyle>
+                    <SignUpStyle>
+                        <input type="email" placeholder="이메일을 입력해 주세요"/>
+                    </SignUpStyle>
+                    <SignUpStyle>
+                        <input type="text" placeholder="이름을 입력해 주세요"/>
+                    </SignUpStyle>
 
-                                    <div class="form-group">
-                                      <input type="text" class="form-control form-control-user" placeholder="아이디를 입력해 주세요"/>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <input type="password" class="form-control form-control-user"placeholder="비밀번호를 입력해 주세요"/>
-                                    </div>
-                                </div>
-                                  <div class="col-sm-6">
-                                        <input type="text" class="form-control form-control-user" placeholder="비밀번호를 한번 더 작성해 주세요"/>
-                                  </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control form-control-user" placeholder="이메일을 입력해 주세요"/>
-                                </div>
-                                  <div class="col-sm-6 mb-3 mb-sm-0">
-                                      <input type="text" class="form-control form-control-user" placeholder="이름을 입력해 주세요"/>
-                                  </div>
-                                  {/* <div class="col-sm-6">
-                                      <input type="text" class="form-control form-control-user" placeholder="닉네임을 입력해 주세요"/>
-                                  </div> */}
+                      <div>
+                        <SignUpStyle>
+                          <DaumPostHook
+                            savingAddressInput={savingAddressInput}
+                            zonecode={zonecode}
+                            address={address}
+                            detailAddress={detailAddress}
+                          />
+                        </SignUpStyle>
+                        <SignUpStyle>
+                          <input type="text" placeholder="상세 주소를 입력해주세요"/>
+                        </SignUpStyle>
+                      </div>
 
-                                <div class="form-group row">
-                                  <DaumPostStyle>
-                                    <DaumPostHook
-                                      savingAddressInput={savingAddressInput}
-                                      zonecode={zonecode}
-                                      address={address}
-                                      detailAddress={detailAddress}
-                                    />
-                                  </DaumPostStyle>
-                                  <div class="form-group">
-                                    <input type="text" class="form-control form-control-user" placeholder="상세 주소를 입력해주세요"/>
-                                  </div>
-                                </div>
+                      
 
-                                
+                      <button className="join-btn" ref={signBtn} onClick={clickSubmitBtn}>
+                        회원가입
+                      </button>
+                      <hr/>
+                  </form>
 
-                                <button className="join-btn" ref={signBtn} onClick={clickSubmitBtn}>
-                                  회원가입
-                                </button>
-                                <hr/>
-                            </form>
-                            <div class="text-center">
-                                <Link class="small" to="/Login">비밀번호를 잃어버리셨나요?</Link>
-                            </div>
-                            
-                            {/* <div class="text-center">
-                                <Link class="small" to="/Login">로그인 창으로</Link>
-                            </div> */}
-                        </div>
-                    </div>
-                </div>
-            </div>
+                  <button className="id-find">
+                    <Link className="custom-signup" href="/">아이디를 잃어버리셨나요?</Link>
+                  </button>
+                  <button className="password-find">
+                    <Link className="custom-signup" href="/">비밀번호를 잃어버리셨나요?</Link>
+                  </button>
+              </div>
+          </div>
         </div>
-      </div>
       </section>
 
       <Footer />
