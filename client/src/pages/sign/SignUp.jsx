@@ -78,7 +78,7 @@ const SignUp = () => {
       alert('빈칸이 존재합니다. 빠짐없이 입력해주세요.');
     }
     axios
-      .post('http://localhost:8000/api/users', {
+      .post('http://localhost:8000/api/users/join', {
         userId: inputId,
         userEmail: inputEmail,
         userPhone: inputPhone,
@@ -161,9 +161,10 @@ const SignUp = () => {
                             <div class="text-center">
                                 <Link class="small" to="/Login">비밀번호를 잃어버리셨나요?</Link>
                             </div>
-                            <div class="text-center">
+                            
+                            {/* <div class="text-center">
                                 <Link class="small" to="/Login">로그인 창으로</Link>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

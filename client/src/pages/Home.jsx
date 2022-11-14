@@ -76,7 +76,7 @@ const Home = () =>{
           <div class="row featurette">
             <div class="col-md-7 order-md-2">
               <h2 class="featurette-heading">동심원이 추천하는 선물</h2>
-              <p class="lead">여기에 giftpack api 적용</p>
+              <p class="lead">여기에 giftpack api</p>
             </div>
             <div class="col-md-5 order-md-1">
               <svg class="rounded bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="573" height="385" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>

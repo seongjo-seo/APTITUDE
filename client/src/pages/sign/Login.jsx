@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useRef, useState, useEffect } from 'react';
 import { FaGoogle, RiKakaoTalkFill } from 'react-icons/fa';
-import {SiNaver, SiKakao} from 'react-icons/si'
+import {SiNaver, SiKakaotalk} from 'react-icons/si'
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import Nav from "../../components/Nav";
@@ -112,7 +112,7 @@ const Login = ({userInfoHandler}) => {
               <div className="text-center mb-5">
                 <img src="/img/temporaryLogo.png"
                   style={{width: '185px'}} alt="logo" />
-                <h4 className="mt-1 mb-5 pb-1">어서오세요!</h4>
+                <h4 className="mt-1 mb-4">동심원 서비스에 어서오세요!</h4>
               </div>
               <form className="login-form" onSubmit={onSubmit}>
                 <div class="form-group mb-3">
@@ -133,26 +133,31 @@ const Login = ({userInfoHandler}) => {
                     id="exampleInputPassword"
                     placeholder="비밀번호를 입력해 주세요"/>
                 </div>
-                <button type="button" class="btn btn-warning custom-button"
+                <button class="btn btn-warning custom-button"
                         >로그인</button>
                 </form>
               <div className="text-center pt-1 mb-5 pb-1">
                 
-                <div class="text-right">
-                    <Link to="/SignUp">회원 가입</Link>
-                </div>
+                <button class="btn btn-warning custom-button-signup">
+                    <Link className="custom-signup" to="/SignUp">회원 가입</Link>
+                </button>
                 <hr/>
                 <a href="/">
                   <FaGoogle className="google-buttons" color="red"/>
                 </a>
                 <a href="/">
-                  <SiNaver color="Green"/>
+                  <SiNaver className="naver-buttons" color="Green"/>
                 </a>
                 <a href="/">
-                  <SiKakao color="yellow"/>
+                  <SiKakaotalk className="kakao-buttons" color="yllow"/>
                 </a>
                 <br/><br/>
-                <a className="text-muted" href="#!">비밀번호를 잃어버리셨나요?</a>
+                <button className="id-find">
+                  <Link className="custom-signup" href="/">아이디를 잃어버리셨나요?</Link>
+                </button>
+                <button className="password-find">
+                  <Link className="custom-signup" href="/">비밀번호를 잃어버리셨나요?</Link>
+                </button>
               </div>
 
             </div>
