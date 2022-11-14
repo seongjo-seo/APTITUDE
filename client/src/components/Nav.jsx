@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.js";
-// import "Nav.css";
+
+import "./Nav.css";
 
 /** 내비게이션 */
 const Nav = () =>{
@@ -44,7 +45,7 @@ const Nav = () =>{
 							<li class="nav-item"><Link class="nav-link link-dark px-2" to={"/"}>리뷰보기</Link></li>
 						</ul>
 						<ul class="nav">
-              {/* <li class="nav-item"><Link to="/member/Mypage" class="nav-link link-dark px-2">일반회원 마이페이지</Link></li> */}
+              <li class="nav-item"><Link to="/member/Mypage" class="nav-link link-dark px-2">일반회원 마이페이지</Link></li>
               {/* <li class="nav-item"><Link to="/salesMember/SellerMypage" class="nav-link link-dark px-2">판매회원 마이페이지</Link></li> */}
 							<li class="nav-item"><Link to="/Login" class="nav-link link-dark px-2">로그인</Link></li>
 							<li class="nav-item"><Link to="/SignUp" class="nav-link link-dark px-2">회원가입</Link></li>

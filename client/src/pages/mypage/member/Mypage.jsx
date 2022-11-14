@@ -9,8 +9,8 @@ const Mypage = () => {
     <>
       <MemberHeader />
       <MemberNav/>
-      <div className="side-logo">logo이미지 배치될 곳</div>
-      <div className="side-container"></div>
+      {/* <div className="side-logo">logo이미지 배치될 곳</div> */}
+      {/* <div className="side-container"></div> */}
       <div>test</div>
     </>
   );

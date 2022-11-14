@@ -1,18 +1,12 @@
 import { Link } from "react-router-dom";
-import "./MemberNav.css";
 
 /** 내비게이션 */
-const MemberNav = () =>{
+const SellerMember = () =>{
 	return(
 		<>
-    {/* Gift-management-text */}
-			<nav >
-        <div className="side-logo">
-
-        </div>
+			<nav>Gift-management-text
         <div className="Dashboard">Dashboard</div>
-        {/* className="default-ranking" */}
-          <ul >
+          <ul className="default-ranking">
             <ul>
               <hr className="schedule-line"/>
               <li className="schedule-information">일정 정보</li>
@@ -36,4 +30,4 @@ const MemberNav = () =>{
 		</>
 	)
 };
-export default MemberNav;
+export default SellerMember;

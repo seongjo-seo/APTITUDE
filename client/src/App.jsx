@@ -11,6 +11,7 @@ import DiscountProduct from "./components/common/DiscountProduct";
 import Information from "./components/common/Information";
 import SellerMypage from "./pages/mypage/salesMember/SellerMypage";
 import Mypage from "./pages/mypage/member/Mypage";
+import Invitation from "./pages/invitation/Invitation";
 
 /**
  *  상태는 BrowserRouter 경로는 Link
@@ -40,6 +41,8 @@ const App = () => {
           <Route path="/member/Mypage" element={<Mypage />} />
           {/* 판매자 마이페이지 */}
           <Route path="/salesMember/SellerMypage" element={<SellerMypage />} />
+          {/* 청첩장 */}
+          <Route path="/Invitation" element={<Invitation />} />
         </Routes>
         <Routes>
           {/* 아이디 찾기 후순위 */}
