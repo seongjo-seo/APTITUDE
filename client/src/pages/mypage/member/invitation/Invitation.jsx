@@ -28,7 +28,7 @@ const Invitation = () => {
           
           <div className='second-rectangular-container'></div>
           {/* <div className="wedding-photo-image-container"> */}
-          <img className='wedding-photo-image-container' src="/img/test_img.jpg" alt="..." />
+          <img className='wedding-photo-image-container' src="/img/InvitationPage/wedding-Invitation.jpg" alt="..." />
           {/* </div> */}
           
           <div className='Third-Rectangular-Container-Position'>
