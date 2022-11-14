@@ -1,6 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.js";
 
+import { Link } from "react-router-dom";
+
 import Header from "../components/Header";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer"
@@ -54,20 +56,14 @@ const Home = () =>{
     {/* Giftpack API가 들어갈 곳  */}
       <section>
         <div class="container mb-4">
-          <div class="row featurette">
+          {/* featurette */}
+          <div class="row">
             <div class="col-md-7">
-              <h2 class="featurette-heading">추천 받을 곳</h2>
-              <p class="lead">~연령대가 많이 뽑은 선물 + 임시 이미지 두개 배치 조정 필요함</p>
+              <p class="text-start">구미님의 연령대 사람들이 고른 상품</p>
             </div>
-            <div class="row align-items-start row-cols-1 row-cols-lg-2 g-4 py-5">
-              <div class="col-md-5">
-                <svg class="rounded bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 300x300" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">300x300</text></svg>
-
-              </div>
-              <div class="col-md-5">
-                <svg class="rounded bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 300x300" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">300x300</text></svg>
-
-              </div>
+            <Link to={"/SaleList"} className="text-center align-middle Age-products">보러가기</Link>
+            <div>
+              
             </div>
           </div>
 
@@ -75,8 +71,8 @@ const Home = () =>{
 
           <div class="row featurette">
             <div class="col-md-7 order-md-2">
-              <h2 class="featurette-heading">동심원이 추천하는 선물</h2>
-              <p class="lead">여기에 giftpack api</p>
+              <h2 class="text-start">동심원이 추천하는 선물</h2>
+              <p class="text-start">기프트팩 api</p>
             </div>
             <div class="col-md-5 order-md-1">
               <svg class="rounded bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="573" height="385" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
