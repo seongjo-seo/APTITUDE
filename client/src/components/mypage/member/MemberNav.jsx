@@ -18,7 +18,7 @@ const MemberNav = () =>{
               <p className="schedule-information">일정 정보</p>
               <ul>
                 <p className="delete-text-line"><Link className="Registration-Schedule" to={"/"}>등록 일정 보기</Link></p>
-                <p className="delete-text-line"><Link className="Manage-your-schedule">일정 관리하기</Link></p>
+                <p className="delete-text-line"><Link className="Manage-your-schedule" to={"/"}>일정 관리하기</Link></p>
               </ul>
             </ul>
             <ul>
@@ -27,8 +27,8 @@ const MemberNav = () =>{
               <ul>
                 <p className="delete-text-line"><Link className="Gift-Cart" to={"/"}>Gift 장바구니</Link></p>
                 <p className="delete-text-line"><Link className="Gift-delivery-tracking" to={"/"}>Gift 배송조회</Link></p>
-                <p className="delete-text-line"><Link className="Gift-review-management">Gift 리뷰관리</Link></p>
-                <p className="delete-text-line"><Link className="Gift-write-message">Gift 메세지 작성</Link></p>
+                <p className="delete-text-line"><Link className="Gift-review-management" to={"/"}>Gift 리뷰관리</Link></p>
+                <p className="delete-text-line"><Link className="Gift-write-message" to={"/"}>Gift 메세지 작성</Link></p>
               </ul>
             </ul>
           </ul>

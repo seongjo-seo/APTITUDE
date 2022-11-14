@@ -8,10 +8,9 @@ import "./Mypage.css"
 const Mypage = () => {
   return (
     <>
-    {/* <div> */}
-      <div className="all-container">
-        <MemberHeader />
-        <MemberNav/>
+      <MemberHeader />
+      <MemberNav/>
+      <div className="mypage-container">
         {/* <div className="side-logo">logo이미지 배치될 곳</div> */}
         {/* <div className="side-container"></div> */}
         <div> <br/><br/><br/><br/></div>
@@ -26,9 +25,10 @@ const Mypage = () => {
         {/* 우측 박스 */}
         <span className="Product-details-id-text"> 구미님의 상품 내역이에요.</span>
         <div className="Product-details">상품 내역 들어갈 곳</div>
-
+        <footer className="mypage-footer"><span className="mypage-footer-text">ⓒ 2022 (주)성조</span></footer>
       </div>
-    {/* </div> */}
+      {/* <div className="wrap">
+      </div> */}
     </>
   );
 };
