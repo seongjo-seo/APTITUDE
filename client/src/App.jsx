@@ -12,6 +12,7 @@ import Information from "./components/common/Information";
 import SellerMypage from "./pages/mypage/salesMember/SellerMypage";
 import Mypage from "./pages/mypage/member/Mypage";
 import Invitation from "./pages/mypage/member/invitation/Invitation.jsx";
+import Schedule from "./pages/mypage/member/schedule/Schedule";
 
 /**
  *  상태는 BrowserRouter 경로는 Link
@@ -43,6 +44,8 @@ const App = () => {
           <Route path="/salesMember/SellerMypage" element={<SellerMypage />} />
           {/* 청첩장 */}
           <Route path="/Invitation" element={<Invitation />} />
+          {/* 마이페이지 일정관리 */}
+          <Route path="/Mypage/schedule" element={<Schedule/>}/>
         </Routes>
         <Routes>
           {/* 아이디 찾기 후순위 */}

@@ -16,7 +16,9 @@ const Mypage = () => {
         <div> <br/><br/><br/><br/></div>
         {/* <div>test</div> */}
         <Link to={"/Invitation"}>test code</Link>
-        <div className="Remaining-schedule-text"></div>
+        <div className="Remaining-schedule-text">결혼식 일정까지 56일 남았어요!</div>
+        <Link to={"/Mypage/Schedule"}><img className="Remaining-schedule" src="/img/Mypage/wedding-mypage.jpg" alt="이미지-없음"/></Link>
+        {/* <div className="Remaining-schedule-text"></div> */}
 
         {/* 좌측 박스 */}
         <span className="Inquiry-history-id-text">구미님의 문의 내역이에요.</span>
