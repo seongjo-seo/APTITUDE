@@ -13,8 +13,6 @@ import "./Home/HomeTemplate.css";
 import "./Home/Open.css";
 
 import "./Home/OpenJs/active.js";
-// import "./Home/OpenJs/plugins.js";
-// import "./Home/OpenJs/jquery/jquery-2.2.4.min.js";
 
 
 
