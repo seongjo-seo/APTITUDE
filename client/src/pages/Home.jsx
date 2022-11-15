@@ -56,26 +56,25 @@ const Home = () =>{
       {/* Giftpack API가 들어갈 곳  */}
       {/* featurette */}
       <section>
-        <div class="second-container mb-4">
-          <div>
-            <div class="col-md-7">
+        <div class="second-container">
+          <div className="divStyled">
+            {/* class="col-md-7" */}
+            <div>
               <p class="text-start">구미님의 연령대 사람들이 고른 상품</p>
             </div>
-            <Link to={"/SaleList"} className="Age-products">보러가기</Link>
+            <Link to={"/SaleList"}  className="Age-products-Container"><p>보러가기</p></Link>
             <div className="Homepage-Featured-Product-Image-Container">test</div>
             <div>
             </div>
           </div>
 
         
-          {/*  featurette */}
-          <div class="row">
-            <div class="col-md-7 order-md-2">
+          {/* class="row" featurette */}
+          <div>
+            {/* class="col-md-7 order-md-2" */}
+            <div>
               <h2 class="text-start">동심원이 추천하는 선물</h2>
               <p class="text-start">기프트팩 api</p>
-            </div>
-            <div class="col-md-5 order-md-1">
-              <svg class="rounded bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="400" height="280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
             </div>
           </div>
         </div>
@@ -84,18 +83,23 @@ const Home = () =>{
 
       {/* 3개 이미지 카드 위치 */}
       <section>
+        {/* 여기서 가로 값이 초과. */}
         <div className="third-container">
+          <div className="inner-container">
+            {/* <div className="rating-adjustment"><br/> */}
+            {/* </div> */}
 
-          <div className="positive-evaluation">긍정 평가</div>
-          <ul className="period">
-            <li>주/</li>
-            <li>한달/</li>
-            <li>분기</li>
-          </ul>
+              <div className="positive-evaluation">긍정 평가</div>
+            <ul className="period">
+              <li>주/</li>
+              <li>한달/</li>
+              <li>분기</li>
+            </ul>
 
-          <div>이미지1</div>
-          <div>이미지2</div>
-          <div>이미지3</div>
+            <div className="First-image-in-third-container">이미지1</div>
+            <div className="Second-image-in-third-container">이미지2</div>
+            <div className="Third-image-in-third-container">이미지3</div>
+          </div>
         </div>
       </section>
 
