@@ -89,15 +89,41 @@ const Home = () =>{
         </div>
       </section>
 
+      
+      <section class="third-container">
+        <div className="container py-5">
+          <div class="row text-center pt-3">
+              <div class="col-lg-6 m-auto">
+                  <h1 class="h1">best of the month</h1>
+                  <p> 이달의 추천 상품과 브랜드를 구경해 보세요!</p>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-12 col-md-4 p-5 mt-3">
+                  <a href="#"><img src="/img/LogoData/14.Derek_Coffee.png" class="rounded-circle img-fluid border"/></a>
+                  <h5 class="text-center mt-3 mb-3">DEREK COFFEE</h5>
+                  <p class="text-center"><a class="btn btn-success">보러가기</a></p>
+              </div>
+              <div class="col-12 col-md-4 p-5 mt-3">
+                  <a href="#"><img src="/img/LogoData/29.Photo_at.png" class="rounded-circle img-fluid border"/></a>
+                  <h2 class="h5 text-center mt-3 mb-3">PHOTO at</h2>
+                  <p class="text-center"><a class="btn btn-success">보러가기</a></p>
+              </div>
+              <div class="col-12 col-md-4 p-5 mt-3">
+                  <a href="#"><img src="/img/LogoData/3.Studio_Fragrance.png" class="rounded-circle img-fluid border"/></a>
+                  <h2 class="h5 text-center mt-3 mb-3">Studio Fragrance</h2>
+                  <p class="text-center"><a class="btn btn-success">보러가기</a></p>
+              </div>
+          </div>
+        </div>
+      </section>
+
 
       {/* 3개 이미지 카드 위치 */}
-      <section>
         {/* 여기서 가로 값이 초과. */}
+      {/* <section>
         <div className="third-container">
           <div className="inner-container">
-            {/* <div className="rating-adjustment"><br/> */}
-            {/* </div> */}
-
               <div className="positive-evaluation">긍정 평가</div>
             <ul className="period">
               <li>주/</li>
@@ -110,7 +136,7 @@ const Home = () =>{
             <div className="Third-image-in-third-container">이미지3</div>
           </div>
         </div>
-      </section>
+      </section> */}
 
 
 

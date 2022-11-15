@@ -49,10 +49,10 @@
 
 /* 3번째 section 컨테이너 */
 .third-container{
-  width: 100%;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  /* width: 100%; */
+  /* height: 600px; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
   
   
   background: rgba(253, 238, 220, 0.4);
