@@ -6,11 +6,16 @@ import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer"
-import Sell_Table from "../components/Sell_Table";
-// import Three_Card from "../components/Three_Card";
 // import styled from 'styled-components';
 
 import "./Home.css";
+import "./Home/HomeTemplate.css";
+import "./Home/Open.css";
+
+import "./Home/OpenJs/active.js";
+// import "./Home/OpenJs/plugins.js";
+// import "./Home/OpenJs/jquery/jquery-2.2.4.min.js";
+
 
 
 /** 홈 화면 페이지 */
@@ -110,25 +115,15 @@ const Home = () =>{
 
 
 
-
-
-
-
-
-
-
-
-      {/* <section>
-        <Sell_Table/>
-      </section> */}
-
+      
+      {/* New Arrivals Area Start */}
       {/* section 판매 물건 구분 */}
       <section class="new_arrivals_area section_padding_100_0 clearfix">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <div class="section_heading text-center">
-                            <h2>New Arrivals</h2>
+                            <h2>판매중인 상품이에요 :)</h2>
                         </div>
                     </div>
                 </div>
@@ -136,20 +131,28 @@ const Home = () =>{
 
             <div class="karl-projects-menu mb-100">
                 <div class="text-center portfolio-menu">
-                    <button class="btn active" data-filter="*">ALL</button>
-                    <button class="btn" data-filter=".women">WOMAN</button>
-                    <button class="btn" data-filter=".man">MAN</button>
-                    <button class="btn" data-filter=".access">ACCESSORIES</button>
-                    <button class="btn" data-filter=".shoes">shoes</button>
-                    <button class="btn" data-filter=".kids">KIDS</button>
+                    <button class="btn active" data-filter="*">모든상품</button>
+                    <button class="btn" data-filter=".bridal-shower">브라이덜 샤워</button>
+                    <button class="btn" data-filter=".birth">출생</button>
+                    <button class="btn" data-filter=".birthday">생일</button>
+                    <button class="btn" data-filter=".Pregnant">임신</button>
+                    <button class="btn" data-filter=".Childbirth-(baby-shower)">출산(베이비샤워)</button>
+                    <button class="btn" data-filter=".first-birthday-party">돌잔치</button>
+                    <button class="btn" data-filter=".engagement">약혼</button>
+                    <button class="btn" data-filter=".sixtieth-birthday">환갑</button>
+                    <button class="btn" data-filter=".seventy-birthday">칠순</button>
                 </div>
             </div>
 
             <div class="container">
                 <div class="row karl-new-arrivals">
-                    <div class="col-12 col-sm-6 col-md-4 single_gallery_item women wow fadeInUpBig" data-wow-delay="0.2s">
+                  
+                  
+                  
+                    {/* 1~3 시작 */}
+                    <div class="col-12 col-sm-6 col-md-4 single_gallery_item Pregnant wow fadeInUpBig" data-wow-delay="0.2s">
                         <div class="product-img">
-                            <img src="img/product-img/product-1.jpg" alt=""/>
+                            <img src="/img/DummyImageData/7.Nuts_Bomb_(2).png" alt=""/>
                             <div class="product-quicview">
                                 <a href="#" data-toggle="modal" data-target="#quickview"><i class="ti-plus"></i></a>
                             </div>
@@ -157,12 +160,12 @@ const Home = () =>{
                         <div class="product-description">
                             <h4 class="product-price">$39.90</h4>
                             <p>Jeans midi cocktail dress</p>
-                            <a href="#" class="add-to-cart-btn">ADD TO CART</a>
+                            <a href="#" class="add-to-cart-btn">장바구니 담기</a>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-4 single_gallery_item women wow fadeInUpBig" data-wow-delay="0.3s">
+                    <div class="col-12 col-sm-6 col-md-4 single_gallery_item Pregnant wow fadeInUpBig" data-wow-delay="0.3s">
                         <div class="product-img">
-                            <img src="img/product-img/product-2.jpg" alt=""/>
+                            <img src="/img/DummyImageData/25.BOUQUET_2.png" alt=""/>
                             <div class="product-quicview">
                                 <a href="#" data-toggle="modal" data-target="#quickview"><i class="ti-plus"></i></a>
                             </div>
@@ -170,12 +173,12 @@ const Home = () =>{
                         <div class="product-description">
                             <h4 class="product-price">$39.90</h4>
                             <p>Jeans midi cocktail dress</p>
-                            <a href="#" class="add-to-cart-btn">ADD TO CART</a>
+                            <a href="#" class="add-to-cart-btn">장바구니 담기</a>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-4 single_gallery_item access wow fadeInUpBig" data-wow-delay="0.4s">
+                    <div class="col-12 col-sm-6 col-md-4 single_gallery_item bridal-shower wow fadeInUpBig" data-wow-delay="0.4s">
                         <div class="product-img">
-                            <img src="img/product-img/product-3.jpg" alt=""/>
+                            <img src="/img/DummyImageData/18.Ceramic_(2).png" alt=""/>
                             <div class="product-quicview">
                                 <a href="#" data-toggle="modal" data-target="#quickview"><i class="ti-plus"></i></a>
                             </div>
@@ -183,12 +186,17 @@ const Home = () =>{
                         <div class="product-description">
                             <h4 class="product-price">$39.90</h4>
                             <p>Jeans midi cocktail dress</p>
-                            <a href="#" class="add-to-cart-btn">ADD TO CART</a>
+                            <a href="#" class="add-to-cart-btn">장바구니 담기</a>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-4 single_gallery_item shoes wow fadeInUpBig" data-wow-delay="0.5s">
+                    {/* 1~3 끝 */}
+
+
+
+                    {/* 3~6 시작 */}
+                    <div class="col-12 col-sm-6 col-md-4 single_gallery_item birthday wow fadeInUpBig" data-wow-delay="0.5s">
                         <div class="product-img">
-                            <img src="img/product-img/product-4.jpg" alt=""/>
+                            <img src="/img/DummyImageData/3.Studio_Fragrance_(3).png" alt=""/>
                             <div class="product-quicview">
                                 <a href="#" data-toggle="modal" data-target="#quickview"><i class="ti-plus"></i></a>
                             </div>
@@ -196,12 +204,12 @@ const Home = () =>{
                         <div class="product-description">
                             <h4 class="product-price">$39.90</h4>
                             <p>Jeans midi cocktail dress</p>
-                            <a href="#" class="add-to-cart-btn">ADD TO CART</a>
+                            <a href="#" class="add-to-cart-btn">장바구니 담기</a>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-4 single_gallery_item women wow fadeInUpBig" data-wow-delay="0.6s">
+                    <div class="col-12 col-sm-6 col-md-4 single_gallery_item birthday wow fadeInUpBig" data-wow-delay="0.6s">
                         <div class="product-img">
-                            <img src="img/product-img/product-5.jpg" alt=""/>
+                            <img src="/img/DummyImageData/25.BOUQUET_(3).png" alt=""/>
                             <div class="product-quicview">
                                 <a href="#" data-toggle="modal" data-target="#quickview"><i class="ti-plus"></i></a>
                             </div>
@@ -209,13 +217,13 @@ const Home = () =>{
                         <div class="product-description">
                             <h4 class="product-price">$39.90</h4>
                             <p>Jeans midi cocktail dress</p>
-                            <a href="#" class="add-to-cart-btn">ADD TO CART</a>
+                            <a href="#" class="add-to-cart-btn">장바구니 담기</a>
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-md-4 single_gallery_item kids man wow fadeInUpBig" data-wow-delay="0.7s">
+                    <div class="col-12 col-sm-6 col-md-4 single_gallery_item Childbirth-(baby-shower) man wow fadeInUpBig" data-wow-delay="0.7s">
                         <div class="product-img">
-                            <img src="img/product-img/product-6.jpg" alt=""/>
+                            <img src="/img/DummyImageData/10.Headset_Robot.png" alt=""/>
                             <div class="product-quicview">
                                 <a href="#" data-toggle="modal" data-target="#quickview"><i class="ti-plus"></i></a>
                             </div>
@@ -223,9 +231,53 @@ const Home = () =>{
                         <div class="product-description">
                             <h4 class="product-price">$39.90</h4>
                             <p>Jeans midi cocktail dress</p>
-                            <a href="#" class="add-to-cart-btn">ADD TO CART</a>
+                            <a href="#" class="add-to-cart-btn">장바구니 담기</a>
                         </div>
                     </div>
+                    {/* 3~6 끝 */}
+
+
+                    {/* 6~9 시작 */}
+                    <div class="col-12 col-sm-6 col-md-4 single_gallery_item Pregnant wow fadeInUpBig" data-wow-delay="0.3s">
+                        <div class="product-img">
+                            <img src="/img/DummyImageData/28.moon_soon.png" alt=""/>
+                            <div class="product-quicview">
+                                <a href="#" data-toggle="modal" data-target="#quickview"><i class="ti-plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="product-description">
+                            <h4 class="product-price">$39.90</h4>
+                            <p>Jeans midi cocktail dress</p>
+                            <a href="#" class="add-to-cart-btn">장바구니 담기</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 single_gallery_item Pregnant wow fadeInUpBig" data-wow-delay="0.3s">
+                        <div class="product-img">
+                            <img src="/img/DummyImageData/26.Olivia.png" alt=""/>
+                            <div class="product-quicview">
+                                <a href="#" data-toggle="modal" data-target="#quickview"><i class="ti-plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="product-description">
+                            <h4 class="product-price">$39.90</h4>
+                            <p>Jeans midi cocktail dress</p>
+                            <a href="#" class="add-to-cart-btn">장바구니 담기</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 single_gallery_item Childbirth-(baby-shower) wow fadeInUpBig" data-wow-delay="0.3s">
+                        <div class="product-img">
+                            <img src="/img/DummyImageData/27.Victoria.png" alt=""/>
+                            <div class="product-quicview">
+                                <a href="#" data-toggle="modal" data-target="#quickview"><i class="ti-plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="product-description">
+                            <h4 class="product-price">$39.90</h4>
+                            <p>Jeans midi cocktail dress</p>
+                            <a href="#" class="add-to-cart-btn">장바구니 담기</a>
+                        </div>
+                    </div>
+                    {/* 6~9 끝 */}
                 </div>
             </div>
         </section>
@@ -239,21 +291,3 @@ const Home = () =>{
 
 export default Home;
 
-
-
-
-
-
-
-{/* <section class="py-5 text-center container">
-          <SellTableStyle>
-          </SellTableStyle>
-          <div class="row py-lg-5">
-            <button className="Questions">
-              자주하는 질문
-            </button>
-            <button className="inquiry">
-              1:1 문의 남기기
-            </button>
-          </div>
-        </section> */}
