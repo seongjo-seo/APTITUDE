@@ -8,7 +8,7 @@ import FindId from "./pages/sign/find/FindId";
 import SaleDetail from "./pages/sale/SaleDetail";
 import SaleList from "./pages/sale/SaleList";
 import DiscountProduct from "./pages/DiscountProduct/DiscountProduct";
-import Information from "./components/common/Information";
+import Information from "./components/common/Information/Information";
 import SellerMypage from "./pages/mypage/salesMember/SellerMypage";
 import Mypage from "./pages/mypage/member/Mypage";
 import Invitation from "./pages/mypage/member/invitation/Invitation.jsx";

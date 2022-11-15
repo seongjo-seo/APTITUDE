@@ -54,11 +54,11 @@ const Footer = () => {
                           할인상품
                         </Link>
                       </li>
-                      <li class="nav-item mb-2">
+                      {/* <li class="nav-item mb-2">
                         <Link to={"/"} class="nav-link p-0 text-muted">
                           판매자 등록 신청
                         </Link>
-                      </li>
+                      </li> */}
                       <li class="nav-item mb-2">
                         <Link to={"/"} class="nav-link p-0 text-muted">
                           공지사항

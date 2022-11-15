@@ -17,32 +17,53 @@ const SaleList = () => {
           <section className="container">
             <div class="categories-page spad">
               <div class="container">
-
+            
               <div class="flex-w flex-sb-m p-b-52">
                     <div class="flex-w flex-l-m filter-tope-group m-tb-10">
                       <button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5 how-active1" data-filter="*">
-                        All Products
+                       모든 상품 보기
                       </button>
 
                       <button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".women">
-                        Women
+                      브라이덜 샤워
                       </button>
 
                       <button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".men">
-                        Men
+                      출생
                       </button>
 
                       <button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".bag">
-                        Bag
+                      혼인
                       </button>
 
                       <button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".shoes">
-                        Shoes
+                      생일
                       </button>
 
                       <button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".watches">
-                        Watches
+                      임신
                       </button>
+
+                      <button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".watches">
+                      출산(베이비샤워)
+                      </button>
+
+                      <button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".watches">
+                      돌잔치
+                      </button>
+
+                      <button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".watches">
+                      약혼
+                      </button>
+
+                      <button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".watches">
+                      환갑
+                      </button>
+
+                      <button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".watches">
+                      칠순
+                      </button>
+
                     </div>
 
                     <div class="flex-w flex-c-m m-tb-10">
@@ -383,7 +404,7 @@ const SaleList = () => {
                           <div class="single-product-item">
                               <figure>
                                   <img src="/img/DummyImageData/18.Ceramic_(3).png" alt=""/>
-                                  <div class="p-status popular">popular</div>
+                                  <div class="p-status sale">sale</div>
                                   {/* <div class="hover-icon">
                                       <a href="img/products/img-4.jpg" class="pop-up"><img src="img/icons/zoom-plus.png"
                                               alt=""/></a>
@@ -391,9 +412,9 @@ const SaleList = () => {
                               </figure>
                               <div class="product-text">
                                   <a href="#">
-                                      <h6>Blue Dress with details</h6>
+                                      <h6>세라믹 그릇 세트</h6>
                                   </a>
-                                  <p>$35.50</p>
+                                  <p>99,000원</p>
                               </div>
                           </div>
                       </div>
