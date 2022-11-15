@@ -93,7 +93,7 @@ const Home = () =>{
           <div class="row text-center pt-3">
               <div class="col-lg-6 m-auto">
                   <h1 class="h1">best of the month</h1>
-                  <p> 이달의 추천 상품과 브랜드를 구경해 보세요!</p>
+                  <p> 이달의 브랜드를 구경해 보세요!</p>
               </div>
           </div>
           <div class="row">
@@ -104,7 +104,7 @@ const Home = () =>{
               </div>
               <div class="col-12 col-md-4 p-5 mt-3">
                   <a href="#"><img src="/img/LogoData/29.Photo_at.png" class="rounded-circle img-fluid border"/></a>
-                  <h2 class="h5 text-center mt-3 mb-3">PHOTO at</h2>
+                  <h2 class="h5 text-center mt-3 mb-3">PHOTO At</h2>
                   <p class="text-center"><a class="btn btn-success">보러가기</a></p>
               </div>
               <div class="col-12 col-md-4 p-5 mt-3">
@@ -155,7 +155,8 @@ const Home = () =>{
 
             <div class="karl-projects-menu mb-100">
                 <div class="text-center portfolio-menu">
-                    <button class="btn active" data-filter="*">모든상품</button>
+                  {/* active 가 움직여야 함. */}
+                    <button class="btn" data-filter="*">모든상품</button>
                     <button class="btn" data-filter=".bridal-shower">브라이덜 샤워</button>
                     <button class="btn" data-filter=".birth">출생</button>
                     <button class="btn" data-filter=".birthday">생일</button>
@@ -176,14 +177,14 @@ const Home = () =>{
                     {/* 1~3 시작 */}
                     <div class="col-12 col-sm-6 col-md-4 single_gallery_item Pregnant wow fadeInUpBig" data-wow-delay="0.2s">
                         <div class="product-img">
-                            <img src="/img/DummyImageData/7.Nuts_Bomb_(2).png" alt=""/>
+                            <img src="/img/DummyImageData/29.Photo_at.png" alt=""/>
                             <div class="product-quicview">
                                 <a href="#" data-toggle="modal" data-target="#quickview"><i class="ti-plus"></i></a>
                             </div>
                         </div>
                         <div class="product-description">
-                            <h4 class="product-price">$39.90</h4>
                             <p>Jeans midi cocktail dress</p>
+                            <h4 class="product-price">$39.90</h4>
                             <a href="#" class="add-to-cart-btn">장바구니 담기</a>
                         </div>
                     </div>
@@ -195,8 +196,8 @@ const Home = () =>{
                             </div>
                         </div>
                         <div class="product-description">
-                            <h4 class="product-price">$39.90</h4>
                             <p>Jeans midi cocktail dress</p>
+                            <h4 class="product-price">$39.90</h4>
                             <a href="#" class="add-to-cart-btn">장바구니 담기</a>
                         </div>
                     </div>
@@ -208,8 +209,8 @@ const Home = () =>{
                             </div>
                         </div>
                         <div class="product-description">
-                            <h4 class="product-price">$39.90</h4>
                             <p>Jeans midi cocktail dress</p>
+                            <h4 class="product-price">$39.90</h4>
                             <a href="#" class="add-to-cart-btn">장바구니 담기</a>
                         </div>
                     </div>
@@ -226,8 +227,8 @@ const Home = () =>{
                             </div>
                         </div>
                         <div class="product-description">
-                            <h4 class="product-price">$39.90</h4>
                             <p>Jeans midi cocktail dress</p>
+                            <h4 class="product-price">$39.90</h4>
                             <a href="#" class="add-to-cart-btn">장바구니 담기</a>
                         </div>
                     </div>
@@ -239,8 +240,8 @@ const Home = () =>{
                             </div>
                         </div>
                         <div class="product-description">
-                            <h4 class="product-price">$39.90</h4>
                             <p>Jeans midi cocktail dress</p>
+                            <h4 class="product-price">$39.90</h4>
                             <a href="#" class="add-to-cart-btn">장바구니 담기</a>
                         </div>
                     </div>
@@ -253,8 +254,8 @@ const Home = () =>{
                             </div>
                         </div>
                         <div class="product-description">
-                            <h4 class="product-price">$39.90</h4>
                             <p>Jeans midi cocktail dress</p>
+                            <h4 class="product-price">$39.90</h4>
                             <a href="#" class="add-to-cart-btn">장바구니 담기</a>
                         </div>
                     </div>
@@ -270,8 +271,8 @@ const Home = () =>{
                             </div>
                         </div>
                         <div class="product-description">
-                            <h4 class="product-price">$39.90</h4>
                             <p>Jeans midi cocktail dress</p>
+                            <h4 class="product-price">$39.90</h4>
                             <a href="#" class="add-to-cart-btn">장바구니 담기</a>
                         </div>
                     </div>
@@ -283,8 +284,8 @@ const Home = () =>{
                             </div>
                         </div>
                         <div class="product-description">
-                            <h4 class="product-price">$39.90</h4>
                             <p>Jeans midi cocktail dress</p>
+                            <h4 class="product-price">$39.90</h4>
                             <a href="#" class="add-to-cart-btn">장바구니 담기</a>
                         </div>
                     </div>
@@ -296,8 +297,8 @@ const Home = () =>{
                             </div>
                         </div>
                         <div class="product-description">
-                            <h4 class="product-price">$39.90</h4>
                             <p>Jeans midi cocktail dress</p>
+                            <h4 class="product-price">$39.90</h4>
                             <a href="#" class="add-to-cart-btn">장바구니 담기</a>
                         </div>
                     </div>
