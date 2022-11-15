@@ -53,29 +53,29 @@ const Home = () =>{
       </div>
       </section>
 
-    {/* Giftpack API가 들어갈 곳  */}
+      {/* Giftpack API가 들어갈 곳  */}
+      {/* featurette */}
       <section>
-        <div class="container mb-4">
-          {/* featurette */}
-          <div class="row">
+        <div class="second-container mb-4">
+          <div>
             <div class="col-md-7">
               <p class="text-start">구미님의 연령대 사람들이 고른 상품</p>
             </div>
-            <Link to={"/SaleList"} className="text-center align-middle Age-products">보러가기</Link>
+            <Link to={"/SaleList"} className="Age-products">보러가기</Link>
+            <div className="Homepage-Featured-Product-Image-Container">test</div>
             <div>
-              
             </div>
           </div>
 
         
-
-          <div class="row featurette">
+          {/*  featurette */}
+          <div class="row">
             <div class="col-md-7 order-md-2">
               <h2 class="text-start">동심원이 추천하는 선물</h2>
               <p class="text-start">기프트팩 api</p>
             </div>
             <div class="col-md-5 order-md-1">
-              <svg class="rounded bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="573" height="385" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+              <svg class="rounded bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="400" height="280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
             </div>
           </div>
         </div>
@@ -84,13 +84,16 @@ const Home = () =>{
 
       {/* 3개 이미지 카드 위치 */}
       <section>
-        
+        <div className="third-container">
+          test
+        </div>
       </section>
 
 
 
-
-      <Sell_Table/>
+      <section>
+        <Sell_Table/>
+      </section>
         {/* <section class="py-5 text-center container">
           <SellTableStyle>
           </SellTableStyle>
