@@ -85,7 +85,17 @@ const Home = () =>{
       {/* 3개 이미지 카드 위치 */}
       <section>
         <div className="third-container">
-          test
+
+          <div className="positive-evaluation">긍정 평가</div>
+          <ul className="period">
+            <li>주/</li>
+            <li>한달/</li>
+            <li>분기</li>
+          </ul>
+
+          <div>이미지1</div>
+          <div>이미지2</div>
+          <div>이미지3</div>
         </div>
       </section>
 
