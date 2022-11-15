@@ -168,7 +168,7 @@ const Login = ({userInfoHandler}) => {
 
           <MDBCol col='6' className="mb-5">
             <div className="d-flex flex-column  justify-content-center h-100 mb-4">
-              <img src="img/SignPage/LoginPage.png" class="img-fluid" alt="이미지가 없습니다." />
+              <img src="/img/SignPage/LoginPage_2.png" class="img-fluid" alt="이미지가 없습니다." />
             </div>
 
           </MDBCol>
