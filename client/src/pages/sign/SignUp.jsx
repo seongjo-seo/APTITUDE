@@ -131,10 +131,11 @@ const SignUp = () => {
                           <input type="text" placeholder="상세 주소를 입력해주세요"/>
                         </SignUpStyle>
                       </div>
-
-                      <button className="join-btn btn-info btn btn-outline-primary" ref={signBtn} onClick={clickSubmitBtn}>
+{/* btn btn-outline-primary */}
+{/* ref={signBtn} onClick={clickSubmitBtn} */}
+                      <Link to={'/Login'} className="join-btn btn-info" >
                         회원가입
-                      </button>
+                      </Link>
                       <hr className="hr-size text-center"/>
                   </form>
 

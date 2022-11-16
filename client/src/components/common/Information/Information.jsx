@@ -39,7 +39,7 @@ const Information = () =>{
                       </div>
                   </div>
                   <h4><a href="#">NOTE WING</a></h4>
-                  <p>Lorem ipsum dolor sit</p>
+                  <p>BTS 노래 Butter 오르골 신제품 판매합니다!</p>
                   <a class="link" href="#">보러가기</a>
               </div>
               <div class="col-sm-4 sm-margin-b-50">
@@ -49,7 +49,7 @@ const Information = () =>{
                       </div>
                   </div>
                   <h4><a href="#">LEAF PLANT</a></h4>
-                  <p>Lorem ipsum dolor sit</p>
+                  <p>겨울에도 만개하는 꽃나무 신상 업데이트!</p>
                   <a class="link" href="#">보러가기</a>
               </div>
           </div>
@@ -62,7 +62,7 @@ const Information = () =>{
                       </div>
                   </div>
                   <h4><a href="#">GODDESS</a></h4>
-                  <p>Lorem ipsum dolor sit</p>
+                  <p>백화점 판매 상품이 아닐 시 100%환불</p>
                   <a class="link" href="#">보러가기</a>
               </div>
               <div class="col-sm-4 sm-margin-b-50">
@@ -72,7 +72,7 @@ const Information = () =>{
                       </div>
                   </div>
                   <h4><a href="#">KITCHEN DELICIOUS</a></h4>
-                  <p>Lorem ipsum dolor sit</p>
+                  <p>주부님들이 좋아하는 주방 용품집</p>
                   <a class="link" href="#">보러가기</a>
               </div>
               <div class="col-sm-4 sm-margin-b-50">
@@ -82,7 +82,7 @@ const Information = () =>{
                       </div>
                   </div>
                   <h4><a href="#">OLIVIA SKINCARE</a></h4>
-                  <p>Lorem ipsum dolor sit</p>
+                  <p>아토피 피부 1등 상품!</p>
                   <a class="link" href="#">보러가기</a>
               </div>
           </div>

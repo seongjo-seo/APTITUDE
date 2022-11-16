@@ -19,8 +19,8 @@ const ReviewList = () => {
 					<div class="row d-flex justify-content-center">
 						<div class="menu-content pb-60 col-lg-10">
 							<div class="title text-center">
-								<h1 class="mb-10">What kind of Coffee we serve for you</h1>
-								<p>Who are in extremely love with eco friendly system.</p>
+								<h1 class="mb-10">리뷰</h1>
+								<p>현재 UI단계의 임시 페이지입니다.</p>
 							</div>
 						</div>
 					</div>
@@ -84,7 +84,7 @@ const ReviewList = () => {
 							</div>
 						</div>
 						<div class="col-lg-3">
-							<div class="single-menu">.
+							<div class="single-menu">
               <img src="/img/HomePage/CarouselTwo.png"  width="100%" height="100%"  class="bd-placeholder-img" alt="..."/>
 								<div class="title-div justify-content-between d-flex">
 									<h4>Mocha</h4>

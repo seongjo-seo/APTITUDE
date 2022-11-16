@@ -86,12 +86,11 @@ const Home = () =>{
                                   <AiTwotoneStar className="star-scope"/>
                                   <AiTwotoneStar className="star-scope"/>
                                 </li>
-                                <li class="text-muted text-right">72,000원</li>
+                                <li class="text-muted text-right">20,000원</li>
                             </ul>
                             <a href="/" class="h2 text-decoration-none text-dark">도자기 그릇 세트</a>
-                            <p class="card-text">
-                                
-                            </p>
+                            <br/>
+                            <p class="card-text">옹기 보다 훨씬 우수한 보온력</p>
                             <p class="text-muted">리뷰 (215)</p>
                         </div>
                     </div>
@@ -110,20 +109,20 @@ const Home = () =>{
                                   <AiTwotoneStar className="star-scope"/>
                                   <AiTwotoneStar className="harp-star-scope"/>
                                 </li>
-                                <li class="text-muted text-right">$480.00</li>
+                                <li class="text-muted text-right">15,000원</li>
                             </ul>
-                            <a href="/" class="h2 text-decoration-none text-dark">Yashica DSLR</a>
+                            <a href="/" class="h2 text-decoration-none text-dark">섬유탈취제</a>
                             <p class="card-text">
-                                Aenean gravida dignissim finibus. Nullam ipsum diam, posuere vitae pharetra sed, commodo ullamcorper.
+                            청량한 피톤치드 향 섬유탈취제
                             </p>
-                            <p class="text-muted">리뷰 (430)</p>
+                            <p class="text-muted">리뷰 (76)</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
                         <a href="/">
-                            <img src="/img/DummyImageData/29.Photo_at_(3).png" class="card-img-top" alt="..."/>
+                            <img src="/img/DummyImageData/6.Macarons.png" class="card-img-top" alt="..."/>
                         </a>
                         <div class="card-body">
                             <ul class="list-unstyled d-flex justify-content-between">
@@ -134,13 +133,11 @@ const Home = () =>{
                                   <AiTwotoneStar className="star-scope"/>
                                   <AiTwotoneStar className="star-scope"/>
                                 </li>
-                                <li class="text-muted text-right">$360.00</li>
+                                <li class="text-muted text-right">18,000원</li>
                             </ul>
-                            <a href="/" class="h2 text-decoration-none text-dark">Summer Addides Shoes</a>
-                            <p class="card-text">
-                                Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et scelerisque ipsum lobortis nec.
-                            </p>
-                            <p class="text-muted">리뷰 (62)</p>
+                            <a href="/" class="h2 text-decoration-none text-dark">마카롱</a>
+                            <p class="card-text">햄버거 만큼 뚱뚱한 뚱카롱</p>
+                            <p class="text-muted">리뷰 (146)</p>
                         </div>
                     </div>
                 </div>
@@ -229,40 +226,40 @@ const Home = () =>{
         <div class="container">
           <div class="container">
             <div class="row align-items-center">
-              <div class="col-md-5 order-md-1 text-center text-md-start"><img class="img-fluid mb-4" src="/img/DummyImageData/29.Photo_at_(3).png" alt="" /></div>
+              <div class="col-md-5 order-md-1 text-center text-md-start"><img class="img-fluid mb-4" src="/img/ReviewPage/8.png" alt="" /></div>
               <div class="col-md-6 text-center text-md-start">
-                <h6 class="fw-bold fs-4 display-3 lh-sm">Ultimate features<br/>that we built</h6>
-                <p class="my-4 pe-xl-5"> The rise of mobile devices transforms the way we consume information entirely.</p>
+                <h6 class="fw-bold fs-4 display-3 lh-sm">추천 선물 리뷰</h6>
+                <p class="my-4 pe-xl-5">이전에 경험한 고객들의 리뷰를 확인해보세요-!</p>
                 <div class="row">
                   <div class="col-md-6">
                     <div class="mb-4">
-                      <div class="py-4"><img class="img-fluid" src="/img/DummyImageData/29.Photo_at_(3).png" width="90" alt="" /></div>
-                      <h5 class="fw-bold text-undefined">App Development</h5>
-                      <p class="mt-2 mb-0">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                      <div class="py-4"><img class="img-fluid" src="/img/ReviewPage/8.png" width="90" alt="" /></div>
+                      <h5 class="fw-bold text-undefined">텐트</h5>
+                      <p class="mt-2 mb-0">집에서 사용하는데, 보온용으로 좋은 것 같아요 ㅎㅎ 진짜 유용하게 잘 쓰고 있답니다 ㅎㅎ!</p>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-4">
-                      <div class="py-4"><img class="img-fluid" src="/img/DummyImageData/29.Photo_at_(3).png" width="90" alt="" /></div>
-                      <h5 class="fw-bold text-undefined">UX Planning</h5>
-                      <p class="mt-2 mb-0">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                      <div class="py-4"><img class="img-fluid" src="/img/ReviewPage/3.png" width="90" alt="" /></div>
+                      <h5 class="fw-bold text-undefined">식물</h5>
+                      <p class="mt-2 mb-0">식물 선물 받고 집에 싱그러움이 생겼어요! 물도 자주 안줘도 괜찮아서 키우기 쉬운 녀석이네용~</p>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-4">
-                      <div class="py-4"><img class="img-fluid" src="/img/DummyImageData/29.Photo_at_(3).png" width="90" alt="" /></div>
-                      <h5 class="fw-bold text-undefined">Cloud Storage</h5>
-                      <p class="mt-2 mb-0">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                      <div class="py-4"><img class="img-fluid" src="/img/ReviewPage/4.png" width="90" alt="" /></div>
+                      <h5 class="fw-bold text-undefined">소금</h5>
+                      <p class="mt-2 mb-0">세계제일 짠돌이 스크루지 영감님도 울고 갈 만큼 넘 맛있는 소금이에요! 저는 넘 만족!</p>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-4">
-                      <div class="py-4"><img class="img-fluid" src="/img/DummyImageData/29.Photo_at_(3).png" width="90" alt="" /></div>
-                      <h5 class="fw-bold text-undefined">Customer support</h5>
-                      <p class="mt-2 mb-0">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                      <div class="py-4"><img class="img-fluid" src="/img/ReviewPage/10.png" width="90" alt="" /></div>
+                      <h5 class="fw-bold text-undefined">곰인형</h5>
+                      <p class="mt-2 mb-0">너무 부드러운 촉감이 좋은 것 같아요. 자녀가 태어나면 애착인형이 될 것 같습니다!</p>
                     </div>
                   </div>
-                </div><a class="btn btn-lg btn-primary rounded-pill hover-top" href="#" role="button">See all</a>
+                </div><a class="btn btn-lg btn-primary rounded-pill hover-top" href="#" role="button">더 보기</a>
               </div>
             </div>
           </div>
@@ -278,8 +275,6 @@ const Home = () =>{
       <section className="dd">
         <div className="container py-5">
           <div class="row text-center pt-3">
-                  {/* <h1 class="h1"></h1> */}
-                  {/* <p> 이달의 브랜드를 구경해 보세요!</p> */}
               <div class="col-lg-6 m-auto">
                   <div className="best-of-the-month">이달의 추천 브랜드</div>
               </div>
@@ -370,8 +365,8 @@ const Home = () =>{
                             </div>
                         </div>
                         <div class="product-description">
-                            <p>Jeans midi cocktail dress</p>
-                            <h4 class="product-price">$39.90</h4>
+                            <p>모공까지 보이는 필름카메라</p>
+                            <h4 class="product-price">30,000원</h4>
                             <a href="#" class="add-to-cart-btn">장바구니 담기</a>
                         </div>
                     </div>
@@ -383,8 +378,8 @@ const Home = () =>{
                             </div>
                         </div>
                         <div class="product-description">
-                            <p>Jeans midi cocktail dress</p>
-                            <h4 class="product-price">$39.90</h4>
+                            <p>건성 피부에게 찰떡 수분크림</p>
+                            <h4 class="product-price">20,000원</h4>
                             <a href="#" class="add-to-cart-btn">장바구니 담기</a>
                         </div>
                     </div>
@@ -396,8 +391,8 @@ const Home = () =>{
                             </div>
                         </div>
                         <div class="product-description">
-                            <p>Jeans midi cocktail dress</p>
-                            <h4 class="product-price">$39.90</h4>
+                            <p>고급 본차이나 식기</p>
+                            <h4 class="product-price">50,000원</h4>
                             <a href="#" class="add-to-cart-btn">장바구니 담기</a>
                         </div>
                     </div>
@@ -414,8 +409,8 @@ const Home = () =>{
                             </div>
                         </div>
                         <div class="product-description">
-                            <p>Jeans midi cocktail dress</p>
-                            <h4 class="product-price">$39.90</h4>
+                            <p>봄 향기 가득 향수</p>
+                            <h4 class="product-price">35,000원</h4>
                             <a href="#" class="add-to-cart-btn">장바구니 담기</a>
                         </div>
                     </div>
@@ -427,8 +422,8 @@ const Home = () =>{
                             </div>
                         </div>
                         <div class="product-description">
-                            <p>Jeans midi cocktail dress</p>
-                            <h4 class="product-price">$39.90</h4>
+                            <p>남성용 춉챱챱 스킨로션</p>
+                            <h4 class="product-price">20,000원</h4>
                             <a href="#" class="add-to-cart-btn">장바구니 담기</a>
                         </div>
                     </div>
@@ -441,8 +436,8 @@ const Home = () =>{
                             </div>
                         </div>
                         <div class="product-description">
-                            <p>Jeans midi cocktail dress</p>
-                            <h4 class="product-price">$39.90</h4>
+                            <p>우영우 헤드셋</p>
+                            <h4 class="product-price">35,000원</h4>
                             <a href="#" class="add-to-cart-btn">장바구니 담기</a>
                         </div>
                     </div>
@@ -458,8 +453,8 @@ const Home = () =>{
                             </div>
                         </div>
                         <div class="product-description">
-                            <p>Jeans midi cocktail dress</p>
-                            <h4 class="product-price">$39.90</h4>
+                            <p>미끌미끌 바디워시&로션</p>
+                            <h4 class="product-price">28,000원</h4>
                             <a href="#" class="add-to-cart-btn">장바구니 담기</a>
                         </div>
                     </div>
@@ -471,8 +466,8 @@ const Home = () =>{
                             </div>
                         </div>
                         <div class="product-description">
-                            <p>Jeans midi cocktail dress</p>
-                            <h4 class="product-price">$39.90</h4>
+                            <p>친환경 비건 욕실용품</p>
+                            <h4 class="product-price">31,000원</h4>
                             <a href="#" class="add-to-cart-btn">장바구니 담기</a>
                         </div>
                     </div>
@@ -484,8 +479,8 @@ const Home = () =>{
                             </div>
                         </div>
                         <div class="product-description">
-                            <p>Jeans midi cocktail dress</p>
-                            <h4 class="product-price">$39.90</h4>
+                            <p>최고급 면으로 만든 수건</p>
+                            <h4 class="product-price">24,000원</h4>
                             <a href="#" class="add-to-cart-btn">장바구니 담기</a>
                         </div>
                     </div>

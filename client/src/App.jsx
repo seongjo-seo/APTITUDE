@@ -38,6 +38,7 @@ const App = () => {
           <Route path="/SaleList/SaleDetail" element={<SaleDetail />} />
           {/* 할인 상품 페이지 */}
           <Route path="/DiscountProduct" element={<DiscountProduct />} />
+          {/* 공지 */}
           <Route path="/Information" element={<Information />} />
           {/* 일반 회원 마이페이지 */}
           <Route path="/member/Mypage" element={<Mypage />} />
