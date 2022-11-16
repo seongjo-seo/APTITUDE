@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.js";
 
 import { Link } from "react-router-dom";
-
+import {AiTwotoneStar} from "react-icons/ai";
 import Header from "../components/Header";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer"
@@ -13,7 +13,6 @@ import "./Home/HomeTemplate.css";
 import "./Home/Open.css";
 
 import "./Home/OpenJs/active.js";
-
 
 
 
@@ -81,11 +80,11 @@ const Home = () =>{
                         <div class="card-body">
                             <ul class="list-unstyled d-flex justify-content-between">
                                 <li>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-warning fa fa-star"></i>
+                                  <AiTwotoneStar className="star-scope"/>
+                                  <AiTwotoneStar className="star-scope"/>
+                                  <AiTwotoneStar className="star-scope"/>
+                                  <AiTwotoneStar className="star-scope"/>
+                                  <AiTwotoneStar className="star-scope"/>
                                 </li>
                                 <li class="text-muted text-right">$240.00</li>
                             </ul>
@@ -93,7 +92,7 @@ const Home = () =>{
                             <p class="card-text">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt in culpa qui officia deserunt.
                             </p>
-                            <p class="text-muted">Reviews (24)</p>
+                            <p class="text-muted">리뷰 (215)</p>
                         </div>
                     </div>
                 </div>
@@ -105,11 +104,11 @@ const Home = () =>{
                         <div class="card-body">
                             <ul class="list-unstyled d-flex justify-content-between">
                                 <li>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-muted fa fa-star"></i>
+                                  <AiTwotoneStar className="star-scope"/>
+                                  <AiTwotoneStar className="star-scope"/>
+                                  <AiTwotoneStar className="star-scope"/>
+                                  <AiTwotoneStar className="star-scope"/>
+                                  <AiTwotoneStar className="harp-star-scope"/>
                                 </li>
                                 <li class="text-muted text-right">$480.00</li>
                             </ul>
@@ -117,7 +116,7 @@ const Home = () =>{
                             <p class="card-text">
                                 Aenean gravida dignissim finibus. Nullam ipsum diam, posuere vitae pharetra sed, commodo ullamcorper.
                             </p>
-                            <p class="text-muted">Reviews (48)</p>
+                            <p class="text-muted">리뷰 (430)</p>
                         </div>
                     </div>
                 </div>
@@ -129,11 +128,11 @@ const Home = () =>{
                         <div class="card-body">
                             <ul class="list-unstyled d-flex justify-content-between">
                                 <li>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-warning fa fa-star"></i>
+                                  <AiTwotoneStar className="star-scope"/>
+                                  <AiTwotoneStar className="star-scope"/>
+                                  <AiTwotoneStar className="star-scope"/>
+                                  <AiTwotoneStar className="star-scope"/>
+                                  <AiTwotoneStar className="star-scope"/>
                                 </li>
                                 <li class="text-muted text-right">$360.00</li>
                             </ul>
@@ -141,7 +140,7 @@ const Home = () =>{
                             <p class="card-text">
                                 Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et scelerisque ipsum lobortis nec.
                             </p>
-                            <p class="text-muted">Reviews (74)</p>
+                            <p class="text-muted">리뷰 (62)</p>
                         </div>
                     </div>
                 </div>
@@ -150,8 +149,47 @@ const Home = () =>{
       </section>
     {/* 추천 상품 종료 */}
 
+
+
+    {/* <section class="pt-3 pb-4" id="count-stats">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 mx-auto py-3">
+            <div class="row">
+
+              <div class="col-md-4 position-relative">
+                <div class="p-3 text-center">
+                  <h1 class="text-gradient text-primary"><span id="state1" countTo="70">0</span>+</h1>
+                  <h5 class="mt-3">매칭 갯수</h5>
+                  <p class="text-sm font-weight-normal">From buttons, to inputs, navbars, alerts or cards, you are covered</p>
+                </div>
+                <hr class="vertical dark"/>
+              </div>
+
+              <div class="col-md-4 position-relative">
+                <div class="p-3 text-center">
+                  <h1 class="text-gradient text-primary"> <span id="state2" countTo="15">0</span>+</h1>
+                  <h5 class="mt-3">선물 갯수</h5>
+                  <p class="text-sm font-weight-normal">Mix the sections, change the colors and unleash your creativity</p>
+                </div>
+                <hr class="vertical dark"/>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> */}
+
+
+
+
+
+
+
+
     {/* 컬러 카운터 시작 */}
-    <section className="color-container">
+    {/* <section className="color-container">
       <div class="counter">
           <div class="container">
               <div class="row">
@@ -177,45 +215,60 @@ const Home = () =>{
                   </div>
                   <div class="col-lg-6 col-xl-7">
                       <div class="image-container">
-                          <img class="img-fluid" src="/img/LogoData/14.Derek_Coffee.png" alt="이미지가 없습니다."/>
+                          <img class="img-fluid" src="/img/temporaryLogo.png" style={{width: '350px'}} alt="이미지가 없습니다."/>
                       </div>
                   </div>
               </div>
           </div>
       </div>
-    </section>
+    </section> */}
     {/* 컬러 카운터 끝 */}
 
 
-
-
-
-
-      {/* Giftpack API가 들어갈 곳  */}
-      {/* featurette */}
-            {/* class="col-md-7" */}
-      {/* <section>
-        <div class="second-container">
-          <div className="divStyled">
-            <div>
-              <p class="text-start">구미님의 연령대 사람들이 고른 상품</p>
-            </div>
-            <Link to={"/SaleList"}  className="Age-products-Container"><p>보러가기</p></Link>
-            <div className="Homepage-Featured-Product-Image-Container">test</div>
-            <div>
-            </div>
-          </div> */}
-          {/* class="row" featurette */}
-            {/* class="col-md-7 order-md-2" */}
-          {/* <div>
-            <div>
-              <h2 class="text-start">동심원이 추천하는 선물</h2>
-              <p class="text-start">기프트팩 api</p>
+{/* class="container" */}
+    <section className="info-container">
+        <div class="container">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-5 order-md-1 text-center text-md-start"><img class="img-fluid mb-4" src="assets/img/illustrations/ultimate-feature.png" alt="" /></div>
+              <div class="col-md-6 text-center text-md-start">
+                <h6 class="fw-bold fs-4 display-3 lh-sm">Ultimate features<br />that we built</h6>
+                <p class="my-4 pe-xl-5"> The rise of mobile devices transforms the way we consume information entirely.</p>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="mb-4">
+                      <div class="py-4"><img class="img-fluid" src="assets/img/illustrations/app.png" width="90" alt="" /></div>
+                      <h5 class="fw-bold text-undefined">App Development</h5>
+                      <p class="mt-2 mb-0">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-4">
+                      <div class="py-4"><img class="img-fluid" src="assets/img/illustrations/ux.png" width="90" alt="" /></div>
+                      <h5 class="fw-bold text-undefined">UX Planning</h5>
+                      <p class="mt-2 mb-0">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-4">
+                      <div class="py-4"><img class="img-fluid" src="assets/img/illustrations/cloud.png" width="90" alt="" /></div>
+                      <h5 class="fw-bold text-undefined">Cloud Storage</h5>
+                      <p class="mt-2 mb-0">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-4">
+                      <div class="py-4"><img class="img-fluid" src="assets/img/illustrations/support.png" width="90" alt="" /></div>
+                      <h5 class="fw-bold text-undefined">Customer support</h5>
+                      <p class="mt-2 mb-0">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                    </div>
+                  </div>
+                </div><a class="btn btn-lg btn-primary rounded-pill hover-top" href="#" role="button">See all</a>
+              </div>
             </div>
           </div>
         </div>
-      </section> */}
-
+      </section>
 
 
 
@@ -254,30 +307,6 @@ const Home = () =>{
 
 
 
-
-
-
-
-
-
-      {/* 3개 이미지 카드 위치 */}
-        {/* 여기서 가로 값이 초과. */}
-      {/* <section>
-        <div className="third-container">
-          <div className="inner-container">
-              <div className="positive-evaluation">긍정 평가</div>
-            <ul className="period">
-              <li>주/</li>
-              <li>한달/</li>
-              <li>분기</li>
-            </ul>
-
-            <div className="First-image-in-third-container">이미지1</div>
-            <div className="Second-image-in-third-container">이미지2</div>
-            <div className="Third-image-in-third-container">이미지3</div>
-          </div>
-        </div>
-      </section> */}
 
 
 

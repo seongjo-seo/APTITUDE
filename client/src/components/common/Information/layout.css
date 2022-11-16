@@ -584,7 +584,7 @@ fieldset[disabled] .btn-theme {
 /*------------------------------------------------------------------
     [Carousel]
 ------------------------------------------------------------------*/
-.carousel-indicators {
+/* .carousel-indicators {
   left: auto;
   width: auto;
   padding-left: 0;
@@ -611,7 +611,7 @@ fieldset[disabled] .btn-theme {
   .carousel-title {
     font-size: 60px;
   }
-}
+} */
 
 /*----------------------------------
   Custome Style of Info Window
