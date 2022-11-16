@@ -100,7 +100,7 @@ const Footer = () => {
         </MDBContainer>
 
         <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.3)' }}>
-          © 2020 Copyright : 2022 성조
+          Copyright 2022 (주)성조
         </div>
       </MDBFooter>
     </FooterStyle>
