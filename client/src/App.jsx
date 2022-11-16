@@ -13,6 +13,7 @@ import SellerMypage from "./pages/mypage/salesMember/SellerMypage";
 import Mypage from "./pages/mypage/member/Mypage";
 import Invitation from "./pages/mypage/member/invitation/Invitation.jsx";
 import Schedule from "./pages/mypage/member/schedule/Schedule";
+import ReviewList from "./pages/review/ReviewList";
 
 /**
  *  상태는 BrowserRouter 경로는 Link
@@ -48,6 +49,7 @@ const App = () => {
           <Route path="/Mypage/schedule" element={<Schedule/>}/>
         </Routes>
         <Routes>
+          <Route path="/ReviewList" element={<ReviewList />} />
           {/* 아이디 찾기 후순위 */}
           <Route path="/Login/FindId" element={<FindId />} />
         </Routes>

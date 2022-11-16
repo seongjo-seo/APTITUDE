@@ -86,11 +86,11 @@ const Home = () =>{
                                   <AiTwotoneStar className="star-scope"/>
                                   <AiTwotoneStar className="star-scope"/>
                                 </li>
-                                <li class="text-muted text-right">$240.00</li>
+                                <li class="text-muted text-right">72,000원</li>
                             </ul>
-                            <a href="/" class="h2 text-decoration-none text-dark">Gym Weight</a>
+                            <a href="/" class="h2 text-decoration-none text-dark">도자기 그릇 세트</a>
                             <p class="card-text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt in culpa qui officia deserunt.
+                                
                             </p>
                             <p class="text-muted">리뷰 (215)</p>
                         </div>
@@ -112,7 +112,7 @@ const Home = () =>{
                                 </li>
                                 <li class="text-muted text-right">$480.00</li>
                             </ul>
-                            <a href="/" class="h2 text-decoration-none text-dark">Cloud Nike Shoes</a>
+                            <a href="/" class="h2 text-decoration-none text-dark">Yashica DSLR</a>
                             <p class="card-text">
                                 Aenean gravida dignissim finibus. Nullam ipsum diam, posuere vitae pharetra sed, commodo ullamcorper.
                             </p>
@@ -225,40 +225,39 @@ const Home = () =>{
     {/* 컬러 카운터 끝 */}
 
 
-{/* class="container" */}
     <section className="info-container">
         <div class="container">
           <div class="container">
             <div class="row align-items-center">
-              <div class="col-md-5 order-md-1 text-center text-md-start"><img class="img-fluid mb-4" src="assets/img/illustrations/ultimate-feature.png" alt="" /></div>
+              <div class="col-md-5 order-md-1 text-center text-md-start"><img class="img-fluid mb-4" src="/img/DummyImageData/29.Photo_at_(3).png" alt="" /></div>
               <div class="col-md-6 text-center text-md-start">
-                <h6 class="fw-bold fs-4 display-3 lh-sm">Ultimate features<br />that we built</h6>
+                <h6 class="fw-bold fs-4 display-3 lh-sm">Ultimate features<br/>that we built</h6>
                 <p class="my-4 pe-xl-5"> The rise of mobile devices transforms the way we consume information entirely.</p>
                 <div class="row">
                   <div class="col-md-6">
                     <div class="mb-4">
-                      <div class="py-4"><img class="img-fluid" src="assets/img/illustrations/app.png" width="90" alt="" /></div>
+                      <div class="py-4"><img class="img-fluid" src="/img/DummyImageData/29.Photo_at_(3).png" width="90" alt="" /></div>
                       <h5 class="fw-bold text-undefined">App Development</h5>
                       <p class="mt-2 mb-0">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-4">
-                      <div class="py-4"><img class="img-fluid" src="assets/img/illustrations/ux.png" width="90" alt="" /></div>
+                      <div class="py-4"><img class="img-fluid" src="/img/DummyImageData/29.Photo_at_(3).png" width="90" alt="" /></div>
                       <h5 class="fw-bold text-undefined">UX Planning</h5>
                       <p class="mt-2 mb-0">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-4">
-                      <div class="py-4"><img class="img-fluid" src="assets/img/illustrations/cloud.png" width="90" alt="" /></div>
+                      <div class="py-4"><img class="img-fluid" src="/img/DummyImageData/29.Photo_at_(3).png" width="90" alt="" /></div>
                       <h5 class="fw-bold text-undefined">Cloud Storage</h5>
                       <p class="mt-2 mb-0">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-4">
-                      <div class="py-4"><img class="img-fluid" src="assets/img/illustrations/support.png" width="90" alt="" /></div>
+                      <div class="py-4"><img class="img-fluid" src="/img/DummyImageData/29.Photo_at_(3).png" width="90" alt="" /></div>
                       <h5 class="fw-bold text-undefined">Customer support</h5>
                       <p class="mt-2 mb-0">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
                     </div>
