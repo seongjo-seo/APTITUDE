@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Nav from "../../../components/Nav";
+import {AiOutlineUser} from "react-icons/ai";
+import {BiMessageRoundedError} from "react-icons/bi";
 
 import "./static/sb-admin-2.css";
 // import "./static/sb-admin-2.min.css";
@@ -8,7 +10,10 @@ import "./static/sb-admin-2.css";
 const Mypage = () => {
   return (
     <>
-    <Nav/>
+
+
+
+    {/* <Nav/> */}
       <div id="wrapper">
 
       {/* <!-- Sidebar --> */}
@@ -127,9 +132,126 @@ const Mypage = () => {
       </ul>
       {/* <!-- End of Sidebar --> */}
 
+{/* ------------------------------------------------------------------------------ */}
+{/* ------------------------------------------------------------------------------ */}
+{/* ------------------------------------------------------------------------------ */}
 
 
 
+    <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <i class="icon-layout menu-icon"></i>
+              <span class="menu-title">UI Elements</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="/">Buttons</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/">Dropdowns</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/">Typography</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
+              <i class="icon-columns menu-icon"></i>
+              <span class="menu-title">Form elements</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="form-elements">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">Basic Elements</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#" aria-expanded="false" aria-controls="charts">
+              <i class="icon-bar-graph menu-icon"></i>
+              <span class="menu-title">Charts</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="charts">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="#">ChartJs</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
+              <i class="icon-grid-2 menu-icon"></i>
+              <span class="menu-title">Tables</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="tables">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/tables/basic-table.html">Basic table</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
+              <i class="icon-contract menu-icon"></i>
+              <span class="menu-title">Icons</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="icons">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/icons/mdi.html">Mdi icons</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+              <i class="icon-head menu-icon"></i>
+              <span class="menu-title">User Pages</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="auth">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Login </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Register </a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#error" aria-expanded="false" aria-controls="error">
+              <i class="icon-ban menu-icon"></i>
+              <span class="menu-title">Error pages</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="error">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> 404 </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> 500 </a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/documentation/documentation.html">
+              <i class="icon-paper menu-icon"></i>
+              <span class="menu-title">Documentation</span>
+            </a>
+          </li>
+        </ul>
+    </nav>
+
+
+
+
+
+{/* ------------------------------------------------------------------------------ */}
+{/* ------------------------------------------------------------------------------ */}
+{/* ------------------------------------------------------------------------------ */}
+
+<section></section>
       {/* <!-- Content Wrapper --> */}
       <div id="content-wrapper" class="d-flex flex-column">
 
@@ -240,7 +362,8 @@ const Mypage = () => {
                       <li class="nav-item dropdown no-arrow mx-1">
                           <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              <i class="fas fa-envelope fa-fw"></i>
+                                <BiMessageRoundedError className="test" style={{width:"22", height:"22", viewBox:"0 0 22 22"}}/>
+                              {/* <i class="fas fa-envelope fa-fw">여기</i> */}
                               {/* <!-- Counter - Messages --> */}
                               <span class="badge badge-danger badge-counter">7</span>
                           </a>
@@ -302,11 +425,11 @@ const Mypage = () => {
 
                       {/* <!-- Nav Item - User Information --> */}
                       <li class="nav-item dropdown no-arrow">
-                          <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
-                              <img class="img-profile rounded-circle"
-                                  src="" alt="..."/>
+                          <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                {/* 사용자 이미지 */}
+                              {/* <img class="img-profile rounded-circle" src="" alt="..."/> */}
+                              <span class="mr-2 d-none d-lg-inline text-gray-600 small">user-img</span>
+                              <AiOutlineUser class="img-profile rounded-circle"/>
                           </a>
                           {/* <!-- Dropdown - User Information --> */}
                           <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
