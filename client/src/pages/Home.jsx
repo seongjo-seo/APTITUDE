@@ -16,6 +16,7 @@ import "./Home/OpenJs/active.js";
 
 
 
+
 /** 홈 화면 페이지 */
 const Home = () =>{
   return (
@@ -23,7 +24,7 @@ const Home = () =>{
     <div>
       <Header/>
       <Nav/>
-      <section>
+        <section>
           <div id="myCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -43,18 +44,148 @@ const Home = () =>{
               </div>
               <div class="carousel-item">
                 <img src="/img/HomePage/CarouselThree.png"  width="100%" height="100%"  class="bd-placeholder-img" alt="..."/>
-              </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+
+
+
+      {/* 추천 상품 시작 */}
+      <section>
+        <div class="container">
+            <div class="row text-center py-3">
+                <div class="col-lg-6 m-auto">
+                    <h2>이런 선물은 어떠신가요?</h2>
+                    <br/><br/><br/>
+                    <p>
+                    감사한 마음이 소중한 당신에게 닿을 수 있도록
+                    <br/>love what you have.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="/">
+                            <img src="/img/DummyImageData/19.Delicious_(2).png" class="card-img-top" alt="..."/>
+                        </a>
+                        <div class="card-body">
+                            <ul class="list-unstyled d-flex justify-content-between">
+                                <li>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                </li>
+                                <li class="text-muted text-right">$240.00</li>
+                            </ul>
+                            <a href="/" class="h2 text-decoration-none text-dark">Gym Weight</a>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt in culpa qui officia deserunt.
+                            </p>
+                            <p class="text-muted">Reviews (24)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="/">
+                            <img src="/img/DummyImageData/16.goddess_(3).png" class="card-img-top" alt="..."/>
+                        </a>
+                        <div class="card-body">
+                            <ul class="list-unstyled d-flex justify-content-between">
+                                <li>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                </li>
+                                <li class="text-muted text-right">$480.00</li>
+                            </ul>
+                            <a href="/" class="h2 text-decoration-none text-dark">Cloud Nike Shoes</a>
+                            <p class="card-text">
+                                Aenean gravida dignissim finibus. Nullam ipsum diam, posuere vitae pharetra sed, commodo ullamcorper.
+                            </p>
+                            <p class="text-muted">Reviews (48)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="/">
+                            <img src="/img/DummyImageData/29.Photo_at_(3).png" class="card-img-top" alt="..."/>
+                        </a>
+                        <div class="card-body">
+                            <ul class="list-unstyled d-flex justify-content-between">
+                                <li>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                </li>
+                                <li class="text-muted text-right">$360.00</li>
+                            </ul>
+                            <a href="/" class="h2 text-decoration-none text-dark">Summer Addides Shoes</a>
+                            <p class="card-text">
+                                Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et scelerisque ipsum lobortis nec.
+                            </p>
+                            <p class="text-muted">Reviews (74)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
       </section>
+    {/* 추천 상품 종료 */}
+
+    {/* 컬러 카운터 시작 */}
+    <section className="color-container">
+      <div class="counter">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-6 col-xl-5">
+                      <div class="text-container">
+                          <h2><span>동심원의 선물 만족도</span></h2>
+                          <p>선물을 만족한 사람들이에요</p>
+
+                          <div class="counter-container">
+                              <div class="counter-cell">
+                              
+                                  <div class="matching-person-count">0</div>
+                                  <div class="counter-info">동심원을 통한 매칭</div>
+                              </div>
+                              
+                              <div class="counter-cell red">
+                                  <div data-purecounter-start="0" data-purecounter-end="3189" data-purecounter-duration="2" class="purecounter">1</div>
+                                  <div class="counter-info">선택한 선물 갯수</div>
+                              </div>
+                          </div>
+
+                      </div>
+                  </div>
+                  <div class="col-lg-6 col-xl-7">
+                      <div class="image-container">
+                          <img class="img-fluid" src="/img/LogoData/14.Derek_Coffee.png" alt="이미지가 없습니다."/>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+    {/* 컬러 카운터 끝 */}
+
 
 
 
@@ -62,10 +193,10 @@ const Home = () =>{
 
       {/* Giftpack API가 들어갈 곳  */}
       {/* featurette */}
-      <section>
+            {/* class="col-md-7" */}
+      {/* <section>
         <div class="second-container">
           <div className="divStyled">
-            {/* class="col-md-7" */}
             <div>
               <p class="text-start">구미님의 연령대 사람들이 고른 상품</p>
             </div>
@@ -73,27 +204,32 @@ const Home = () =>{
             <div className="Homepage-Featured-Product-Image-Container">test</div>
             <div>
             </div>
-          </div>
-
-        
+          </div> */}
           {/* class="row" featurette */}
-          <div>
             {/* class="col-md-7 order-md-2" */}
+          {/* <div>
             <div>
               <h2 class="text-start">동심원이 추천하는 선물</h2>
               <p class="text-start">기프트팩 api</p>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+
+
+
+
+
+
 
       
-      <section class="third-container">
+      <section className="dd">
         <div className="container py-5">
           <div class="row text-center pt-3">
+                  {/* <h1 class="h1"></h1> */}
+                  {/* <p> 이달의 브랜드를 구경해 보세요!</p> */}
               <div class="col-lg-6 m-auto">
-                  <h1 class="h1">best of the month</h1>
-                  <p> 이달의 브랜드를 구경해 보세요!</p>
+                  <div className="best-of-the-month">이달의 추천 브랜드</div>
               </div>
           </div>
           <div class="row">
@@ -115,6 +251,13 @@ const Home = () =>{
           </div>
         </div>
       </section>
+
+
+
+
+
+
+
 
 
       {/* 3개 이미지 카드 위치 */}
@@ -141,14 +284,30 @@ const Home = () =>{
 
       
       {/* New Arrivals Area Start */}
-      {/* section 판매 물건 구분 */}
-      <section class="new_arrivals_area section_padding_100_0 clearfix">
+      {/* section 판매 물건 구분 화면 조정 필요함. */}
+      <section class="third-container new_arrivals_area section_padding_100_0 clearfix">
             <div class="container">
-                <div class="row">
+              {/* 이쪽 조정 */}
+                <div >
                     <div class="col-12">
                         <div class="section_heading text-center">
-                            <h2>판매중인 상품이에요 :)</h2>
+                            <h2>판매중인 선물이에요 :)</h2>
                         </div>
+                    </div>
+                    <div className="Trd-container-button-location">
+                      <div class="flex-w flex-c-m m-tb-10">
+                        <div class="flex-c-m stext-106 cl6 size-104 bor4 pointer hov-btn3 trans-04 m-r-8 m-tb-4 js-show-filter">
+                          <i class="icon-filter cl2 m-r-6 fs-15 trans-04 zmdi zmdi-filter-list"></i>
+                          <i class="icon-close-filter cl2 m-r-6 fs-15 trans-04 zmdi zmdi-close dis-none"></i>
+                          Filter
+                        </div>
+
+                        <div class="flex-c-m stext-106 cl6 size-105 bor4 pointer hov-btn3 trans-04 m-tb-4 js-show-search">
+                          <i class="icon-search cl2 m-r-6 fs-15 trans-04 zmdi zmdi-search"></i>
+                          <i class="icon-close-search cl2 m-r-6 fs-15 trans-04 zmdi zmdi-close dis-none"></i>
+                          Search
+                        </div>
+                      </div>
                     </div>
                 </div>
             </div>
@@ -156,7 +315,7 @@ const Home = () =>{
             <div class="karl-projects-menu mb-100">
                 <div class="text-center portfolio-menu">
                   {/* active 가 움직여야 함. */}
-                    <button class="btn" data-filter="*">모든상품</button>
+                    <button class="btn" data-filter="*">모든선물</button>
                     <button class="btn" data-filter=".bridal-shower">브라이덜 샤워</button>
                     <button class="btn" data-filter=".birth">출생</button>
                     <button class="btn" data-filter=".birthday">생일</button>
@@ -302,10 +461,15 @@ const Home = () =>{
                             <a href="#" class="add-to-cart-btn">장바구니 담기</a>
                         </div>
                     </div>
+                <div className="container">
+                  <button type="button" class="btn btn-outline-primary my-4">더보기</button>
+                </div>
                     {/* 6~9 끝 */}
                 </div>
+
+
             </div>
-        </section>
+      </section>
 
       {/* 판매 이미지 */}
       <Footer/>

@@ -21,7 +21,7 @@ const Nav = () =>{
 							<ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
 								<li class="nav-item dropdown">
 									<a class="nav-link link-dark px-2 dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
-										<span>모든상품</span>
+										<span>모든선물</span>
 										<i class="bi bi-chevron-down dropdown-indicator"></i>
 									</a>
 									<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -46,7 +46,7 @@ const Nav = () =>{
 							<li class="nav-item"><Link class="nav-link link-dark px-2" to={"/"}>리뷰보기</Link></li>
 						</ul>
 						<ul class="nav">
-              <li class="nav-item"><Link to="/member/Mypage" class="nav-link link-dark px-2">일반회원 마이페이지</Link></li>
+              {/* <li class="nav-item"><Link to="/member/Mypage" class="nav-link link-dark px-2">일반회원 마이페이지</Link></li> */}
               {/* <li class="nav-item"><Link to="/salesMember/SellerMypage" class="nav-link link-dark px-2">판매회원 마이페이지</Link></li> */}
 							<li class="nav-item"><Link to="/Login" class="nav-link link-dark px-2">로그인</Link></li>
 							<li class="nav-item"><Link to="/SignUp" class="nav-link link-dark px-2">회원가입</Link></li>
