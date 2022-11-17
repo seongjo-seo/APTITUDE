@@ -1,17 +1,12 @@
-.side-nav-bar{
-  z-index: 3;
-  position: absolute;
-}
 
-
-/*** Layout ***/
+/* side nav bar css */
 .side-nav-bar {
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   width: 250px;
-  height: 100vh;
+  height: 100%;
   overflow-y: auto;
   background: var(--light);
   transition: 0.5s;
@@ -19,10 +14,10 @@
 }
 /*** Navbar ***/
 .side-nav-bar .navbar .navbar-nav .nav-link {
+  /* color: var(--dark); */
+  /* border-left: 3px solid var(--light); */
   padding: 7px 20px;
-  color: var(--dark);
   font-weight: 500;
-  border-left: 3px solid var(--light);
   border-radius: 0 30px 30px 0;
   outline: none;
 }

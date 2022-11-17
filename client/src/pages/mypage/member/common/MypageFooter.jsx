@@ -1,6 +1,6 @@
 import React from 'react';
 
-import "../static/sb-admin-2.css"
+import "../static/core.css"
 
 const MypageFooter = ()=>{
 
