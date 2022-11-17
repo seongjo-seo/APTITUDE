@@ -1,21 +1,16 @@
 
 /* side nav bar css */
 .side-nav-bar {
+  border-right : 0.1px;
+  border-color: gray;
   position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 250px;
+  width: 10%;
   height: 100%;
   overflow-y: auto;
-  background: var(--light);
   transition: 0.5s;
   z-index: 1500;
 }
-/*** Navbar ***/
 .side-nav-bar .navbar .navbar-nav .nav-link {
-  /* color: var(--dark); */
-  /* border-left: 3px solid var(--light); */
   padding: 7px 20px;
   font-weight: 500;
   border-radius: 0 30px 30px 0;
@@ -24,9 +19,7 @@
 
 .side-nav-bar .navbar .navbar-nav .nav-link:hover,
 .side-nav-bar .navbar .navbar-nav .nav-link.active {
-  color: var(--primary);
   background: #FFFFFF;
-  border-color: var(--primary);
 }
 
 .side-nav-bar .navbar .navbar-nav .nav-link i {
@@ -39,10 +32,6 @@
   border-radius: 40px;
 }
 
-.side-nav-bar .navbar .navbar-nav .nav-link:hover i,
-.side-nav-bar .navbar .navbar-nav .nav-link.active i {
-  background: var(--light);
-}
 
 .side-nav-bar .navbar .dropdown-toggle::after {
   position: absolute;
@@ -67,14 +56,9 @@
 .content .navbar .navbar-nav .nav-link {
   margin-left: 25px;
   padding: 12px 0;
-  color: var(--dark);
   outline: none;
 }
 
-.content .navbar .navbar-nav .nav-link:hover,
-.content .navbar .navbar-nav .nav-link.active {
-  color: var(--primary);
-}
 
 .content .navbar .side-nav-bar-toggler,
 .content .navbar .navbar-nav .nav-link i {
@@ -86,6 +70,17 @@
   background: #FFFFFF;
   border-radius: 40px;
 }
+
+/** mypage-section-right-size */
+.mypage-section-right-size{
+  margin-left: 10%;
+  width: 90%;
+}
+
+
+
+
+
 
 
 /*!

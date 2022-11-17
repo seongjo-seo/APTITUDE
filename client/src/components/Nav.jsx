@@ -49,8 +49,8 @@ const Nav = () =>{
 						<ul class="nav">
               <li class="nav-item"><Link to="/member/Mypage" class="nav-link link-dark px-2">마이페이지</Link></li>
               <li class="nav-item"><Link to="/Login" class="nav-link link-dark px-2">로그아웃</Link></li>
-							{/* <li class="nav-item"><Link to="/Login" class="nav-link link-dark px-2">로그인</Link></li>
-							<li class="nav-item"><Link to="/SignUp" class="nav-link link-dark px-2">회원가입</Link></li> */}
+							<li class="nav-item"><Link to="/Login" class="nav-link link-dark px-2">로그인</Link></li>
+							<li class="nav-item"><Link to="/SignUp" class="nav-link link-dark px-2">회원가입</Link></li>
 						</ul>
 						
 						{/* <form class="d-flex">

@@ -14,9 +14,9 @@ const Mypage = () => {
   return (
     <>
     
+    <MypageNav/>
     
-    <section>
-      {/* <MypageNav/> */}
+    <section className="mypage-section-right-size">
 
 
       {/* 뒷 배경 색상 코어 잡는 곳. */}
