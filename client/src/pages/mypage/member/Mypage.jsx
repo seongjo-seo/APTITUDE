@@ -1,14 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import {AiOutlineUser, AiOutlineGift} from "react-icons/ai";
-import {BiBell} from "react-icons/bi";
 import {TiMessages} from "react-icons/ti";
-import {HiOutlineMagnifyingGlass} from "react-icons/hi2";
 import {BsThreeDotsVertical} from "react-icons/bs";
 
 import "./static/core.css";
 import MypageFooter from "./common/MypageFooter";
 import MypageNav from "./common/MypageNav";
+import MypageTopNav from "./common/MypageTopNav";
 
 
 const Mypage = () => {
@@ -28,134 +27,7 @@ const Mypage = () => {
       {/* Content Wrapper */}
       <div id="content-wrapper" class="d-flex flex-column">
 
-      {/* 상단 header 시작 위치  */}
-      <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-
-      {/* <!-- Topbar Search --> */}
-      <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-          <div class="input-group">
-              <input type="text" class="form-control bg-light border-0 small" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2"/>
-              <div class="input-group-append">
-                  <button class="btn btn-primary" type="button">
-                    <HiOutlineMagnifyingGlass style={{width:"18", height:"18", viewBox:"0 0 18 18"}}/>
-                      {/* <i class="fas fa-search fa-sm"></i> */}
-                  </button>
-              </div>
-          </div>
-      </form>
-
-
-
-    {/* 상단 헤더 바 위치 */}
-    <ul class="navbar-nav ml-auto">
-        {/*  Nav Item - Search Dropdown (Visible Only XS) */}
-        <li class="nav-item dropdown no-arrow d-sm-none">
-            {/* <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-search fa-fw"></i>
-            </a> */}
-            
-          </li>
-
-        {/* 상단헤더 내비에 있는 벨 */}
-        <li class="nav-item dropdown no-arrow mx-1">
-            <Link class="nav-link dropdown-toggle" to={"#"} id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <BiBell style={{width:"22", height:"22", viewBox:"0 0 22 22"}}/>
-                {/* <i class="fas fa-bell fa-fw"></i> */}
-                {/* <!-- Counter - Alerts --> */}
-                <span class="badge badge-danger badge-counter">5+</span>
-            </Link>
-            {/* 알람 내부 시작 영역 */}
-            {/* <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                aria-labelledby="alertsDropdown">
-                <h6 class="dropdown-header">Alerts Center</h6>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                    <div class="mr-3">
-                        <div class="icon-circle bg-primary">
-                            <i class="fas fa-file-alt text-white"></i>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="small text-gray-500">December 12, 2019</div>
-                        <span class="font-weight-bold">A new monthly report is ready to download!</span>
-                    </div>
-                </a>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                    <div class="mr-3">
-                        <div class="icon-circle bg-success">
-                            <i class="fas fa-donate text-white"></i>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="small text-gray-500">December 7, 2019</div>$290.29 has been deposited into your account!
-                    </div>
-                </a>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                    <div class="mr-3">
-                        <div class="icon-circle bg-warning">
-                            <i class="fas fa-exclamation-triangle text-white"></i>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="small text-gray-500">December 2, 2019</div>
-                        Spending Alert: We've noticed unusually high spending for your account.
-                    </div>
-                </a>
-                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
-            </div> */}
-            {/* 알람 내부 종료 영역  */}
-        </li>
-
-        {/* 내비 내부 메시지 정리  nav messages info */}
-        <li class="nav-item dropdown no-arrow mx-1">
-            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <TiMessages style={{width:"22", height:"22", viewBox:"0 0 22 22"}}/>
-                {/* <i class="fas fa-envelope fa-fw">여기</i> */}
-
-                {/* 메시지 개수 */}
-                <span class="badge badge-danger badge-counter">2</span>
-            </a>
-           
-        </li>
-
-        <div class="topbar-divider d-none d-sm-block"></div>
-
-        {/* <!-- Nav Item - User Information --> */}
-        <li class="nav-item dropdown no-arrow">
-            <a class="nav-link dropdown-toggle" href="/" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  {/* 사용자 이미지 */}
-                {/* <img class="img-profile rounded-circle" src="" alt="..."/> */}
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small">김태평 님</span>
-                <AiOutlineUser class="img-profile rounded-circle"/>
-            </a>
-            {/* <!-- Dropdown - User Information --> */}
-            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="#">
-                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                    Profile
-                </a>
-                <a class="dropdown-item" href="#">
-                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                    Settings
-                </a>
-                <a class="dropdown-item" href="#">
-                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                    Activity Log
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                    Logout
-                </a>
-            </div>
-        </li>
-
-    </ul>
-
-</nav>
-{/* <!-- End of Topbar --> */}
-
+      <MypageTopNav/>
 
 
 
