@@ -10,6 +10,7 @@ import '../static/core.css';
 const MypageTopNav = () => {
   return (
     <>
+    {/* top-nav-bar */}
         <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
         {/* d-none form-inline  mr-auto  my-2 my-md-0 mw-100 */}

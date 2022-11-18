@@ -1,14 +1,72 @@
+/* top-nav-bar */
+/* .top-nav-bar .navbar-nav .nav-link{
+  padding: 7px 20px;
+  font-weight: 500;
+  border-radius: 0 30px 30px 0;
+  outline: none;
+}
+
+.top-nav-bar .navbar-nav .nav-link:hover,
+.top-nav-bar .navbar-nav .nav-link.active {
+  background: rgba(78, 115, 223, 0.1);
+
+}
+.top-nav-bar .navbar-nav .nav-link i {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+}
+.top-nav-bar .dropdown-toggle::after {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: none;
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  transition: .5s;
+}
+.top-nav-bar .dropdown-toggle[aria-expanded=true]::after {
+  transform: rotate(-180deg);
+}
+
+.top-nav-bar .dropdown-item {
+  padding-left: 25px;
+  border-radius: 0 30px 30px 0;
+}
+.top-nav-bar .navbar-nav .nav-link {
+  margin-left: 25px;
+  padding: 12px 0;
+  outline: none;
+}
+.top-nav-bar .side-nav-bar-toggler,
+.top-nav-bar .navbar-nav .nav-link i {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+  border-radius: 40px;
+} */
+
+
+
 
 /* side nav bar css */
 .side-nav-bar {
-  border-right : 0.1px;
-  border-color: gray;
+  border-right : 1px solid;
+  border: rgb(122, 122, 122);
   position: fixed;
   width: 10%;
   height: 100%;
   overflow-y: auto;
   transition: 0.5s;
   z-index: 1500;
+  background-color: white;
 }
 .side-nav-bar .navbar .navbar-nav .nav-link {
   padding: 7px 20px;
@@ -19,7 +77,8 @@
 
 .side-nav-bar .navbar .navbar-nav .nav-link:hover,
 .side-nav-bar .navbar .navbar-nav .nav-link.active {
-  background: #FFFFFF;
+  background: rgba(78, 115, 223, 0.1);
+
 }
 
 .side-nav-bar .navbar .navbar-nav .nav-link i {
@@ -28,7 +87,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: #FFFFFF;
+  /* background: rgba(246, 194, 62, 0.25); */
+  /* background: #FFFFFF; */
   border-radius: 40px;
 }
 
@@ -96,11 +156,11 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
-*,
+/* *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
+} */
 /* 
 html {
   font-family: sans-serif;
@@ -3039,6 +3099,7 @@ input[type="button"].btn-block {
   position: relative;
 }
 
+/* 드롭박스 이미지 위치 */
 .dropdown-toggle {
   white-space: nowrap;
 }
